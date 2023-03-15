@@ -1,4 +1,3 @@
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
@@ -57,9 +56,15 @@ a:hover{
     </div>
     <div class="navbaruserlist">
         <div class="profileicon">
-            <img src="image\Profile.png" width="30rem">
-            <?php if(!isset($_SESSION['user_username'])) { ?><a href="login.php">Log in / Sign in </a><?php } ?>
+            <?php if(!isset($_SESSION['user_username'])) { ?>
+                <a href="login.php"><img src="image\Profile.png" width="30rem"></a>
+                <a href="login.php">Log in / Sign in </a><?php } ?>
         </div>
+
+        <div class="profileicon">
+            <a href="#shoppingcart"><img src="image\shopping-cart.png" width="25rem"></a>
+        </div>
+
         <div><?php if(isset($_SESSION['user_username'])) { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
         <div><?php if(isset($_SESSION['user_username'])) { ?><a href="logout.php" class="linkstyle">ออกจากระบบ</a><?php } ?></div>
     </div>
