@@ -5,9 +5,6 @@ require_once 'connect.php';
 <!DOCTYPE html>
 <html>
 <head>
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>

@@ -15,10 +15,7 @@
         else
         {
                 $_SESSION["user_username"] = $objResult["username"];
-                // $_SESSION["user_name"] = $objResult["user_name"];
-                // $_SESSION["user_sername"] = $objResult["user_sername"];
                 $_SESSION["user_type"] = $objResult["user_type"];
-                // $_SESSION["user_id"] = $objResult["user_id"];
                 if($objResult["user_type"]=="admin")
                 {
                     header("location:http://localhost/SE_Project/");
