@@ -18,7 +18,7 @@
                 $_SESSION["user_type"] = $objResult["user_type"];
                 if($objResult["user_type"]=="admin")
                 {
-                    header("location:http://localhost/SE_Project/");
+                    header("location:http://localhost/SE_Project/index-admin.php");
                 }
                 else
                 {

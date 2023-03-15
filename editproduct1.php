@@ -7,7 +7,7 @@ require_once 'connect.php';
 <body>
 
 <?php
-include("navbar.php")
+include("navbar-admin.php") //navbar
 ?>
 
 

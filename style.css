@@ -24,6 +24,10 @@ h3{
     margin-top: 1rem;
 }
 
+.padpage{
+    padding-left: 10%;
+    padding-right: 10%;
+    
 .contextbox{
     margin: 5% 20%;
 }
@@ -57,4 +61,5 @@ h3{
 
 .graytext{
     color: #8f8f8f;
+
 }
