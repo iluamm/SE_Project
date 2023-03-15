@@ -43,18 +43,21 @@ a:link, a:visited {
     color: black;
     text-decoration: none;
 }
+a:hover{
+    color:red;
+}
 
 </style>
 <nav class="navbar">
     <div class="navbarmenu">
-        <img src="\image\Logo.png" width="120rem">
-        <div>อัลบั้มสอด</div>
-        <div>อัลบั้มกาว</div>
-        <div>อัดรูป</div> 
+        <a href="index.php"><img src="image\Logo.png" width="120rem"></a>
+        <div><a href="orderproduct1.php">อัลบั้มสอด</a></div>
+        <div><a href="orderproduct2.php">อัลบั้มกาว</a></div>
+        <div><a href="orderproduct3.php">อัดรูป</a></div> 
     </div>
     <div class="navbaruserlist">
         <div class="profileicon">
-            <img src="\image\Profile.png" width="30rem">
+            <img src="image\Profile.png" width="30rem">
             <?php if(!isset($_SESSION['user_username'])) { ?><a href="login.php">Log in / Sign in </a><?php } ?>
         </div>
         <div><?php if(isset($_SESSION['user_username'])) { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
