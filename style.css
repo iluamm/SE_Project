@@ -7,6 +7,12 @@
 body{
     font-family: 'Noto Sans Thai', sans-serif;
 }
+
+h3{
+    color: black;
+    font-weight: normal;
+}
+
 .form-input {
     width:50%;
     height:2rem;
@@ -16,4 +22,39 @@ body{
 .form-button {
     height:2rem;
     margin-top: 1rem;
+}
+
+.contextbox{
+    margin: 5% 20%;
+}
+
+.menuitemlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.menueachitemlist{
+    text-align: center;
+}
+
+.picturemenu{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+.picturemenu img{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.graytext{
+    color: #8f8f8f;
 }
