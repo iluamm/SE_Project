@@ -5,14 +5,17 @@
 <style>
 .navbarmenu{
     display: flex;
+    height: 100%;
+    align-items: center;
     justify-content: flex-start;
     gap: 25%;
-    list-style: none;
     white-space: nowrap;
 }
 
 .navbaruserlist{
     display: flex;
+    height: 100%;
+    align-items: center;
     justify-content: flex-end;
     gap: 25%;
     white-space: nowrap;
@@ -25,10 +28,11 @@
     justify-content: space-between;
     font-family: 'Noto Sans Thai', sans-serif;
     padding: 0.5%;
+    align-items: center;
 }
 
 </style>
-<div class="navbar">
+<nav class="navbar">
     <div class="navbarmenu">
         <img src="\image\Logo.png" width="120rem">
         <div>อัลบั้มสอด</div>
@@ -37,11 +41,8 @@
     </div>
     <div class="navbaruserlist">
         <div>
-            <!-- profile icon -->
-        </div>
-        <div>
             <?php if(!isset($_SESSION['user_username'])) { ?><a href="login.php">Log in / Sign in </a><?php } ?></div>
         <div><?php if(isset($_SESSION['user_username'])) { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
         <div><?php if(isset($_SESSION['user_username'])) { ?><a href="logout.php">ออกจากระบบ</a><?php } ?></div>
     </div>
-</div>
+</nav>
