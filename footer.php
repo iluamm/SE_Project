@@ -5,15 +5,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
 <style>
 footer {
+    /* position: fixed; */
+    width:100%;
     left: 0;
     bottom: 0;
+
     color: #ffffff;
-    font-size: 16px;
-    min-height:100px;
-    width:100%;
-    font-family: 'Noto Sans Thai', sans-serif;
-    padding-bottom: 2rem;
+    font-size: 1rem;
     border-top: 1px solid #D9D9D9;
+    font-family: 'Noto Sans Thai', sans-serif;
+
+    padding-bottom: 2rem;
+    margin-top: 5rem;
 }
 footer .container {
   display: flex;
