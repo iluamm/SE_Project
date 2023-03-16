@@ -13,6 +13,11 @@ h3{
     font-weight: normal;
 }
 
+p{
+    font-size: 1rem;
+    line-height: 0.7;
+}
+
 .form-input {
     width:50%;
     height:2rem;
@@ -27,16 +32,19 @@ h3{
 .padpage{
     padding-left: 10%;
     padding-right: 10%;
-    
+}
 .contextbox{
     margin: 5% 20%;
 }
 
 .menuitemlist{
-    display: flex;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: space-evenly;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
+    gap: 5%; */
 }
 
 .menueachitemlist{
@@ -57,9 +65,9 @@ h3{
     top: 0;
     left: 0;
     object-fit: contain;
+    border-radius: 0%;
 }
 
 .graytext{
     color: #8f8f8f;
-
 }

@@ -3,6 +3,9 @@
 
 <head>
 <link rel="stylesheet" href="style.css" />
+<!-- <style>
+
+</style> -->
 </head>
 
 <body>
@@ -13,6 +16,54 @@
         <h3 align="center">อัลบั้มสอด</h3>
 
         <div class="menuitemlist">
+            <div class="menueachitemlist">
+                <div class="picturemenu">
+                    <img src="album\elephant.jpg">
+                </div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+
+            <div class="menueachitemlist">
+                <div class="picturemenu">
+                    <img src="album\elephant.jpg">
+                </div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+
+            <div class="menueachitemlist">
+                <div class="picturemenu">
+                    <img src="album\elephant.jpg">
+                </div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+
+            <div class="menueachitemlist">
+                <div class="picturemenu">
+                    <img src="album\elephant.jpg">
+                </div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+
+            <div class="menueachitemlist">
+                <div class="picturemenu">
+                    <img src="album\elephant.jpg">
+                </div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+
+            <div class="menueachitemlist">
+                <div class="picturemenu">
+                    <img src="album\elephant.jpg">
+                </div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+
             <div class="menueachitemlist">
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">

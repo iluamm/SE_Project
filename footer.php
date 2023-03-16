@@ -5,10 +5,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
 <style>
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #;
     color: #ffffff;
     font-size: 16px;
     min-height:100px;
