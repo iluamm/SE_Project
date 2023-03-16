@@ -20,13 +20,13 @@ include("navbar-admin.php") //navbar
 </form>
 
 <br>เบอร์โทร
-<br><input style="width:20%;height:2rem;" type="text"value="phone" />
+<br><input style="width:20%;height:2rem;" type="text"value="phone" readonly/>
 
 <p>Firstname - Lastname
-<br><input style="width:20%;height:2rem;" type="text"value="phone" />
+<br><input style="width:20%;height:2rem;" type="text"value="ลูกพี่เนม เทพซ่า" readonly/>
 
 <p>Address
-<br><input style="width:50%;height:10rem;" type="text"value="phone" />
+<br><input style="width:50%;height:10rem;" type="text"value="phone" readonly/>
 
 <p style="margin-top:3rem"><h2>ประวัติการสั่งซื้อ</h2>
 <table border="1">
@@ -58,7 +58,7 @@ include("navbar-admin.php") //navbar
 
 
 </body>
-<?php
- include("footer.php")
-?>
+    <?php
+    include("footer.php")
+    ?>
 </html>

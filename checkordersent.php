@@ -23,14 +23,14 @@ include("navbar-admin.php") //navbar
     <tr>
         <td>xxxxx</td>
         <td>xx/xx/xxxx</td>
-        <td>ยกเลิก</td>
-        <td>รายละเอียด</td>
+        <td><input type="submit" name="Submit" value="ยกเลิก" /></td>
+        <td><input type="submit" name="Submit" value="รายละเอียด" /></td>
     </tr>
     <tr>
         <td>xxxxx</td>
         <td>xx/xx/xxxx</td>
-        <td>ยกเลิก</td>
-        <td>รายละเอียด</td>
+        <td><input type="submit" name="Submit" value="ยกเลิก" /></td>
+        <td><input type="submit" name="Submit" value="รายละเอียด" /></td>
     </tr>
 </table>
 

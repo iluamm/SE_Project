@@ -30,8 +30,8 @@ include("navbar-admin.php") //navbar
         <td>15.00</td>
         <td>500</td>
         <td>ดูรูป</td>
-        <td>ยกเลิก</td>
-        <td>ยอมรับ</td>
+        <td><input type="submit" name="Submit" value="ยกเลิก" /></td>
+        <td><input type="submit" name="Submit" value="ยอมรับ" /></td>
     </tr>
     <tr>
         <td>xxxxx</td>
@@ -39,8 +39,8 @@ include("navbar-admin.php") //navbar
         <td>15.00</td>
         <td>500</td>
         <td>ดูรูป</td>
-        <td>ยกเลิก</td>
-        <td>ยอมรับ</td>
+        <td><input type="submit" name="Submit" value="ยกเลิก" /></td>
+        <td><input type="submit" name="Submit" value="ยอมรับ" /></td>
     </tr>
 </table>
 
