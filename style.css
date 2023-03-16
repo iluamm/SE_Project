@@ -37,37 +37,6 @@ p{
     margin: 5% 20%;
 }
 
-.menuitemlist{
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15%;
-    justify-content: space-evenly;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%; */
-}
-
-.menueachitemlist{
-    text-align: center;
-}
-
-.picturemenu{
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-}
-.picturemenu img{
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: contain;
-    border-radius: 0%;
-}
-
 .graytext{
     color: #8f8f8f;
 }

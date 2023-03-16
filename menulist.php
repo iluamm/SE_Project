@@ -3,9 +3,38 @@
 
 <head>
 <link rel="stylesheet" href="style.css" />
-<!-- <style>
+<style>
+.menuitemlist{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: space-evenly;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%; */
+}
 
-</style> -->
+.menueachitemlist{
+    text-align: center;
+}
+
+.picturemenu{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+.picturemenu img{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    border-radius: 0%;
+}
+</style>
 </head>
 
 <body>
