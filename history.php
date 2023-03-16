@@ -42,14 +42,14 @@ include("navbar-admin.php") //navbar
         <td>xx/xx/xxxx</td>
         <td>500</td>
         <td>รอตรวจสอบ</td>
-        <td>รายละเอียด</td>
+        <td><a href="orderdetail.php"><input type="submit" name="Submit" value="รายละเอียด" /></a></td>
     </tr>
     <tr>
         <td>xxxxx</td>
         <td>xx/xx/xxxx</td>
         <td>500</td>
         <td>จัดเตรียมสินค้า</td>
-        <td>จัดส่งสำเร็จ</td>
+        <td><a href="orderdetail.php"><input type="submit" name="Submit" value="รายละเอียด" /></a></td>
     </tr>
 </table>
 </div>
