@@ -30,7 +30,7 @@ include("navbar-admin.php") //navbar
         <td>xx/xx/xxxx</td>
         <td>15.00</td>
         <td>500</td>
-        <td>ดูรูป</td>
+        <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
         <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
         <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
     </tr>
@@ -39,7 +39,7 @@ include("navbar-admin.php") //navbar
         <td>xx/xx/xxxx</td>
         <td>15.00</td>
         <td>500</td>
-        <td>ดูรูป</td>
+        <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
         <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
         <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
     </tr>

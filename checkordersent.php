@@ -15,7 +15,7 @@ include("navbar-admin.php") //navbar
 ?>
 
 <h2>รายการสินค้าที่จัดส่ง</h2>
-<table>
+<table class="t4">
     <tr>
         <th>เลขที่ออเดอร์</th>
         <th>เวลา</th>

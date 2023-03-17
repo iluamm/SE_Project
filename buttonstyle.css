@@ -37,6 +37,26 @@
     background-color: #B2B2B2;
 }
 
+.checkpicButton{
+    color: black;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    background-color: white; /* #cbe2c5 */
+    transition: 0.2s;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.checkpicButton:hover{
+    background-color: #B2B2B2;
+    color: black;
+    cursor: pointer;
+}
 
 .cancelButton{
     color: #B2B2B2;

@@ -62,8 +62,9 @@ a:hover{
         <div class="profileicon">
             <img src="image\Profile.png" width="30rem">
             <?php if(!isset($_SESSION['user_username'])) { ?><a href="login.php">Log in / Sign in </a><?php } ?>
+        
+            <?php if(isset($_SESSION['user_username'])) { ?><div>Hello! <?php echo $_SESSION['user_username']; ?></div><?php } ?>
         </div>
-        <div><?php if(isset($_SESSION['user_username'])) { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
         <div><?php if(isset($_SESSION['user_username'])) { ?><a href="logout.php" class="linkstyle">ออกจากระบบ</a><?php } ?></div>
     </div>
 </nav>

@@ -15,7 +15,7 @@ include("navbar-admin.php")
 
 <div class="padpage">
 <h2>รายละเอียดออเดอร์</h2>
-<table border="1">
+<table>
     <tr>
         <th>ลำดับรายการ   </th>
         <th>สินค้า</th>
@@ -70,7 +70,7 @@ include("navbar-admin.php")
 
 
 <p style="margin-top:3rem"><h2>ติดตามสินค้า</h2>
-<table border="1">
+<table>
     <tr>
         <td>
             เลขพัสดุ : <input style="width:50%;height:1.5rem;" type="text" placeholder="เลขพัสดุ"/>
