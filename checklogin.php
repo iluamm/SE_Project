@@ -5,12 +5,15 @@
         $username = $mysqli -> real_escape_string($_POST['username']);
         $password = $mysqli -> real_escape_string($_POST['password']);
         $strSQL = "SELECT * FROM username WHERE username = '". $username."'
-                    and password = '".$password."'"; //หาuser&pass
-        $objQuery = $mysqli -> query($strSQL); //
+                    and password = '".$password."'";
+        $objQuery = $mysqli -> query($strSQL);
         $objResult = $objQuery -> fetch_array(MYSQLI_ASSOC);
         if(!$objResult)
-            { echo "Username and Password Incorrect!";
-            
+            { 
+                echo "<script>";
+                echo "alert('ชื่อผู้ใช้งาน หรือรหัสผ่านไม่ถูกต้อง');";
+                echo "window.history.back();";
+                echo "</script>";
             }
         else
         {
