@@ -65,6 +65,7 @@ a:hover{
         </div>
 
         <?php if(isset($_SESSION['user_username'])) { ?>
+            <a href="profile.php"><img src="image\Profile.png" width="30rem"></a>
             <div>
             Hello! 
             <?php echo $_SESSION['user_username']; ?>
