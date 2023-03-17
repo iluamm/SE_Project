@@ -11,11 +11,11 @@ if(isset($_POST['regis']))
     $user_type = "customer";
     
     if($password1==$password2){
-        $sql = "INSERT INTO username (	username, password,user_type)
-        VALUES ('$username', '$password1', '$user_type')";
+        $sql = "INSERT INTO username (user_id,username, password,user_type)
+        VALUES (NULL,'$username', '$password1', '$user_type')";
         $objQuery = $mysqli -> query($sql);
         echo 'Insert Success';
-        header( "location: http://localhost/SE_Project/" );
+        header( "location: http://localhost/SE_Project/login.php" );
     }
     else{
         echo 'Insert Failed';
