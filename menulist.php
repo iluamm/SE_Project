@@ -50,7 +50,7 @@
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">
                 </div>
-                <div class="detailsbox">
+                <div>
                     <p>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
@@ -60,7 +60,7 @@
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">
                 </div>
-                <div class="detailsbox">
+                <div>
                     <p>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">
                 </div>
-                <div class="detailsbox">
+                <div>
                     <p>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
@@ -80,7 +80,7 @@
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">
                 </div>
-                <div class="detailsbox">
+                <div>
                     <p>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
@@ -90,7 +90,7 @@
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">
                 </div>
-                <div class="detailsbox">
+                <div>
                     <p>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
@@ -100,12 +100,12 @@
                 <div class="picturemenu">
                     <img src="album\elephant.jpg">
                 </div>
-                <div class="detailsbox">
+                <div>
                     <p>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
     
@@ -113,6 +113,5 @@
 <?php
  include("footer.php")
 ?>
-
 
 </html>

@@ -6,6 +6,7 @@ require_once 'connect.php';
 <html>
 <head>
 <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="buttonstyle.css" />
 </head>
 <body>
 
@@ -13,8 +14,8 @@ require_once 'connect.php';
 include("navbar-admin.php") //navbar
 ?>
 
-<h2 align="center">รายการสินค้าที่จัดส่ง</h2>
-<table border="1" align="center">
+<h2>รายการสินค้าที่จัดส่ง</h2>
+<table>
     <tr>
         <th>เลขที่ออเดอร์</th>
         <th>เวลา</th>
@@ -23,19 +24,16 @@ include("navbar-admin.php") //navbar
     <tr>
         <td>xxxxx</td>
         <td>xx/xx/xxxx</td>
-        <td><input type="submit" name="Submit" value="ยกเลิก" /></td>
-        <td><input type="submit" name="Submit" value="รายละเอียด" /></td>
+        <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
+        <td><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></td>
     </tr>
     <tr>
         <td>xxxxx</td>
         <td>xx/xx/xxxx</td>
-        <td><input type="submit" name="Submit" value="ยกเลิก" /></td>
-        <td><input type="submit" name="Submit" value="รายละเอียด" /></td>
+        <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
+        <td><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></td>
     </tr>
 </table>
-
-
-
 
 </body>
 <?php

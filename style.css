@@ -8,6 +8,12 @@ body{
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
+h2{
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+
 h3{
     color: black;
     font-weight: normal;
@@ -34,7 +40,6 @@ h3{
 .contextbox{
     /* background-color: aquamarine; */
     width: 60%;
-    /* min-height: 1000px; */
     margin: auto;
 }
 
@@ -46,6 +51,29 @@ p.graytext{
     color: #8f8f8f;
 }
 
-.detailsbox{
-    margin-top: 1rem;
+table.t6{
+    width: 60%;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+
+    /* border: 1px solid #D9D9D9; */
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0,0.05);
+    border-collapse: collapse;
+    /* background-color: gray; */
+    border-radius: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+tr{
+    border-bottom: 1px solid #D9D9D9; 
+}
+
+tr:last-child{
+    border: none
 }
