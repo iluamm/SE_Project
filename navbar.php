@@ -48,12 +48,15 @@ a:hover{
 
 </style>
 <nav class="navbar">
+    <!-- left -->
     <div class="navbarmenu">
         <a href="index.php"><img src="image\Logo.png" width="120rem"></a>
         <div><a href="orderproduct1.php">อัลบั้มสอด</a></div>
         <div><a href="orderproduct2.php">อัลบั้มกาว</a></div>
         <div><a href="orderproduct3.php">อัดรูป</a></div> 
     </div>
+
+    <!-- right -->
     <div class="navbaruserlist">
         <div class="profileicon">
             <?php if(!isset($_SESSION['user_username'])) { ?>
@@ -61,11 +64,22 @@ a:hover{
                 <a href="login.php">Log in / Sign in </a><?php } ?>
         </div>
 
+        <?php if(isset($_SESSION['user_username'])) { ?>
+            <div>
+            Hello! 
+            <?php echo $_SESSION['user_username']; ?>
+            </div>
+        <?php } ?>
+        
+
+        <?php if(isset($_SESSION['user_username'])) { ?>
+            <div>
+            <a href="logout.php" class="linkstyle">ออกจากระบบ</a>
+            </div>
+        <?php } ?>
+        
         <div class="profileicon">
             <a href="#shoppingcart"><img src="image\shopping-cart.png" width="25rem"></a>
         </div>
-
-        <div><?php if(isset($_SESSION['user_username'])) { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
-        <div><?php if(isset($_SESSION['user_username'])) { ?><a href="logout.php" class="linkstyle">ออกจากระบบ</a><?php } ?></div>
     </div>
 </nav>
