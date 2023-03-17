@@ -13,8 +13,8 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 <h1 align="center">ลงชื่อเข้าใช้</h1>
-<br><?php if(isset($_SESSION['error'])) { echo $_SESSION['error']; } ?>
 <form name="frm" align="center" method="post" action="checkregis.php" enctype="multipart/from-data">
+<label>
 <input class="form-input" type="text" name="name" placeholder="ชื่อ-นามสกุล">
 <input class="form-input" type="text" name="username" placeholder="เบอร์โทรศัพท์">
 <input class="form-input" type="text" name="password" placeholder="รหัสผ่าน">
