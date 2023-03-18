@@ -22,7 +22,8 @@ body{
     float: right;
 }
 
-h1.left,h2.left,h3.left,h4.left,h5.left,h6.left{
+
+.left{
     color: black;
     font-weight: normal;
     text-align: left;
