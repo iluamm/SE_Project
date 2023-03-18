@@ -16,7 +16,7 @@ include("navbar.php")
 ?>
 <div class="logsign">
     <div class="logsigncolumn">
-        <img src="\image\login photo.jpg" width="100%">
+        <img src="image\login_photo.jpg" width="100%">
     </div>
     
     <div class="logsigncolumn">
