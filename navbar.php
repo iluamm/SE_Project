@@ -50,7 +50,7 @@ a:hover{
 <nav class="navbar">
     <!-- left -->
     <div class="navbarmenu">
-        <a href="index.php"><img src="image\Logo.png" width="120rem"></a>
+        <a href="index.php"><img src    ="image\Logo.png" width="120rem"></a>
         <div><a href="orderproduct1.php">อัลบั้มสอด</a></div>
         <div><a href="orderproduct2.php">อัลบั้มกาว</a></div>
         <div><a href="orderproduct3.php">อัดรูป</a></div> 
@@ -61,7 +61,8 @@ a:hover{
         <div class="profileicon">
             <?php if(!isset($_SESSION['user_username'])) { ?>
                 <a href="login.php"><img src="image\Profile.png" width="30rem"></a>
-                <a href="login.php">Log in / Sign in </a><?php } ?>
+                <a href="login.php">Log in / Sign in </a>
+            <?php } ?>
         </div>
 
         <?php if(isset($_SESSION['user_username'])) { ?>
@@ -79,8 +80,17 @@ a:hover{
             </div>
         <?php } ?>
         
+        <?php if(!isset($_SESSION['user_username'])) { ?>
         <div class="profileicon">
-            <a href="#shoppingcart"><img src="image\shopping-cart.png" width="25rem"></a>
+            <a href="login.php"><img src="image\shopping-cart.png" width="25rem"></a>
         </div>
+        <?php } ?>
+
+        <?php if(isset($_SESSION['user_username'])) { ?>
+        <div class="profileicon">
+            <a href="shoppingcart.php"><img src="image\shopping-cart.png" width="25rem"></a>
+        </div>
+        <?php } ?>
+
     </div>
 </nav>

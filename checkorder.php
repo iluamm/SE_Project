@@ -4,18 +4,21 @@ require_once 'connect.php';
 ?>
 <!DOCTYPE html>
 <html>
-<body>
 <head>
 <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="buttonstyle.css" />
 </head>
+<body>
+
 <?php
 include("navbar.php")
 ?>
 
-
+<div class="contextbox">
 <div class="padpage">
-<h2>ตะกร้าสินค้า</h2>
-<table class="t6">
+<h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
+<h3 class="left">รายละเอียดสินค้า</h3>
+<table>
     <tr>
         <th>ลำดับรายการ   </th>
         <th>สินค้า</th>
@@ -68,10 +71,14 @@ include("navbar.php")
     </tr>
 </table>
 
-<br>
-<a href="checkorder.php"><button>ยืนยันคำสั่งซื้อ</button></a>
+<p><h2>ที่อยู่ที่ต้องการจัดส่ง</h2></p>
+<br><input style="width:50%;height:10rem;" type="text" placeholder="เลขที่หมู่"/>
+<br>*กรุณาตรวจสอบความถูกต้องของที่อยู่
 
+<p><a href="shoppingcart.php"><button>ย้อนกลับ</button></a>
+<a href="uploadpayment.php"><button>ยืนยัน</button></a>
 
+</div>
 </div>
 
 
