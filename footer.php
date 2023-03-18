@@ -16,7 +16,6 @@ footer {
     font-family: 'Noto Sans Thai', sans-serif;
 
     padding-bottom: 2rem;
-    margin-top: 5rem;
 }
 footer .container {
   display: flex;
