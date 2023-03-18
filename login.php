@@ -22,16 +22,27 @@ include("navbar.php")
     <div class="logsigncolumn">
         <h1>กรุณาเข้าสู่ระบบ</h1>
 
-        <form name="frm" align="center" method="post" action="checklogin.php" enctype="multipart/from-data">
-            <input class="common" type="text" name="username" placeholder="เบอร์โทรศัพท์">
-            <p>&nbsp;</p>
-            <input class="common" type="password" name="password" placeholder="รหัสผ่าน">
-            <p>&nbsp;</p>
-            <input class="losicButton" type="submit" name="Submit" value="เข้าสู่ระบบ" /></input>
-        </form>
-        <h5>
+        <div class="area4">
+            <form class="inputbar" align="center" name="frm" method="post" action="checklogin.php" enctype="multipart/from-data">
+                <div class="warpborder">
+                    <img src="image\user.png">
+                    <input class="withicon" type="text" name="username" placeholder="เบอร์โทรศัพท์">
+                </div>
+                <p>&nbsp;</p>
+                <div class="warpborder">
+                    <img src="image\key.png">
+                    <input class="withicon" type="password" name="password" placeholder="รหัสผ่าน">
+                </div>
+                
+                <p>&nbsp;</p>
+                <input class="losicButton" type="submit" name="Submit" value="เข้าสู่ระบบ" /></input>
+            </form>
+        </div>
+
+        
+        <p align="center">
             <a href="register.php">ยังไม่มีบัญชี? สมัครเลย</a>
-        </h5>
+        </p>
     </div>
 </div>
 

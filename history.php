@@ -8,6 +8,7 @@ require_once 'connect.php';
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="buttonstyle.css" />
 <link rel="stylesheet" href="inputstyle.css" />
+<link rel="stylesheet" href="tablestyle.css" />
 <style>
 input.search{
     width:100%;
@@ -17,7 +18,6 @@ input.search{
 
 .searchbox{
     margin-bottom: 2.5%;
-    
 }
 
 .search{
@@ -45,10 +45,10 @@ include("navbar-admin.php") //navbar
 <div class="contextbox">
     <div class="padpage">
         <h2 class="left">ค้นหาประวัติลูกค้า</h2>
-        <form class="searchbox">
-            <div class="search">
+        <form class="inputbar">
+            <div class="warpborder">
                 <img src="image\search.png">
-                <input class="search" placeholder="ค้นหา" />
+                <input class="withicon" placeholder="ค้นหา" />
             </div>
         </form>
 
@@ -69,38 +69,38 @@ include("navbar-admin.php") //navbar
 
     </div>
 </div>
+
 <div class="contextbox2">
-    <p style="margin-top:3rem"><h2 class="left">ประวัติการสั่งซื้อ</h2></div>
-    <table class="t5">
-        <tr>
-            <th>เลขที่ออเดอร์</th>
-            <th>วันที่สั่ง</th>
-            <th>ราคาออเดอร์</th>
-            <th>สถานะออเดอร์</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>xxxxx</td>
-            <td>xx/xx/xxxx</td>
-            <td>500</td>
-            <td>รอตรวจสอบ</td>
-            <td><a href="orderdetail.php">
-            <input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" />
-            </a></td>
-        </tr>
-        <tr>
-            <td>xxxxx</td>
-            <td>xx/xx/xxxx</td>
-            <td>500</td>
-            <td>จัดเตรียมสินค้า</td>
-            <td><a href="orderdetail.php">
-            <input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a>
-            </td>
-        </tr>
-    </table>
-
-
-
+    <h2 class="left">ประวัติการสั่งซื้อ</h2>
+</div>
+<table class="t5">
+    <tr>
+        <th>เลขที่ออเดอร์</th>
+        <th>วันที่สั่ง</th>
+        <th>ราคาออเดอร์</th>
+        <th>สถานะออเดอร์</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>xxxxx</td>
+        <td>xx/xx/xxxx</td>
+        <td>500</td>
+        <td>รอตรวจสอบ</td>
+        <td><a href="orderdetail.php">
+        <input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" />
+        </a></td>
+    </tr>
+    <tr>
+        <td>xxxxx</td>
+        <td>xx/xx/xxxx</td>
+        <td>500</td>
+        <td>จัดเตรียมสินค้า</td>
+        <td><a href="orderdetail.php">
+        <input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a>
+        </td>
+    </tr>
+</table>
+<h6>&nbsp;</h6>
 </body>
     <?php
     include("footer.php")

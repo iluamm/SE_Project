@@ -58,7 +58,7 @@ footer a:hover{
 
 <div class="container">
     <div class="column">
-      <h3>ติดต่อเรา</h3>
+      <h3 class="left">ติดต่อเรา</h3>
       <ul>
         <li><a href="#">FB : Polaroid Shop</a></li>
         <li><a href="#">Line : @Polaroid_shop</a></li>

@@ -7,6 +7,7 @@ require_once 'connect.php';
 <head>
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="buttonstyle.css" />
+<link rel="stylesheet" href="tablestyle.css" />
 </head>
 <body>
 
@@ -44,7 +45,7 @@ include("navbar-admin.php") //navbar
         <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
     </tr>
 </table>
-
+<h6>&nbsp;</h6>
 </body>
 <?php
  include("footer.php")
