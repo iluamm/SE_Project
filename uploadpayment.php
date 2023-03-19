@@ -30,7 +30,7 @@ include("navbar.php")
     <br>ยกเลิกออเดอร์
 </dd>
 <p><a href="checkorder.php"><button>ย้อนกลับ</button></a>
-<a href="index.php"><button>ยืนยัน</button></a>
+<a href="history.php"><button>ยืนยัน</button></a>
 
 </div>
 </div>

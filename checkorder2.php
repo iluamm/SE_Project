@@ -8,15 +8,18 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
 <link rel="stylesheet" href="csscol/tablestyle.css" />
+<link rel="stylesheet" href="csscol/inputstyle.css" />
 </head>
 <body>
 
 <?php
-include("navbar-admin.php")
+include("navbar.php")
 ?>
 
+<div class="contextbox">
 <div class="padpage">
-<h2>รายละเอียดออเดอร์</h2>
+<h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
+<h2 class="left">รายละเอียดสินค้า</h2>
 <table>
     <tr>
         <th>ลำดับรายการ   </th>
@@ -70,28 +73,6 @@ include("navbar-admin.php")
     </tr>
 </table>
 
-<p style="margin-top:3rem"><h2>ติดตามสินค้า</h2>
-<table>
-    <tr>
-        <td>
-            เลขพัสดุ : <input style="width:50%;height:1.5rem;" type="text" placeholder="เลขพัสดุ"/>
-            <br>จัดส่งโดย : <select name="delivery" id="delivery">
-                            <option value="thaiexpress">ไปรษณีย์ไทย</option>
-                            <option value="kerryexpress">Kerry Express</option>
-                            <option value="lalamove">Lalamove</option>
-                            <option value="flashexpress">Flash Express</option>
-                            </select>
-            <br>จัดส่งวันที่ : <input type="date" />
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ติดตามพัสดุ
-            <br>Kerry Express : ลิงค์
-        </td>
-    </tr>
-</table>
-
 <p style="margin-top:3rem"><h2>ชื่อผู้รับ ที่อยู่ และเบอร์โทรศัพท์</h2></p>
 <br>สัปปะรด พิซซ่า
 <br>11/12 ซอย 5 ถนนข้าวสาร แขวงข้าวสาร ตำบลข้าวสาร จังหวัดข้าวสวย เลขไปรษณีย์ 55555 
@@ -99,12 +80,19 @@ include("navbar-admin.php")
 <br>&nbsp;
 <br>วันที่สั่ง: xx/xx/xxxx
 
-<br>
-<a href="history-admin.php"><button>ย้อนกลับ</button></a>
-<button>จัดเตรียมสำเร็จ</button>
+
+<h5>&nbsp;</h3>
+
+
+ยกเลิกคำสั่งซื้อ (Cancel order)
+<br>*หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน
+<p><a href="history.php"><button>ย้อนกลับ</button></a>
+
 
 
 </div>
+</div>
+
 
 
 </body>
@@ -112,4 +100,3 @@ include("navbar-admin.php")
  include("footer.php")
 ?>
 </html>
-    
