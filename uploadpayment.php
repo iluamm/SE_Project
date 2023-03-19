@@ -5,8 +5,8 @@ require_once 'connect.php';
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="buttonstyle.css" />
+<link rel="stylesheet" href="csscol/style.css" />
+<link rel="stylesheet" href="csscol/buttonstyle.css" />
 </head>
 <body>
 

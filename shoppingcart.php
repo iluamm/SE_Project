@@ -6,7 +6,9 @@ require_once 'connect.php';
 <html>
 <body>
 <head>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="csscol/style.css" />
+<link rel="stylesheet" href="csscol/buttonstyle.css" />
+<link rel="stylesheet" href="csscol/tablestyle.css" />
 </head>
 <?php
 include("navbar.php")

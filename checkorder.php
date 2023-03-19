@@ -5,8 +5,10 @@ require_once 'connect.php';
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="buttonstyle.css" />
+<link rel="stylesheet" href="csscol/style.css" />
+<link rel="stylesheet" href="csscol/buttonstyle.css" />
+<link rel="stylesheet" href="csscol/tablestyle.css" />
+<link rel="stylesheet" href="csscol/inputstyle.css" />
 </head>
 <body>
 
@@ -17,7 +19,7 @@ include("navbar.php")
 <div class="contextbox">
 <div class="padpage">
 <h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
-<h3 class="left">รายละเอียดสินค้า</h3>
+<h2 class="left">รายละเอียดสินค้า</h2>
 <table>
     <tr>
         <th>ลำดับรายการ   </th>
@@ -71,10 +73,10 @@ include("navbar.php")
     </tr>
 </table>
 
-<p><h2>ที่อยู่ที่ต้องการจัดส่ง</h2></p>
-<br><input style="width:50%;height:10rem;" type="text" placeholder="เลขที่หมู่"/>
-<br>*กรุณาตรวจสอบความถูกต้องของที่อยู่
-
+<h2 class="left">ที่อยู่ที่ต้องการจัดส่ง</h2>
+<input class="address"  type="text" placeholder="เลขที่หมู่"/>
+<p class="gray">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
+<!-- style="width:50%;height:10rem;" -->
 <p><a href="shoppingcart.php"><button>ย้อนกลับ</button></a>
 <a href="uploadpayment.php"><button>ยืนยัน</button></a>
 

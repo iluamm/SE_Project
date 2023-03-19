@@ -2,8 +2,11 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="menuliststyle.css" />
+<link rel="stylesheet" href="css\style.css" />
+<link rel="stylesheet" href="css\menuliststyle.css" />
+
+<link rel="stylesheet" href="csscol/style.css" />
+<link rel="stylesheet" href="csscol/menuliststyle.css" />
 </head>
 
 <body>

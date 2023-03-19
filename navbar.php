@@ -50,7 +50,7 @@ a:hover{
 <nav class="navbar">
     <!-- left -->
     <div class="navbarmenu">
-        <a href="index.php"><img src    ="image\Logo.png" width="120rem"></a>
+        <a href="index.php"><img src ="image\Logo.png" width="120rem"></a>
         <div><a href="orderproduct1.php">อัลบั้มสอด</a></div>
         <div><a href="orderproduct2.php">อัลบั้มกาว</a></div>
         <div><a href="orderproduct3.php">อัดรูป</a></div> 
