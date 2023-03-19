@@ -21,6 +21,12 @@ input.address{
     border-radius: 1rem;
 }
 
+input.profileAddress{
+    width:100%;
+    height:10rem;
+    border-radius: 1rem;
+}
+
 /* with icon - ยังไม่ได้เทส ขี้เกียจหาไอคอน */
 
 .area4{

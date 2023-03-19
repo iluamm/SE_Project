@@ -6,6 +6,9 @@ require_once 'connect.php';
 <html>
 <head>
 <link rel="stylesheet" href="csscol/style.css" />
+<link rel="stylesheet" href="csscol/tablestyle.css" />
+<link rel="stylesheet" href="csscol/tablestyle.css" />
+<link rel="stylesheet" href="csscol/tablestyle.css" />
 </head>
 <body>
 
@@ -67,7 +70,6 @@ include("navbar-admin.php")
         <td>1550 บาท</td>
     </tr>
 </table>
-
 
 <p style="margin-top:3rem"><h2>ติดตามสินค้า</h2>
 <table>

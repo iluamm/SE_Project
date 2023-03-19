@@ -14,14 +14,6 @@ require_once 'connect.php';
 <?php
 include("navbar.php")
 ?>
-<!-- <h1>ลงชื่อเข้าใช้</h1>
-<form name="frm" align="center" method="post" action="checkregis.php" enctype="multipart/from-data">
-<input class="form-input" type="text" name="name" placeholder="ชื่อ-นามสกุล">
-<input class="form-input" type="text" name="username" placeholder="เบอร์โทรศัพท์">
-<input class="form-input" type="text" name="password" placeholder="รหัสผ่าน">
-<input class="form-input" type="text" name="password2" placeholder="ยืนยันรหัสผ่าน">
-<br><input class="form-button" type="submit" name="regis" value="สมัครสมาชิก" /></input>
-</form> -->
 
 <div class="logsign">
     <div class="logsigncolumn">
@@ -58,9 +50,6 @@ include("navbar.php")
         </div>
     </div>
 </div>
-
-
-
 
 </body>
 <?php

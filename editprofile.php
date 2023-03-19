@@ -15,27 +15,31 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
+<div class="contextbox">
+    <div class="padpage">
+        <h2>แก้โปรไฟล์ (Profile)</h2>
 
-<div class="padpage">
+        <div class="addressbox">
+            เบอร์โทรศัพท์ (Phone number)
+            <br><dd>09x-xxx-xxxx</dd>
+        </div>
 
+        <div class="addressbox">
+            <p>ชื่อ-นามสกุล (Firstname - Lastname)
+            <br><input type="text" class="common" value="ลูกพี่เนม เทพซ่า"/>
+        </div>
+        
+        <div class="addressbox">
+            <p>ที่อยู่ (Address)
+            <br><input type="text" class="profileAddress" value="phone"/>
+        </div>
 
-<h2>แก้โปรไฟล์ (Profile)</h2>
+        <div align="right">
+            <a href="profile.php"><input type="submit" class="saveButton" name="Submit" value="บันทึกการเปลี่ยนแปลง"  /></a>
+        </div>
 
-<br>เบอร์โทรศัพท์ (Phone number)
-<br><dd>09x-xxx-xxxx</dd>
-
-<br>ชื่อ-นามสกุล (Firstname - Lastname)
-<br><input style="width:20%;height:2rem;" type="text"value="phone" />
-
-<br>ที่อยู่ (Address)
-<br><input style="width:50%;height:10rem;" type="text"value="phone" />
-
-<br><a href="profile.php"><button>บันทึกการเปลี่ยนแปลง</button></a>
-
-
+    </div>
 </div>
-
-
 
 </body>
 <?php
