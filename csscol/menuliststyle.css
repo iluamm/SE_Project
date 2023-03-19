@@ -7,6 +7,11 @@
 
 .menueachitemlist{
     text-align: center;
+    transition: transform .2s;
+}
+.menueachitemlist:hover{
+    text-align: center;
+    transform: scale(1.15);
 }
 
 .picturemenu{

@@ -13,12 +13,14 @@ require_once 'connect.php';
 <body>
 
 <?php
-include("navbar-admin.php")
+include("navbar.php")
 ?>
 
+<div class="contextbox">
 <div class="padpage">
-<h2>รายละเอียดออเดอร์</h2>
-<table class="t6">
+<h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
+<h2 class="left">รายละเอียดสินค้า</h2>
+<table>
     <tr>
         <th>ลำดับรายการ   </th>
         <th>สินค้า</th>
@@ -58,38 +60,16 @@ include("navbar-admin.php")
         <td>500 บาท</td>
     </tr>
     <tr>
-        <td colspan="3" align="left">ราคาสินค้าทั้งหมด</td>
+        <td colspan="3">ราคาสินค้าทั้งหมด</td>
         <td>1500 บาท</td>
     </tr>
     <tr>
-        <td colspan="3" align="left">ค่าจัดส่ง</td>
+        <td colspan="3">ค่าจัดส่ง</td>
         <td>50 บาท</td>
     </tr>
     <tr>
-        <td colspan="3" align="left">ราคารวม</td>
+        <td colspan="3">ราคารวม</td>
         <td>1550 บาท</td>
-    </tr>
-</table>
-
-<p style="margin-top:3rem"><h2>ติดตามสินค้า</h2>
-<table>
-    <tr>
-        <td>
-            เลขพัสดุ : <input style="width:50%;height:1.5rem;" type="text" placeholder="เลขพัสดุ"/>
-            <br>จัดส่งโดย : <select name="delivery" id="delivery">
-                            <option value="thaiexpress">ไปรษณีย์ไทย</option>
-                            <option value="kerryexpress">Kerry Express</option>
-                            <option value="lalamove">Lalamove</option>
-                            <option value="flashexpress">Flash Express</option>
-                            </select>
-            <br>จัดส่งวันที่ : <input type="date" />
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ติดตามพัสดุ
-            <br>Kerry Express : ลิงค์
-        </td>
     </tr>
 </table>
 
@@ -100,12 +80,19 @@ include("navbar-admin.php")
 <br>&nbsp;
 <br>วันที่สั่ง: xx/xx/xxxx
 
-<br>
-<a href="history-admin.php"><button>ย้อนกลับ</button></a>
-<button>จัดเตรียมสำเร็จ</button>
+
+<h5>&nbsp;</h3>
+
+
+ยกเลิกคำสั่งซื้อ (Cancel order)
+<br>*หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน
+<p><a href="history.php"><button>ย้อนกลับ</button></a>
+
 
 
 </div>
+</div>
+
 
 
 </body>
@@ -113,4 +100,3 @@ include("navbar-admin.php")
  include("footer.php")
 ?>
 </html>
-    
