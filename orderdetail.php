@@ -8,6 +8,7 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
 <link rel="stylesheet" href="csscol/tablestyle.css" />
+<link rel="stylesheet" href="csscol/inputstyle.css" />
 </head>
 <body>
 
