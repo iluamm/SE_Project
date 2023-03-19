@@ -39,7 +39,6 @@ include("navbar.php")
             </form>
         </div>
 
-        
         <p align="center">
             <a href="register.php">ยังไม่มีบัญชี? สมัครเลย</a>
         </p>

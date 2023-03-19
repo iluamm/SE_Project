@@ -3,39 +3,7 @@
 
 <head>
 <link rel="stylesheet" href="style.css" />
-<style>
-.menuitemlist{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    justify-content: space-evenly;
-    row-gap: 3rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%; */
-}
-
-.menueachitemlist{
-    text-align: center;
-}
-
-.picturemenu{
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-}
-.picturemenu img{
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: contain;
-    border-radius: 0%;
-}
-</style>
+<link rel="stylesheet" href="menuliststyle.css" />
 </head>
 
 <body>
