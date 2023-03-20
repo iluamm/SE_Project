@@ -8,6 +8,11 @@ require_once 'connect.php';
 <head>
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/menuliststyle.css" />
+<style>
+    body{
+        margin:0;
+    }
+</style>
 </head>
 
 <body>
@@ -165,7 +170,7 @@ include("navbar.php")
                     <img src="album\elephant.jpg">
                 </div>
                 <div>
-                    <p>3x2 นิ้ว</p>
+                    <p class>3x2 นิ้ว</p>
                     <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
                 </div>
             </div>
