@@ -18,7 +18,7 @@ include("navbar-admin.php")
 
 <div class="padpage">
 <h2>รายละเอียดออเดอร์</h2>
-<table>
+<table class="t6">
     <tr>
         <th>ลำดับรายการ   </th>
         <th>สินค้า</th>
@@ -58,15 +58,15 @@ include("navbar-admin.php")
         <td>500 บาท</td>
     </tr>
     <tr>
-        <td colspan="3">ราคาสินค้าทั้งหมด</td>
+        <td colspan="3" align="left">ราคาสินค้าทั้งหมด</td>
         <td>1500 บาท</td>
     </tr>
     <tr>
-        <td colspan="3">ค่าจัดส่ง</td>
+        <td colspan="3" align="left">ค่าจัดส่ง</td>
         <td>50 บาท</td>
     </tr>
     <tr>
-        <td colspan="3">ราคารวม</td>
+        <td colspan="3" align="left">ราคารวม</td>
         <td>1550 บาท</td>
     </tr>
 </table>
