@@ -63,15 +63,16 @@ a:hover{
                 <a href="login.php"><img src="image\Profile.png" width="30rem"></a>
                 <a href="login.php">Log in / Sign in </a>
             <?php } ?>
-        </div>
+        
 
-        <?php if(isset($_SESSION['user_username'])) { ?>
-            <a href="profile.php"><img src="image\Profile.png" width="30rem"></a>
-            <div>
-            Hello! 
-            <?php echo $_SESSION['user_username']; ?>
-            </div>
-        <?php } ?>
+            <?php if(isset($_SESSION['user_username'])) { ?>
+                <a href="profile.php"><img src="image\Profile.png" width="30rem"></a>
+                <div>
+                Hello! 
+                <?php echo $_SESSION['user_username']; ?>
+                </div>
+            <?php } ?>
+        </div>
         
 
         <?php if(isset($_SESSION['user_username'])) { ?>

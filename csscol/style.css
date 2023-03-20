@@ -22,13 +22,6 @@ body{
     float: right;
 }
 
-
-.left{
-    color: black;
-    font-weight: normal;
-    text-align: left;
-}
-
 h1,h2,h3,h4,h5,h6{
     color: black;
     font-weight: normal;
@@ -37,6 +30,11 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 3rem;
 }
 
+.left{
+    text-align: left;
+}
+
+/* 
 .form-input {
     width:50%;
     height:2rem;
@@ -47,26 +45,26 @@ h1,h2,h3,h4,h5,h6{
     height:2rem;
     margin-top: 1rem;
 }
-
+ */
+ 
 .padpage{
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .contextbox{
-    /* background-color: aquamarine; */
     width: 60%;
-    margin: auto auto 3rem auto;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .contextbox2{
-    /* background-color: aquamarine; */
     width: 50%;
-    margin: auto auto 3rem auto;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 p{
-    /* font-size: 1rem; */
     margin: 0;
 }
 
@@ -74,8 +72,20 @@ p.graytext{
     color: #8f8f8f;
 }
 
-
 p.small{
     font-size: 0.75rem;
     text-align: center;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+.banner{
+    width: 100%;
+    text-align: center;
+}
+
+.banner img{
+    width: 100%;
 }

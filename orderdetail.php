@@ -58,16 +58,16 @@ include("navbar-admin.php")
         <td>500 บาท</td>
     </tr>
     <tr>
-        <td colspan="3" align="left">ราคาสินค้าทั้งหมด</td>
-        <td>1500 บาท</td>
+        <td colspan="3" class="left">ราคาสินค้าทั้งหมด</td>
+        <td class="right">1500 บาท</td>
     </tr>
     <tr>
-        <td colspan="3" align="left">ค่าจัดส่ง</td>
-        <td>50 บาท</td>
+        <td colspan="3" class="left">ค่าจัดส่ง</td>
+        <td class="right">50 บาท</td>
     </tr>
     <tr>
-        <td colspan="3" align="left">ราคารวม</td>
-        <td>1550 บาท</td>
+        <td colspan="3" class="left">ราคารวม</td>
+        <td class="right">1550 บาท</td>
     </tr>
 </table>
 

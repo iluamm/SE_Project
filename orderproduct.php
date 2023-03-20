@@ -16,23 +16,26 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
-<div class="padpage">
-<h2>รูปแบบเบิ้มๆ!!! Gallery</h2>
-<table>
-    <tr>
-        <td>                
-            <p>Order detail</p>
-            <br>ขนาดภาพ: 3x2 นิ้ว
-            <br>จำนวน: 64 รูป
-            <br>ชนิดกระดาษ: กระดาษ Fujicolor Crystal Archive 260 แกรม
-            <br>ระยะเวลาจัดทำ: ไม่เกิน 1 สัปดาห์
-        </td>
-        <td>
-            <p>ราคารวม 500 บาท</p>
-            <br><a href="uploadorder.php"><button>เริ่มทำการสั่งซื้อ</button></a>
-        </td>
-    </tr>
-</table>
+<div class="contextbox">
+    <h2>รูปแบบเบิ้มๆ!!! Gallery</h2>
+    <table class="t6">
+        <tr>
+            <td>                
+                <p class="left bold">รายละเอียดสินค้า (Order detail)</p>
+                <p class="left">
+                    ขนาดภาพ: 3x2 นิ้ว
+                    <br>จำนวน: 64 รูป
+                    <br>ชนิดกระดาษ: กระดาษ Fujicolor Crystal Archive 260 แกรม
+                    <br>ระยะเวลาจัดทำ: ไม่เกิน 1 สัปดาห์
+                </p>
+            </td>
+            <td>
+                <p>ราคารวม 500 บาท</p>
+                <br><a href="uploadorder.php">
+                <input class="losicButton" type="submit" name="Submit" value="เริ่มทำการสั่งซื้อ" /></input>
+            </td>
+        </tr>
+    </table>
 
 </div>
 

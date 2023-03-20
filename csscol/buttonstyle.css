@@ -1,3 +1,10 @@
+/* Back - Next div */
+.bn{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
 /* Log-in sign-in */
 .losicButton{
     color: black;
@@ -17,7 +24,63 @@
     background-color: #d4d4d4;
 }
 
+/* Order confirm */
+.orderConfirmButton{
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: #afafaf; /* #cbe2c5 */
+    transition: 0.2s;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.orderConfirmButton:hover{
+    background-color: #929292;
+}
+
 /* Next - Back - Edit - Save */
+
+.nextButton{
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: #afafaf; /* #cbe2c5 */
+    transition: 0.2s;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.nextButton:hover{
+    background-color: #929292;
+}
+
+.backButton{
+    color: #d4d4d4;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: white; /* #cbe2c5 */
+    transition: 0.2s;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.backButton:hover{
+    color: black;
+    background-color: #d4d4d4;
+}
 
 .saveButton{
     color: white;
@@ -56,7 +119,7 @@
     background-color: #d4d4d4;
 }
 
-/* Operator */
+/* Operator ตั้งแต่ตรงนี้ไปขอบมน*/
 
 .confirmButton{
     color: black;
