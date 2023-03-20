@@ -11,7 +11,9 @@
     font-family: 'Noto Sans Thai', sans-serif;
     padding: 0.5%;
     align-items: center;
+    background: #2B3D5B;
 }
+
 
 .navbarmenu{
     display: flex;
@@ -38,12 +40,12 @@
     gap: 10%;
 }
 
-a:link, a:visited {
-    color: black;
+.navbar a:link, a:visited {
+    color: white;
     text-decoration: none;
 }
-a:hover{
-    color:red;
+.navbar a:hover{
+    color:#FCA311;
 }
 
 </style>

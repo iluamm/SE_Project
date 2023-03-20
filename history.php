@@ -16,7 +16,7 @@ include("navbar.php") //navbar
 ?>
 
 <div class="padpge">
-<h2 class="left">ประวัติการสั่งซื้อ</h2>
+<h2 class="center">ประวัติการสั่งซื้อ</h2>
 <table class="t6">
     <tr>
         <th>เลขที่ออเดอร์</th>
