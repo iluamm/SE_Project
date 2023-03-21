@@ -14,7 +14,7 @@ require_once 'connect.php';
 <body>
 
 <?php
-include("navbar-admin.php") //navbar
+include("navbar-admin.php")
 ?>
     <div class="contextbox">
         <h2>ลายอัลบั้มสอด</h2>
@@ -35,8 +35,8 @@ include("navbar-admin.php") //navbar
                 echo "<tr>";
                 echo "<td>$row[0]</td>";
                 echo "<td>$row[2]</td>";
-                echo "<td><img src='album/$row[3].png' height='120rem'></td>";
-                echo "<td>ลบลายอัลบั้ม</td>";
+                echo "<td><img src='album/$row[3].jpg' height='120rem'></td>";
+                echo "<td><a href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
                 echo "</tr>";
             }
         ?>
