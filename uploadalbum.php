@@ -20,19 +20,6 @@ include("navbar-admin.php") //navbar
 <div class="padpage">
 
 <h2>เพิ่มลายอัลบั้ม</h2>
-<!-- <form action="upload.php" method="post"enctype="multipart/from-data">
-                <label>เลขที่อัลบั้ม</label>                
-                    <input type="text" name="name" placeholder="ชื่อ-นามสกุล">
-                <p>&nbsp;</p>
-                <label>ประเภทอัลบั้ม</label>   
-                    <input  type="text" name="username" placeholder="เบอร์โทรศัพท์">
-                <p>&nbsp;</p>
-                <label>อัพโหลดรูปภาพลายอัลบั้ม</label>
-                <input type="file" name="image" id="image">
-                
-                <p>&nbsp;</p>
-                <input  type="submit" name="submit" value="submit" />
-            </form> -->
  <form action="upload.php" method="post" enctype="multipart/form-data">
   Select image to upload:
   <input type="text" name="a_type" placeholder="a_type">
