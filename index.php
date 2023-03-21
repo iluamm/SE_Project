@@ -8,6 +8,11 @@ require_once 'connect.php';
 <head>
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/menuliststyle.css" />
+<style>
+    body{
+        margin:0;
+    }
+    </style>
 </head>
 
 <body>
