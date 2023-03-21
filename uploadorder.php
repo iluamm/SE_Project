@@ -36,6 +36,7 @@ include("navbar.php")
     </table>
 
     <h2 class="left">-เลือกอัลบั้ม-</h2>
+ 
     <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
     <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
     <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">

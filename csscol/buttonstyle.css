@@ -4,6 +4,9 @@
     margin-top: 2rem;
     justify-content: space-between;
 }
+.ba{ /*back alone*/
+    margin-top: 2rem;
+}
 
 /* Log-in sign-in */
 .losicButton{
