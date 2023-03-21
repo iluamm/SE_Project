@@ -4,22 +4,11 @@
 @import url('https://fonts.googleapis.com/%22%3E');
 @import url('https://fonts.gstatic.com/');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap');
+
+/* body & text */
+
 body{
     font-family: 'Noto Sans Thai', sans-serif;
-}
-
-.logsign{
-    display: flex;
-    justify-content: space-between; 
-}
-
-.logsigncolumn{
-    width: 50%;
-    margin: auto;
-}
-
-.logsigncolumn img{
-    float: right;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -32,36 +21,7 @@ h1,h2,h3,h4,h5,h6{
 
 .left{
     text-align: left;
-}
-
-/* 
-.form-input {
-    width:50%;
-    height:2rem;
-    margin-top: 1rem;
-}
-
-.form-button {
-    height:2rem;
-    margin-top: 1rem;
-}
- */
- 
-.padpage{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.contextbox{
-    width: 60%;
-    margin: auto;
-    margin-bottom: 5rem;
-}
-
-.contextbox2{
-    width: 50%;
-    margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 p{
@@ -79,6 +39,66 @@ p.small{
 
 p.bold{
     font-weight: bold;
+}
+
+/* Link & log in-sign in page */
+
+a:link{
+    text-decoration: none;
+}
+
+.logsign{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.logsign a:hover{
+    color: red;
+}
+
+.logsigncolumn{
+    width: 50%;
+    margin: auto;
+}
+
+.logsigncolumn img{
+    float: right;
+}
+
+/* padpage */
+ 
+.padpage{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.padpage25{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.tt1{    /*title 3rem*/
+    margin-bottom: 1rem;
+}
+
+.tt3{    /*title 3rem*/
+    margin-bottom: 3rem;
+}
+
+.tt5{
+    margin-bottom: 5rem;
+}
+
+.c5{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.c6{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .banner{

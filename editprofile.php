@@ -15,7 +15,7 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
-<div class="contextbox">
+<div class="c6">
     <div class="padpage">
         <h2>แก้โปรไฟล์ (Profile)</h2>
 
@@ -31,7 +31,7 @@ include("navbar.php")
         
         <div class="addressbox">
             <p>ที่อยู่ (Address)
-            <br><input type="text" class="profileAddress" value="phone"/>
+            <br><input type="text" class="a10" value="phone"/>
         </div>
 
         <div align="right">

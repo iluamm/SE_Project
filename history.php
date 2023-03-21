@@ -15,9 +15,10 @@ require_once 'connect.php';
 include("navbar.php") //navbar
 ?>
 
-<div class="padpge">
-<h2 class="center">ประวัติการสั่งซื้อ</h2>
-<table class="t6">
+<div class="padpage">
+    <h2 class="center">ประวัติการสั่งซื้อ</h2>
+</div>
+<table class="t5">
     <tr>
         <th>เลขที่ออเดอร์</th>
         <th>วันที่สั่ง</th>
@@ -40,7 +41,7 @@ include("navbar.php") //navbar
         <td><a href="checkorder2.php"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>
     </tr>
 </table>
-<h6>&nbsp;</h6>
+<div class="c6"></div>
 </body>
 <?php
  include("footer.php")

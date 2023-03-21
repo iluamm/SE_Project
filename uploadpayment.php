@@ -14,7 +14,7 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
-<div class="contextbox">
+<div class="c6">
     <div class="padpage">
     <h2>ชำระเงิน</h2>
     <h1>แปะรูป QR !!!</h1>

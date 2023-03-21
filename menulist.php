@@ -10,7 +10,7 @@
     <?php
     include("navbar.php")
     ?>
-    <div class="contextbox">
+    <div class="c6">
         <h3>อัลบั้มสอด</h3>
 
         <div class="menuitemlist">

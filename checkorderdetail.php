@@ -15,37 +15,38 @@ require_once 'connect.php';
 include("navbar-admin.php") //navbar
 ?>
 
+<div class="c6">
+    <h2 class="">รายการสินค้าที่ต้องตรวจสอบ</h2>
+    <table class="t8">
+        <tr>
+            <th>เลขที่ออเดอร์</th>
+            <th>วันที่โอน</th>
+            <th>เวลา</th>
+            <th>ยอด</th>
+            <th>สลิป</th>
+            <th colspan="2"></th>
+        </tr>
+        <tr>
+            <td>xxxxx</td>
+            <td>xx/xx/xxxx</td>
+            <td>15.00</td>
+            <td>500</td>
+            <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
+            <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
+            <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
+        </tr>
+        <tr>
+            <td>xxxxx</td>
+            <td>xx/xx/xxxx</td>
+            <td>15.00</td>
+            <td>500</td>
+            <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
+            <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
+            <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
+        </tr>
+    </table>
+</div>
 
-<h2>รายการสินค้าที่ต้องตรวจสอบ</h2>
-<table class="t6">
-    <tr>
-        <th>เลขที่ออเดอร์</th>
-        <th>วันที่โอน</th>
-        <th>เวลา</th>
-        <th>ยอด</th>
-        <th>สลิป</th>
-        <th colspan="2"></th>
-    </tr>
-    <tr>
-        <td>xxxxx</td>
-        <td>xx/xx/xxxx</td>
-        <td>15.00</td>
-        <td>500</td>
-        <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
-        <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
-        <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
-    </tr>
-    <tr>
-        <td>xxxxx</td>
-        <td>xx/xx/xxxx</td>
-        <td>15.00</td>
-        <td>500</td>
-        <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
-        <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
-        <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
-    </tr>
-</table>
-<h6>&nbsp;</h6>
 </body>
 <?php
  include("footer.php")

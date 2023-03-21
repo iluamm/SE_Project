@@ -11,7 +11,7 @@
     font-family: 'Noto Sans Thai', sans-serif;
     padding: 0.5%;
     align-items: center;
-    background: #2B3D5B;
+    background: white;
 }
 
 
@@ -41,11 +41,11 @@
 }
 
 .navbar a:link, a:visited {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .navbar a:hover{
-    color:#FCA311;
+    color: red;
 }
 
 </style>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2023 at 06:24 AM
+-- Generation Time: Mar 21, 2023 at 04:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -39,9 +39,10 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`album_id`, `a_type`, `a_name`, `a_image`) VALUES
-(1, 'test', 'test', 'test'),
-(2, 'test', 'test', 'test'),
-(3, '1', '1', '????\0JFIF\0\0`\0`\0\0??\0;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 75\n??\0C\0		\n\r\Z\Z $.\' \",#(7),01444\'9=82<.342??\0C			\r\r2!!22222222222222222222222222222222222222222222222222??\0f\"\0??\0\0\0\0\0\0');
+(1, '1', '2', 'buffalo'),
+(2, '2', '3', '0-Shark2'),
+(3, '3', '4', 'artworks-000575007212-sl7kkk-t500x500'),
+(4, 'cat', 'orange cat', 'ornagecat');
 
 -- --------------------------------------------------------
 
@@ -113,7 +114,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `album`
 --
 ALTER TABLE `album`
-  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`

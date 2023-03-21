@@ -42,7 +42,7 @@ input.search{
 <?php
 include("navbar-admin.php") //navbar
 ?>
-<div class="contextbox">
+<div class="c6">
     <div class="padpage">
         <h2 class="left">ค้นหาประวัติลูกค้า</h2>
         <form class="inputbar">
@@ -64,13 +64,13 @@ include("navbar-admin.php") //navbar
         
         <div class="addressbox">
             <p>Address
-            <br><input type="text" class="address" value="phone" readonly/>
+            <br><input type="text" class="a8" value="phone" readonly/>
         </div>
 
     </div>
 </div>
 
-<div class="contextbox2">
+<div class="padpage25">
     <h2 class="left">ประวัติการสั่งซื้อ</h2>
 </div>
 <table class="t5">

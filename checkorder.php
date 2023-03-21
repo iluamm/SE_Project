@@ -16,7 +16,7 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
-<div class="contextbox">
+<div class="c6">
     <div class="padpage">
         <h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
         <h2 class="left">รายละเอียดสินค้า</h2>
@@ -74,7 +74,7 @@ include("navbar.php")
         </table>
 
         <h2 class="left">ที่อยู่ที่ต้องการจัดส่ง</h2>
-        <input class="profileAddress"  type="text" placeholder="เลขที่หมู่"/>
+        <input class="a10"  type="text" placeholder="เลขที่หมู่"/>
         <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
         <!-- style="width:50%;height:10rem;" -->
         <div class="bn">

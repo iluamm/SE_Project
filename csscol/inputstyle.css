@@ -15,13 +15,13 @@ input.common{
     border-radius: 0.75rem;
 }
 
-input.address{
+input.a8{
     width:80%;
     height:10rem;
     border-radius: 1rem;
 }
 
-input.profileAddress{
+input.a10{
     width:100%;
     height:10rem;
     border-radius: 1rem;

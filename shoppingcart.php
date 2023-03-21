@@ -70,7 +70,7 @@ include("navbar.php")
     </table>
 
 <br>
-<div class="contextbox" align="right" >
+<div class="c6" align="right" >
     <!-- <div class="padpage"> -->
         <a href="checkorder.php">
             <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>

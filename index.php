@@ -22,7 +22,7 @@ include("navbar.php")
 ?>
 
 
-<div class="contextbox">
+<div class="c6">
     <div class="banner">
         <img src="image\banner2.jpg">
     </div>

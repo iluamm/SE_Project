@@ -1,14 +1,23 @@
-/* Back - Next div */
-.bn{
+/* Layout */
+
+.bn{    /* back - next */
     display: flex;
     margin-top: 2rem;
     justify-content: space-between;
 }
-.ba{ /*back alone*/
+
+.ba{    /*back alone*/
     margin-top: 2rem;
 }
 
+.aa{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
 /* Log-in sign-in */
+
 .losicButton{
     color: black;
     border: 1px solid #d4d4d4;
@@ -28,6 +37,7 @@
 }
 
 /* Order confirm */
+
 .orderConfirmButton{
     color: white;
     border: none;

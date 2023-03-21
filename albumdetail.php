@@ -16,7 +16,7 @@ require_once 'connect.php';
 <?php
 include("navbar-admin.php") //navbar
 ?>
-    <div class="contextbox">
+    <div class="c6">
         <h2>อัลบั้มสอด</h2>
         <a href="uploadalbum.php"><button class="detailCheckButton">เพิ่มลายอัลบั้ม</button></a>
         <p>&nbsp;</p>

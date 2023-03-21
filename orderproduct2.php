@@ -13,7 +13,7 @@ require_once 'connect.php';
     <?php
     include("navbar.php")
     ?>
-    <div class="contextbox">
+    <div class="c6">
         <h3>อัลบั้มกาว</h3>
 
         <div class="menuitemlist">

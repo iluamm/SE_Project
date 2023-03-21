@@ -17,7 +17,7 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
-<div class="contextbox">
+<div class="c6">
     <h2 class="left">-กรุณาอัพโหลดรูปภาพ-</h2>
     <table class="t8">
         <tr>
