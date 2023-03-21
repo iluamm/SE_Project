@@ -12,7 +12,7 @@ require_once 'connect.php';
     body{
         margin:0;
     }
-</style>
+    </style>
 </head>
 
 <body>

@@ -36,15 +36,29 @@ include("navbar.php")
     </table>
 
     <h2 class="left">-เลือกอัลบั้ม-</h2>
- 
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
-    <input type="radio" id="album" name="album" value="album" /><img src="album/elephant.jpg" height="120rem">
+    <label>
+    <input type="radio" id="album" name="album" value="album">
+    <img src="album/elephant.jpg" height="120rem">
+    <div>Red</div>
+    </label>
 
+    <label>
+    <input type="radio" id="album" name="album" value="album">
+    <img src="album/elephant.jpg" height="120rem">
+    <div>Red</div>
+    </label>
+    
+    <label>
+    <input type="radio" id="album" name="album" value="album">
+    <img src="album/elephant.jpg" height="120rem">
+    <div>Red</div>
+    </label>
+
+    <label>
+    <input type="radio" id="album" name="album" value="album">
+    <img src="album/elephant.jpg" height="120rem">
+    <div>Red</div>
+    </label>
 
     <div class="bn">
         <a href="orderproduct.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>

@@ -4,7 +4,7 @@
 
         $username = $mysqli -> real_escape_string($_POST['username']);
         $password = $mysqli -> real_escape_string($_POST['password']);
-        $strSQL = "SELECT * FROM username WHERE username = '". $username."'
+        $strSQL = "SELECT * FROM user WHERE username = '". $username."'
                     and password = '".$password."'";
         $objQuery = $mysqli -> query($strSQL);
         $objResult = $objQuery -> fetch_array(MYSQLI_ASSOC);
