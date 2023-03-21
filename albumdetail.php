@@ -14,20 +14,33 @@ require_once 'connect.php';
 <body>
 
 <?php
-include("navbar-admin.php") //navbar
+include("navbar-admin.php")
 ?>
     <div class="c6">
         <h2>อัลบั้มสอด</h2>
         <a href="uploadalbum.php"><button class="detailCheckButton">เพิ่มลายอัลบั้ม</button></a>
         <p>&nbsp;</p>
-
-        <?php
-    $query = "SELECT * FROM album";
-    $result = mysqli_query($mysqli, $query);
-    while($row = mysqli_fetch_row($result)) {
-        echo "<img src='album/$row[3].jpg' height='120rem'><br>";
-    }
-?>
+        
+        <table class="t5">
+            <tr>
+                <th>เลขที่อัลบั้ม</th>
+                <th>ลายอัลบั้ม</th>
+                <th>รูปอัลบั้ม</th>
+                <th>&nbsp;</th>
+            </tr>
+            <?php
+            $query = "SELECT * FROM album";
+            $result = mysqli_query($mysqli, $query);
+            while($row = mysqli_fetch_row($result)) {
+                echo "<tr>";
+                echo "<td>$row[0]</td>";
+                echo "<td>$row[2]</td>";
+                echo "<td><img src='album/$row[3].jpg' height='120rem'></td>";
+                echo "<td><a href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
+                echo "</tr>";
+            }
+        ?>
+        </table>
 
         </div>
     </div>
