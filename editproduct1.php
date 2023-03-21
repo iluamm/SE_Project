@@ -16,7 +16,7 @@ require_once 'connect.php';
 include("navbar-admin.php") //navbar
 ?>
 
-
+<a href="uploadalbum.php"><button>ไปหน้าเพิ่มอัลบั้ม</button></a>
 
 
 

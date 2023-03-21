@@ -11,7 +11,7 @@ if(isset($_POST['regis']))
     $password2 = $mysqli -> real_escape_string($_POST['password2']);
     $user_type = "customer";
 
-    $strSQL = "SELECT * FROM username WHERE username = '". $username."'";
+    $strSQL = "SELECT * FROM user WHERE username = '". $username."'";
     $objQuery = $mysqli -> query($strSQL); 
     $objResult = mysqli_num_rows($objQuery);
 
@@ -28,7 +28,7 @@ if(isset($_POST['regis']))
         echo "</script>";
     }
     elseif($password1==$password2){
-        $sql = "INSERT INTO username (user_id,username, password,user_type)
+        $sql = "INSERT INTO user (user_id,username, password,user_type)
         VALUES (NULL,'$username', '$password1', '$user_type')";
         $objQuery = $mysqli -> query($sql);
         header( "location: http://localhost/SE_Project/login.php" );
