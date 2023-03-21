@@ -34,6 +34,8 @@ include("navbar-admin.php") //navbar
             </form> -->
             <form action="upload.php" method="post" enctype="multipart/form-data">
   Select image to upload:
+  <input type="text" name="a_type" placeholder="a_type">
+  <input type="text" name="a_name" placeholder="a_name">
   <input type="file" name="image" id="image">
   <input type="submit" value="Upload Image" name="submit">
 </form>

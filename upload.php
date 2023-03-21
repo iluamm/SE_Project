@@ -12,8 +12,9 @@ $target_file = $target_dir . basename($_FILES["image"]["name"]);
 
 
             //Insert image content into database
-            $insert = $mysqli->query("INSERT into album (album_id,a_type,a_name,a_image)
-            VALUES (NULL,'$a_type','$a_name','$imgContent')");
+            $insert = "INSERT into album (album_id,a_type,a_name,a_image)
+            VALUES (NULL,'$a_type','$a_name','$imgContent')";
+            $objQuery = $mysqli -> query($insert);
             if($insert){
                 echo "File uploaded successfully.";
                 header( "location: http://localhost/SE_Project/index-admin.php" );
