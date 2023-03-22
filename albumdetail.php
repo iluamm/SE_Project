@@ -16,39 +16,40 @@ require_once 'connect.php';
 <?php
 include("navbar-admin.php")
 ?>
-    <div class="c6">
-        <h2>อัลบั้มสอด</h2>
+<div class="c6">
+    <h2 class="tt1">อัลบั้มสอด</h2>
+    <div class="tt1 aa padpage2">
         <a href="uploadalbum.php"><button class="detailCheckButton">เพิ่มลายอัลบั้ม</button></a>
-        <p>&nbsp;</p>
-        
-        <table class="t5">
-            <tr>
-                <th>เลขที่อัลบั้ม</th>
-                <th>ลายอัลบั้ม</th>
-                <th>รูปอัลบั้ม</th>
-                <th>&nbsp;</th>
-            </tr>
-            <?php
-            $query = "SELECT * FROM album";
-            $result = mysqli_query($mysqli, $query);
-            while($row = mysqli_fetch_row($result)) {
-                echo "<tr>";
-                echo "<td>$row[0]</td>";
-                echo "<td>$row[2]</td>";
-                echo "<td><img src='album/$row[3].jpg' height='120rem'></td>";
-                echo "<td><a href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
-                echo "</tr>";
-            }
-        ?>
-        </table>
-
-        </div>
     </div>
     
+    <table class="t6 tt1">
+        <tr>
+            <th>เลขที่อัลบั้ม</th>
+            <th>ลายอัลบั้ม</th>
+            <th>รูปอัลบั้ม</th>
+            <th>&nbsp;</th>
+        </tr>
+        <?php
+        $query = "SELECT * FROM album";
+        $result = mysqli_query($mysqli, $query);
+        while($row = mysqli_fetch_row($result)) {
+            echo "<tr>";
+            echo "<td>$row[0]</td>";
+            echo "<td>$row[2]</td>";
+            echo "<td><img src='album/$row[3].jpg' height='120rem'></td>";
+            echo "<td><a href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
+            echo "</tr>";
+        }
+    ?>
+    </table>
 
+    <div class="c6">
+        <a href="albumdetail.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+    </div>
 
-
-
+</div>
+    
+    
 </body>
 <?php
  include("footer.php")

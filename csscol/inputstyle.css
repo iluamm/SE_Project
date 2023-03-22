@@ -69,8 +69,30 @@ input.withicon{
 }
 
 /* Upload */
+label{
+    cursor: pointer;
+}
 
+.warpupload{
+    display: flex;
+    width: 20%;
+    gap: 5%;
+    border: 1px solid #8f8f8f;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+}
 
+label.label-upload img{
+    height: 100%;
+    
+}
+
+input.custom-upload{
+    border: none;
+    display: none;
+    margin: auto;
+}
 
 /* Select */
 

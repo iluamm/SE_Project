@@ -31,3 +31,28 @@
     object-fit: contain;
     border-radius: 0%;
 }
+
+.picturemenu .btn {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 70, 70, 0.8);
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.picturemenu .btn img{
+    width: 50%;
+    align-items: center;
+    left: 25%;
+}
+
+.picturemenu .btn:hover {
+    background-color: rgba(210, 10, 10, 0.8);
+    /* background-color: rgba(255, 28, 28, 0.7); */
+}

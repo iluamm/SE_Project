@@ -25,9 +25,10 @@ include("navbar-admin.php") //navbar
     
 
     <div class="menuitemlist">
-        <div class="menueachitemlist">
+    <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
+                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
                 <p>3x2 นิ้ว</p>
@@ -38,6 +39,7 @@ include("navbar-admin.php") //navbar
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
+                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
                 <p>3x2 นิ้ว</p>
@@ -48,6 +50,7 @@ include("navbar-admin.php") //navbar
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
+                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
                 <p>3x2 นิ้ว</p>
@@ -58,6 +61,7 @@ include("navbar-admin.php") //navbar
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
+                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
                 <p>3x2 นิ้ว</p>
@@ -68,6 +72,7 @@ include("navbar-admin.php") //navbar
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
+                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
                 <p>3x2 นิ้ว</p>
@@ -78,6 +83,7 @@ include("navbar-admin.php") //navbar
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
+                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
                 <p>3x2 นิ้ว</p>

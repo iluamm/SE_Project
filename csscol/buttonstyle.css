@@ -12,6 +12,7 @@
 
 .aa{
     display: flex;
+    width: auto;
     justify-content: flex-end;
     gap: 1rem;
 }

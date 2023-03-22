@@ -21,7 +21,6 @@ include("navbar-admin.php") //navbar
     <h2>เพิ่มลายอัลบั้ม</h2>
     <form action="upload.php" method="post" enctype="multipart/form-data">
 
-
         <div class="tt1">
             <p> ประเภทอัลบั้ม : 
             <select class="select-add" name="album_type" id="album_type">
@@ -37,15 +36,25 @@ include("navbar-admin.php") //navbar
 
         <div class="tt1">
             <p>อัปโหลดรูปภาพลายอัลบั้ม</p>
-            <input class="upfile" type="file" name="image" id="image">
+            <label for="image" class="label-upload">
+                <div class="warpupload">
+                    <p class="graytext">Select file to upload</p>
+                    <img src="\image\upload.png" width="30rem">
+                    <input class="custom-upload" type="file" name="image" id="image"/>
+                </div>
+                
+            </label>
         </div>
 
-        <div class="bn">
-            <a href="index-admin.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+        <div class="aa">
             <a href="#"><input class="nextButton" type="submit" name="Submit" value="ยืนยัน" /></a>
         </div>
+
     </form>
+
+    <a href="albumdetail.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
 </div>
+
 
 </body>
 <?php
