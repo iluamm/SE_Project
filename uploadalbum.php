@@ -17,29 +17,38 @@ include("navbar-admin.php") //navbar
 ?>
 
 
-<div class="padpage">
+<div class="c5">
+    <h2>เพิ่มลายอัลบั้ม</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
 
-<h2>เพิ่มลายอัลบั้ม</h2>
- <form action="upload.php" method="post" enctype="multipart/form-data">
-  ประเภทอัลบั้ม : 
-    <select name="album_type" id="album_type">
-        <option value="insert">อัลบั้มสอด</option>
-        <option value="adhesive">อัลบั้มกาว</option>
-    </select>
-  <br>ลายอัลบั้ม : <input type="text" name="a_name" placeholder="ลายอัลบั้ม">
-  <br>อัปโหลดรูปภาพลายอัลบั้ม<input type="file" name="image" id="image">
-  <br>
-  <input class="detailCheckButton"  type="submit" value="ยืนยัน" name="submit">
-</form>
-<a href="index-admin.php"><button class="detailCheckButton" >ย้อนกลับ</button></a>
 
+        <div class="tt1">
+            <p> ประเภทอัลบั้ม : 
+            <select class="select-add" name="album_type" id="album_type">
+                <option value="insert">อัลบั้มสอด</option>
+                <option value="adhesive">อัลบั้มกาว</option>
+            </select></p>
+        </div>
+
+        <div class="tt1">
+            <p>ลายอัลบั้ม : 
+            <input class="add" type="text" name="a_name" placeholder="ลายอัลบั้ม"></p>
+        </div>
+
+        <div class="tt1">
+            <p>อัปโหลดรูปภาพลายอัลบั้ม</p>
+            <input class="upfile" type="file" name="image" id="image">
+        </div>
+
+        <div class="bn">
+            <a href="index-admin.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+            <a href="#"><input class="nextButton" type="submit" name="Submit" value="ยืนยัน" /></a>
+        </div>
+    </form>
 </div>
-
-
-
 
 </body>
 <?php
- include("footer.php")
+include("footer.php")
 ?>
 </html>

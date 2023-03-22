@@ -33,7 +33,9 @@ include("navbar.php")
                 <br>ขนาดรูป : 3x3 นิ้ว
                 <br>จำนวน : 64 รูป
             </td>
-            <td>500 บาท</td>
+            <td>500 บาท
+                <input class="delcButton" type="submit" name="Submit" value="✖" /></input>
+            </td>
         </tr>
         <tr>
             <td>2</td>
@@ -43,7 +45,9 @@ include("navbar.php")
                 <br>ขนาดรูป : 3x3 นิ้ว
                 <br>จำนวน : 64 รูป
             </td>
-            <td>500 บาท</td>
+            <td>500 บาท
+                <input class="delcButton" type="submit" name="Submit" value="✖" /></input>
+            </td>
         </tr>
         <tr>
             <td>3</td>
@@ -53,7 +57,9 @@ include("navbar.php")
                 <br>ขนาดรูป : 3x3 นิ้ว
                 <br>จำนวน : 64 รูป
             </td>
-            <td>500 บาท</td>
+            <td>500 บาท
+                <input class="delcButton" type="submit" name="Submit" value="✖" /></input>
+            </td>
         </tr>
         <tr>
             <td colspan="3" class="left">ราคาสินค้าทั้งหมด</td>
