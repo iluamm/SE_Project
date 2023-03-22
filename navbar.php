@@ -47,7 +47,24 @@
 .navbar a:hover{
     color: red;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 <nav class="navbar">
     <!-- left -->
@@ -69,19 +86,15 @@
 
             <?php if(isset($_SESSION['user_username'])) { ?>
                 <a href="profile.php"><img src="image\Profile.png" width="30rem"></a>
-                <div>
-                Hello! 
-                <?php echo $_SESSION['user_username']; ?>
+                <div class="dropdown">
+                <?php echo $_SESSION['user_name']; ?>
+                <div class="dropdown-content">
+                    <a href="profile.php"><p>บัญชีของฉัน</p></a>
+                    <a href="history.php"><p>ประวัติการสั่งซื้อ</p></a>
+                    <a href="logout.php"><p>ออกจากระบบ</p></a>
                 </div>
             <?php } ?>
         </div>
-        
-
-        <?php if(isset($_SESSION['user_username'])) { ?>
-            <div>
-            <a href="logout.php" class="linkstyle">ออกจากระบบ</a>
-            </div>
-        <?php } ?>
         
         <?php if(!isset($_SESSION['user_username'])) { ?>
         <div class="profileicon">
