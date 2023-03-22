@@ -17,7 +17,9 @@
             }
         else
         {
+                $_SESSION["user_id"] = $objResult["user_id"];
                 $_SESSION["user_username"] = $objResult["username"];
+                $_SESSION["user_name"] = $objResult["user_name"];
                 $_SESSION["user_type"] = $objResult["user_type"];
                 if($objResult["user_type"]=="admin")
                 {
