@@ -28,13 +28,13 @@ if(isset($_POST['regis']))
         echo "</script>";
     }
     elseif($password1==$password2){
-        $sql = "INSERT INTO user (user_id,username, password,user_type)
-        VALUES (NULL,'$username', '$password1', '$user_type')";
+        $sql = "INSERT INTO user (user_id,username, password,user_type,user_name)
+        VALUES (NULL,'$username', '$password1', '$user_type','$name')";
         $objQuery = $mysqli -> query($sql);
         header( "location: http://localhost/SE_Project/login.php" );
     }
     else{
-            header("location: http://localhost/SE_Project/register.php");
+        header("location: http://localhost/SE_Project/register.php");
     }
 }
 ?>

@@ -41,11 +41,11 @@ include("navbar.php")
                 <p>&nbsp;</p>
                 <div class="warpborder">
                     <img src="image\key.png">
-                    <input class="withicon" type="password" name="password" placeholder="ยืนยันรหัสผ่าน*">
+                    <input class="withicon" type="password" name="password2" placeholder="ยืนยันรหัสผ่าน*">
                 </div>
                 
                 <p>&nbsp;</p>
-                <input class="losicButton" type="submit" name="Submit" value="สมัครสมาชิก" /></input>
+                <input class="losicButton" type="submit" name="regis" value="สมัครสมาชิก" /></input>
             </form>
         </div>
     </div>
