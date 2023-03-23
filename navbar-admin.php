@@ -86,7 +86,7 @@ a:hover{
                 <div class="dropdown">
                     <div>Hello! <?php echo $_SESSION['user_username']; ?></div>
                     <div class="dropdown-content">
-                        <a href="#p"><p>เพิ่มพนักงาน</p></a>
+                        <a href="addclerk.php"><p>เพิ่มพนักงาน</p></a>
                         <a href="logout.php"><p>ออกจากระบบ</p></a>
                     </div>
                 </div>
