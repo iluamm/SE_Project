@@ -88,12 +88,8 @@ include("navbar.php")
         <p class="graytext">*หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน</p>
         <a href="history.php"><input class="backButton ba" type="submit" name="Submit" value="ย้อนกลับ" /></a>
 
-
-
     </div>
 </div>
-
-
 
 </body>
 <?php

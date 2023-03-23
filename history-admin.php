@@ -30,9 +30,9 @@ input.search{
 }
 
 .search img{
-    width: 1rem;
-    height: 1rem;
-    padding: 0.575rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
 }
 </style>
 

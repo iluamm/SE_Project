@@ -48,6 +48,9 @@ include("navbar.php")
                 <input class="losicButton" type="submit" name="regis" value="สมัครสมาชิก" /></input>
             </form>
         </div>
+        <p align="center">
+            <a class="black" href="login.php">มีบัญชีอยู่แล้ว? ลงชื่อเข้าใช้เลย</a>
+        </p>
     </div>
 </div>
 

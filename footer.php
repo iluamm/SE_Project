@@ -5,10 +5,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
 <style>
 footer {
-    /* position: fixed; */
+    position: absolute;
     width:100%;
     left: 0;
     bottom: 0;
+    right: 0;
 
     color: #ffffff;
     font-size: 1rem;

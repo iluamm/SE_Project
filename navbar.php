@@ -26,6 +26,7 @@
 
 .navbaruserlist{
     display: flex;
+    padding-right: 1rem;
     height: 100%;
     align-items: center;
     justify-content: flex-end;
