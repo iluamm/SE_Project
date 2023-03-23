@@ -83,30 +83,30 @@
                 <a href="login.php">Log in / Sign in </a>
             <?php } ?>
         
-
+            <!--user loged in -->
             <?php if(isset($_SESSION['user_username'])) { ?>
                 <a href="profile.php"><img src="image\Profile.png" width="30rem"></a>
                 <div class="dropdown">
-                    test
-                <?php echo $_SESSION['user_name']; ?>
-                <div class="dropdown-content">
-                    <a href="profile.php"><p>บัญชีของฉัน</p></a>
-                    <a href="history.php"><p>ประวัติการสั่งซื้อ</p></a>
-                    <a href="logout.php"><p>ออกจากระบบ</p></a>
+                    <?php echo $_SESSION['user_name']; ?>
+                    <div class="dropdown-content">
+                        <a href="profile.php"><p>บัญชีของฉัน</p></a>
+                        <a href="history.php"><p>ประวัติการสั่งซื้อ</p></a>
+                        <a href="logout.php"><p>ออกจากระบบ</p></a>
+                    </div>
                 </div>
             <?php } ?>
         </div>
         
         <?php if(!isset($_SESSION['user_username'])) { ?>
-        <div class="profileicon">
-            <a href="login.php"><img src="image\shopping-cart.png" width="25rem"></a>
-        </div>
+            <div class="profileicon">
+                <a href="login.php"><img src="image\shopping-cart.png" width="25rem"></a>
+            </div>
         <?php } ?>
 
         <?php if(isset($_SESSION['user_username'])) { ?>
-        <div class="profileicon">
-            <a href="shoppingcart.php"><img src="image\shopping-cart.png" width="25rem"></a>
-        </div>
+            <div class="profileicon">
+                <a href="shoppingcart.php"><img src="image\shopping-cart.png" width="25rem"></a>
+            </div>
         <?php } ?>
 
     </div>
