@@ -3,6 +3,7 @@
     session_start();
 
 $target_dir = "album/";
+
 do{
     $uniq = uniqid(); 
     $strSQL = "SELECT * FROM album WHERE a_image = '".$uniq.".jpg'";
