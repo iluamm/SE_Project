@@ -87,17 +87,18 @@ label{
 
 .warpupload{
     display: flex;
-    width: 20%;
+    width: 12rem;
     gap: 5%;
     border: 1px solid #8f8f8f;
     align-items: center;
     border-radius: 0.5rem;
-    padding: 0rem 1rem;
+    padding: 0rem 0.5rem;
 }
 
 .warpupload-w2-5{
     width: 25%;
 }
+
 
 label.label-upload img{
     height: 100%;

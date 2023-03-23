@@ -74,6 +74,10 @@ include("navbar.php")
             <td class="right">1550 บาท</td>
         </tr>
     </table>
+    <div class="padpage2">
+        <p class="graytext">*รายการในตะกร้าจะหายไปเมื่อคุณออกจากระบบหรือปิดเว็บไซต์</p>
+    </div>
+    
 
 <br>
 <div class="c6" align="right" >

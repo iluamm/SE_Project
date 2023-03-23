@@ -37,6 +37,7 @@ include("navbar-admin.php") //navbar
         <div class="tt1">
             <p>อัปโหลดรูปภาพลายอัลบั้ม<span class="red">*</span></p>
             
+            <!-- label -->
             <label for="image" class="label-upload">
                 <div class="warpupload">
                     <p class="graytext">Select file to upload</p>
@@ -46,13 +47,12 @@ include("navbar-admin.php") //navbar
             </label>
         </div>
 
-        <div class="aa">
+        <div class="bn">
+            <a href="albumdetail.php" class="backButton graytext" value="ยืนยัน">ย้อนกลับ</a>
             <a href="#"><input class="nextButton" type="submit" name="Submit" value="ยืนยัน" /></a>
         </div>
 
     </form>
-
-    <a href="albumdetail.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
 </div>
 
 

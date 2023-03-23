@@ -1,0 +1,20 @@
+.albumlist{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-evenly;
+    row-gap: 3rem;
+}
+
+.bchoice{
+    width: auto;
+    border: 1px solid #8f8f8f;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.in-choice{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
