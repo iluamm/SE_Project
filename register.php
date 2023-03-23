@@ -26,22 +26,22 @@ include("navbar.php")
             <form class="inputbar" align="center" name="frm" method="post" action="checkregis.php" enctype="multipart/from-data">
                 <div class="warpborder">
                     <img src="image\user.png">
-                    <input class="withicon" type="text" name="name" maxlength="25" placeholder="ชื่อ-นามสกุล">
+                    <input class="withicon" type="text" name="name" maxlength="25" placeholder="ชื่อ-นามสกุล*">
                 </div>
                 <p>&nbsp;</p>
                 <div class="warpborder">
                     <img src="image\phone.png">
-                    <input class="withicon" type="text" name="username" maxlength="10" placeholder="เบอร์โทรศัพท์">
+                    <input class="withicon" type="text" name="username" maxlength="10" placeholder="เบอร์โทรศัพท์*">
                 </div>
                 <p>&nbsp;</p>
                 <div class="warpborder">
                     <img src="image\key.png">
-                    <input class="withicon" type="password" name="password" placeholder="รหัสผ่าน">
+                    <input class="withicon" type="password" name="password" placeholder="รหัสผ่าน*">
                 </div>
                 <p>&nbsp;</p>
                 <div class="warpborder">
                     <img src="image\key.png">
-                    <input class="withicon" type="password" name="password" placeholder="ยืนยันรหัสผ่าน">
+                    <input class="withicon" type="password" name="password" placeholder="ยืนยันรหัสผ่าน*">
                 </div>
                 
                 <p>&nbsp;</p>

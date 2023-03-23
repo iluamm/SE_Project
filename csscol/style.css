@@ -21,12 +21,20 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 0.5rem;
 }
 
-p{
-    margin: 0;
+.red{
+    color: red;
 }
 
-p.graytext{
+.black{
+    color: black;
+}
+
+.graytext{
     color: #8f8f8f;
+}
+
+p{
+    margin: 0;
 }
 
 p.small{
@@ -110,4 +118,12 @@ a:link{
 
 .banner img{
     width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.qrcodepic{
+    width: 30%;
 }

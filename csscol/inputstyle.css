@@ -9,6 +9,18 @@ input{
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
+input.a1{
+    width:10%;
+    height:2rem;
+    border-radius: 0.75rem;
+}
+
+input.a1-5{
+    width:15%;
+    height:2rem;
+    border-radius: 0.75rem;
+}
+
 input.add{
     width:20%;
     height:2rem;
@@ -83,9 +95,12 @@ label{
     padding: 0rem 1rem;
 }
 
+.warpupload-w2-5{
+    width: 25%;
+}
+
 label.label-upload img{
     height: 100%;
-    
 }
 
 input.custom-upload{

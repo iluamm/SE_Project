@@ -31,7 +31,7 @@ include("navbar-admin.php") //navbar
                 <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
-                <p>3x2 นิ้ว</p>
+                <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
         </div>
@@ -42,7 +42,7 @@ include("navbar-admin.php") //navbar
                 <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
-                <p>3x2 นิ้ว</p>
+                <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
         </div>
@@ -53,7 +53,7 @@ include("navbar-admin.php") //navbar
                 <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
-                <p>3x2 นิ้ว</p>
+                <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
         </div>
@@ -64,7 +64,7 @@ include("navbar-admin.php") //navbar
                 <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
-                <p>3x2 นิ้ว</p>
+                <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
         </div>
@@ -75,7 +75,7 @@ include("navbar-admin.php") //navbar
                 <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
-                <p>3x2 นิ้ว</p>
+                <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
         </div>
@@ -86,7 +86,7 @@ include("navbar-admin.php") //navbar
                 <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
             </div>
             <div>
-                <p>3x2 นิ้ว</p>
+                <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
         </div>

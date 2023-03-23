@@ -28,7 +28,7 @@ include("navbar-admin.php")
         <tr>
             <td>1</td>
             <td>รูป img</td>
-            <td>
+            <td class="left">
                 อัดรูป
                 <br>ขนาดรูป : 3x3 นิ้ว
                 <br>จำนวน : 64 รูป
@@ -38,7 +38,7 @@ include("navbar-admin.php")
         <tr>
             <td>2</td>
             <td>รูป img</td>
-            <td>
+            <td class="left">
                 อัลบั้มกาว
                 <br>ขนาดรูป : 3x3 นิ้ว
                 <br>จำนวน : 64 รูป
@@ -49,7 +49,7 @@ include("navbar-admin.php")
         <tr>
             <td>3</td>
             <td>รูป img</td>
-            <td>
+            <td class="left">
                 อัลบั้มกาว
                 <br>ขนาดรูป : 3x3 นิ้ว
                 <br>จำนวน : 64 รูป
@@ -70,40 +70,53 @@ include("navbar-admin.php")
             <td class="right">1550 บาท</td>
         </tr>
     </table>
+    
+    <div class="c6">
+        <h2 class="left">ติดตามสินค้า</h2>
 
-    <p style="margin-top:3rem"><h2>ติดตามสินค้า</h2>
-    <table>
-        <tr>
-            <td>
-                เลขพัสดุ : <input style="width:50%;height:1.5rem;" type="text" placeholder="เลขพัสดุ"/>
-                <br>จัดส่งโดย : <select name="delivery" id="delivery">
-                                <option value="thaiexpress">ไปรษณีย์ไทย</option>
-                                <option value="kerryexpress">Kerry Express</option>
-                                <option value="lalamove">Lalamove</option>
-                                <option value="flashexpress">Flash Express</option>
-                                </select>
-                <br>จัดส่งวันที่ : <input type="date" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                ติดตามพัสดุ
-                <br>Kerry Express : ลิงค์
-            </td>
-        </tr>
-    </table>
+        <table class="t10 left">
+            <tr>
+                <td>
+                    <p class="tt1">เลขพัสดุ : <input class="add" type="text" placeholder="เลขพัสดุ" maxlength="13"/></p>
+                    <p class="tt1">จัดส่งโดย : <select class="select-add" name="delivery" id="delivery">
+                                    <option value="thaiexpress">ไปรษณีย์ไทย</option>
+                                    <option value="kerryexpress">Kerry Express</option>
+                                    <option value="lalamove">Lalamove</option>
+                                    <option value="flashexpress">Flash Express</option>
+                                 </select></p>
+                    <p class="tt1">จัดส่งวันที่ : <input class="a1-5" type="date" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="bold tt1">ติดตามพัสดุ</p>
+                    Kerry Express : ลิงค์
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <div class="c6">
-        <p style="margin-top:3rem"><h2>ชื่อผู้รับ ที่อยู่ และเบอร์โทรศัพท์</h2></p>
-        <br>สัปปะรด พิซซ่า
-        <br>11/12 ซอย 5 ถนนข้าวสาร แขวงข้าวสาร ตำบลข้าวสาร จังหวัดข้าวสวย เลขไปรษณีย์ 55555 
-        <br>เบอร์โทรศัพท์ 0812345679
-        <br>&nbsp;
-        <br>วันที่สั่ง: xx/xx/xxxx
+        <h2 class="left">ชื่อผู้รับ ที่อยู่ และเบอร์โทรศัพท์</h2>
+        <p class="tt1">
+            <br>สัปปะรด พิซซ่า
+            <br>11/12 ซอย 5 ถนนข้าวสาร แขวงข้าวสาร ตำบลข้าวสาร จังหวัดข้าวสวย เลขไปรษณีย์ 55555 
+            <br>เบอร์โทรศัพท์ 0812345679
+            <br>&nbsp;
+            <br>วันที่สั่ง: xx/xx/
+        </p>
 
-        <br>
-        <a href="history-admin.php"><button>ย้อนกลับ</button></a>
-        <button>จัดเตรียมสำเร็จ</button>
+        <a  href="#">
+            <img src="image\bin2.png" width="20rem"> 
+            <span class="graytext">ยกเลิกออเดอร์<br>
+            *หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน
+            </span>
+        </a>
+
+        <div class="bn">
+            <a href="history-admin.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+            <input class="nextButton" type="submit" name="Submit" value="จัดเตรียมสำเร็จ" />
+        </div>
     </div>
 </div>
 

@@ -87,6 +87,7 @@
             <?php if(isset($_SESSION['user_username'])) { ?>
                 <a href="profile.php"><img src="image\Profile.png" width="30rem"></a>
                 <div class="dropdown">
+                    test
                 <?php echo $_SESSION['user_name']; ?>
                 <div class="dropdown-content">
                     <a href="profile.php"><p>บัญชีของฉัน</p></a>

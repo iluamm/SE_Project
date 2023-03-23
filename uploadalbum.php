@@ -22,7 +22,7 @@ include("navbar-admin.php") //navbar
     <form action="upload.php" method="post" enctype="multipart/form-data">
 
         <div class="tt1">
-            <p> ประเภทอัลบั้ม : 
+            <p> ประเภทอัลบั้ม<span class="red">*</span> : 
             <select class="select-add" name="album_type" id="album_type">
                 <option value="insert">อัลบั้มสอด</option>
                 <option value="adhesive">อัลบั้มกาว</option>
@@ -30,19 +30,19 @@ include("navbar-admin.php") //navbar
         </div>
 
         <div class="tt1">
-            <p>ลายอัลบั้ม : 
+            <p>ลายอัลบั้ม<span class="red">*</span> : 
             <input class="add" type="text" name="a_name" placeholder="ลายอัลบั้ม"></p>
         </div>
 
         <div class="tt1">
-            <p>อัปโหลดรูปภาพลายอัลบั้ม</p>
+            <p>อัปโหลดรูปภาพลายอัลบั้ม<span class="red">*</span></p>
+            
             <label for="image" class="label-upload">
                 <div class="warpupload">
                     <p class="graytext">Select file to upload</p>
-                    <img src="\image\upload.png" width="30rem">
+                    <img src="image\upload.png" width="30rem">
                     <input class="custom-upload" type="file" name="image" id="image"/>
                 </div>
-                
             </label>
         </div>
 

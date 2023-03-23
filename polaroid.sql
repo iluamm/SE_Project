@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2023 at 04:08 PM
+-- Generation Time: Mar 22, 2023 at 06:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -41,8 +41,12 @@ CREATE TABLE `album` (
 INSERT INTO `album` (`album_id`, `a_type`, `a_name`, `a_image`) VALUES
 (1, '1', '2', 'buffalo'),
 (2, '2', '3', '0-Shark2'),
-(3, '3', '4', 'artworks-000575007212-sl7kkk-t500x500'),
-(4, 'cat', 'orange cat', 'ornagecat');
+(3, 'test', 'uganda', '1eJ1q0V'),
+(4, 'test', '3123', '4dba8bb0f57b4e55f5d2df2bc7ba7d6f'),
+(9, 'insert', 'ก้อง', '7'),
+(12, 'insert', 'สุดหล่อ', '240973451_375757430733563_9219492440027951805_n'),
+(13, 'insert', 'นกอีก๋อย', '0UqKmn4D_400x400'),
+(14, 'insert', '', '');
 
 -- --------------------------------------------------------
 
@@ -70,19 +74,21 @@ CREATE TABLE `user` (
   `user_id` int(10) NOT NULL,
   `username` varchar(15) NOT NULL,
   `password` varchar(15) NOT NULL,
-  `user_type` varchar(8) NOT NULL DEFAULT 'customer'
+  `user_type` varchar(8) NOT NULL DEFAULT 'customer',
+  `user_name` varchar(50) NOT NULL,
+  `user_address` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `user_type`) VALUES
-(0, 'admin', '1234', 'admin'),
-(1, 'kuy', '1234', 'customer'),
-(2, 'name', '1234', 'customer'),
-(9, 'asad', 's', 'customer'),
-(10, 'tanawat', '12', 'customer');
+INSERT INTO `user` (`user_id`, `username`, `password`, `user_type`, `user_name`, `user_address`) VALUES
+(0, 'admin', '1234', 'admin', '', ''),
+(1, 'kuy', '1234', 'customer', '', ''),
+(2, 'name', '1234', 'customer', 'ลูกพี่เนม เทพซ่า', 'บ้านอยู่บางโพ โอ้โหโก้จริงๆ'),
+(9, 'asad', 's', 'customer', '', ''),
+(10, 'tanawat', '12', 'customer', '', '');
 
 --
 -- Indexes for dumped tables
@@ -114,7 +120,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `album`
 --
 ALTER TABLE `album`
-  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `user`
