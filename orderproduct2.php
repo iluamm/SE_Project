@@ -10,75 +10,75 @@ require_once 'connect.php';
 </head>
 
 <body>
-    <?php
-    include("navbar.php")
-    ?>
-    <div class="c6">
-        <h3>อัลบั้มกาว</h3>
+<?php
+include("navbar.php")
+?>
+<div class="c6">
+    <h3>อัลบั้มกาว</h3>
 
-        <div class="menuitemlist">
-            <div class="menueachitemlist">
-                <div class="picturemenu">
-                    <img src="album\elephant.jpg">
-                </div>
-                <div>
-                    <p>3x2 นิ้ว</p>
-                    <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-                </div>
+    <div class="menuitemlist">
+        <div class="menueachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
             </div>
-
-            <div class="menueachitemlist">
-                <div class="picturemenu">
-                    <img src="album\elephant.jpg">
-                </div>
-                <div>
-                    <p>3x2 นิ้ว</p>
-                    <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-                </div>
+            <div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
-
-            <div class="menueachitemlist">
-                <div class="picturemenu">
-                    <img src="album\elephant.jpg">
-                </div>
-                <div>
-                    <p>3x2 นิ้ว</p>
-                    <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-                </div>
-            </div>
-
-            <div class="menueachitemlist">
-                <div class="picturemenu">
-                    <img src="album\elephant.jpg">
-                </div>
-                <div>
-                    <p>3x2 นิ้ว</p>
-                    <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-                </div>
-            </div>
-
-            <div class="menueachitemlist">
-                <div class="picturemenu">
-                    <img src="album\elephant.jpg">
-                </div>
-                <div>
-                    <p>3x2 นิ้ว</p>
-                    <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-                </div>
-            </div>
-
-            <div class="menueachitemlist">
-                <div class="picturemenu">
-                    <img src="album\elephant.jpg">
-                </div>
-                <div>
-                    <p>3x2 นิ้ว</p>
-                    <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="menueachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+            <div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+        </div>
+
+        <div class="menueachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+            <div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+        </div>
+
+        <div class="menueachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+            <div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+        </div>
+
+        <div class="menueachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+            <div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+        </div>
+
+        <div class="menueachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+            <div>
+                <p>3x2 นิ้ว</p>
+                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
+            </div>
+        </div>
+
     </div>
+</div>
     
 </body>
 <?php
