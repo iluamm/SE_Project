@@ -25,6 +25,18 @@ include("navbar-admin.php") //navbar
     
 
     <div class="menuitemlist">
+
+        <div>
+            <a href="uploadproduct.php">
+                <div class="addRec">
+                    <div class="item">
+                        <img src="image\camera.png" width="30rem">
+                        <p>เพิ่มสินค้า</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">

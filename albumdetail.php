@@ -44,7 +44,7 @@ include("navbar-admin.php")
     </table>
 
     <div class="c6">
-        <a href="albumdetail.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+        <a href="index-admin.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
     </div>
 
 </div>

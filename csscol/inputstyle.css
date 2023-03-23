@@ -85,6 +85,8 @@ label{
     cursor: pointer;
 }
 
+
+
 .warpupload{
     display: flex;
     width: 12rem;
@@ -97,6 +99,11 @@ label{
 
 .warpupload-w2-5{
     width: 25%;
+}
+
+.warpupload:hover{
+    background-image: linear-gradient(white,white, #e0e0e0);
+    box-shadow: 0px 00px 10px 0px rgba(0, 0, 0,0.1);
 }
 
 

@@ -49,7 +49,7 @@ include("navbar.php")
     <div class="albumlist">
         <div class="bchoice">
             <label class="in-choice">
-                    <input type="radio" id="album" name="album" value="album">
+                <input type="radio" id="album" name="album" value="album">
                 <div class="center">
                     <img src="album/elephant.jpg" height="120rem">
                     <p>Red</p>
@@ -59,7 +59,7 @@ include("navbar.php")
 
         <div class="bchoice">
             <label class="in-choice">
-                    <input type="radio" id="album" name="album" value="album">
+                <input type="radio" id="album" name="album" value="album">
                 <div class="center">
                     <img src="image/banner1.jpg" height="120rem" width="120rem">
                     <p>Red</p>
@@ -116,9 +116,6 @@ include("navbar.php")
     </div>
         
 </div>
-
-
-
 
 </body>
 <?php

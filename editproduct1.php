@@ -20,7 +20,7 @@ include("navbar-admin.php") //navbar
     <h2>อัลบั้มสอด</h2>
     <div class="tt1 aa">
         <a href="albumdetail.php"><button class="detailCheckButton">ลายอัลบั้ม</button></a>
-        <a href="albumdetail.php"><button class="confirmButton">เพิ่มสินค้า</button></a>
+        <a href="uploadproduct.php"><button class="confirmButton">เพิ่มสินค้า</button></a>
     </div>
     
 
