@@ -25,6 +25,7 @@
 
 .navbaruserlist{
     display: flex;
+    padding-right: 1rem;
     height: 100%;
     align-items: center;
     justify-content: flex-end;
@@ -46,6 +47,24 @@ a:link, a:visited {
 a:hover{
     color:red;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 </style>
 <nav class="navbar">
@@ -63,8 +82,16 @@ a:hover{
             <img src="image\Profile.png" width="30rem">
             <?php if(!isset($_SESSION['user_username'])) { ?><a href="login.php">Log in / Sign in </a><?php } ?>
         
-            <?php if(isset($_SESSION['user_username'])) { ?><div>Hello! <?php echo $_SESSION['user_username']; ?></div><?php } ?>
+            <?php if(isset($_SESSION['user_username'])) { ?>
+                <div class="dropdown">
+                    <div>Hello! <?php echo $_SESSION['user_username']; ?></div>
+                    <div class="dropdown-content">
+                        <a href="#p"><p>เพิ่มพนักงาน</p></a>
+                        <a href="logout.php"><p>ออกจากระบบ</p></a>
+                    </div>
+                </div>
+            <?php } ?>
+
         </div>
-        <div><?php if(isset($_SESSION['user_username'])) { ?><a href="logout.php" class="linkstyle">ออกจากระบบ</a><?php } ?></div>
     </div>
 </nav>
