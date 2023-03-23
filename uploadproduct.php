@@ -43,9 +43,12 @@ include("navbar-admin.php") //navbar
             </label>
         </div>
 
-        
-
         <h3 class="left">รายละเอียดสินค้า</h3>
+        <div class="tt1">
+            <p>ขนาด
+            <input class="a05" type="number" name="a_name" placeholder="--"> x 
+            <input class="a05" type="number" name="a_name" placeholder="--"> นิ้ว<span class="red">*</span> </p>
+        </div>
         <div class="tt1">
             <p>จำนวนรูป
             <input class="add" type="number" name="a_name" placeholder="จำนวนรูป"> รูป<span class="red">*</span> </p>

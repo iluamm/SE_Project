@@ -9,6 +9,12 @@ input{
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
+input.a05{
+    width:5%;
+    height:2rem;
+    border-radius: 0.75rem;
+}
+
 input.a1{
     width:10%;
     height:2rem;
