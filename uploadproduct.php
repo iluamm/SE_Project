@@ -19,14 +19,15 @@ include("navbar-admin.php") //navbar
 
 <div class="c5">
     <h2>เพิ่มสินค้า</h2>
-    <form>
+    <form action="uploadpro.php" method="post" enctype="multipart/form-data">
 
+        
         <div class="tt1">
             <p> ประเภทสินค้า<span class="red">*</span> 
-            <select class="select-add" name="album_type" id="album_type">
+            <select class="select-add" name="p_type" id="p_type">
                 <option value="insert">อัลบั้มสอด</option>
                 <option value="adhesive">อัลบั้มกาว</option>
-                <option value="adhesive">อัดรูป</option>
+                <option value="image">อัดรูป</option>
             </select></p>
         </div>
 
@@ -44,19 +45,20 @@ include("navbar-admin.php") //navbar
         </div>
 
         <h3 class="left">รายละเอียดสินค้า</h3>
+
         <div class="tt1">
             <p>ขนาด
-            <input class="a05" type="number" name="a_name" placeholder="--"> x 
-            <input class="a05" type="number" name="a_name" placeholder="--"> นิ้ว<span class="red">*</span> </p>
+            <input class="a05" type="number" name="size1" step="0.1" placeholder="--"> x 
+            <input class="a05" type="number" name="size2" step="0.1" placeholder="--"> นิ้ว<span class="red">*</span> </p>
         </div>
         <div class="tt1">
             <p>จำนวนรูป
-            <input class="add" type="number" name="a_name" placeholder="จำนวนรูป"> รูป<span class="red">*</span> </p>
+            <input class="add" type="number" name="pic_amount" placeholder="จำนวนรูป"> รูป<span class="red">*</span> </p>
         </div>
 
         <div class="tt1">
             <p>ราคา
-            <input class="add" type="number" name="a_name" placeholder="ราคา"> บาท<span class="red">*</span> </p>
+            <input class="add" type="number" name="pic_price" placeholder="ราคา"> บาท<span class="red">*</span> </p>
         </div>
 
         <div class="bn">

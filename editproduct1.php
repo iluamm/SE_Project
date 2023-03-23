@@ -19,77 +19,28 @@ include("navbar-admin.php") //navbar
 <div class="c6">
     <h2>อัลบั้มสอด</h2>
     <div class="tt1 aa">
-        <a href="albumdetail.php"><button class="detailCheckButton">ลายอัลบั้ม</button></a>
+        <a href="albumdetail1.php"><button class="detailCheckButton">ลายอัลบั้ม</button></a>
         <a href="uploadproduct.php"><button class="confirmButton">เพิ่มสินค้า</button></a>
     </div>
     
-
     <div class="menuitemlist">
-    <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
 
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
+    <?php
+        $query = "SELECT * FROM promotion WHERE p_type='insert'";
+        $result = mysqli_query($mysqli, $query);
+        while($row = mysqli_fetch_row($result)) {
+            echo "<div class='menueachitemlist'>";
+            echo "<div class='picturemenu'>";
+            echo "<img src='promotion/$row[5]'>";
+            echo "<a href='deletepro.php?id=$row[0]'><button class='btn'><img src='image\bin.png'></button></a>";
+            echo "</div>";
+            echo "<div>";
+            echo "<p>$row[2] นิ้ว</p>";
+            echo "<p class='graytext'>จำนวน $row[3] รูป ราคา $row[4] บาท</p>";
+            echo "</div>";
+            echo "</div>";
+        }
+        ?>
 
     </div>
 </div>

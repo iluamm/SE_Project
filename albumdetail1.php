@@ -44,7 +44,7 @@ include("navbar-admin.php")
     </table>
 
     <div class="c6">
-        <a href="index-admin.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+        <a href="editproduct1.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
     </div>
 
 </div>

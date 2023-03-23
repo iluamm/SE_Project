@@ -57,7 +57,6 @@ if(isset($_POST['editconfirm'])){
     $objQuery = $mysqli -> query($sql); 
     header( "location: http://localhost/SE_Project/profile.php" );
 }
-
 ?>
 
 </body>
