@@ -1,6 +1,10 @@
 <?php
 session_start();
 require_once 'connect.php';
+$promotion_id = $_GET['id'];
+$query = "SELECT * FROM promotion WHERE promotion_id = '".$promotion_id."'";
+$result = mysqli_query($mysqli, $query);
+$row = mysqli_fetch_row($result);
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,6 +51,23 @@ include("navbar.php")
     <h2 class="left">-เลือกลายอัลบั้ม-</h2>
 
     <div class="albumlist">
+
+        <?php
+            $query2 = "SELECT * FROM album WHERE a_type='$row[1]'";
+            $result2 = mysqli_query($mysqli, $query2);
+            while($row2 = mysqli_fetch_row($result2)) {
+                echo "<div class='bchoice'>";
+                echo "<label class='in-choice'>";
+                echo "<input type='radio' id='album' name='album' value='album'>";
+                echo "<div class='center'>";
+                echo "<img src='album/$row2[3]' height='120rem'>";
+                echo "<p>$row2[2]</p>";
+                echo "</div>";
+                echo "</label>";
+                echo "</div>";
+            }
+        ?>
+    <!-- <div class="albumlist">
         <div class="bchoice">
             <label class="in-choice">
                 <input type="radio" id="album" name="album" value="album">
@@ -105,7 +126,7 @@ include("navbar.php")
                     <p>Red</p>
                 </div>
             </label>
-        </div>
+        </div> -->
 
     </div>
     
