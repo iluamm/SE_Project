@@ -137,5 +137,19 @@ input.custom-upload{
     cursor: pointer;
 }
 
+.select-addRec{
+    width: 80%;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.select-addRec:hover{
+    cursor: pointer;
+}
+
 /* Radio box */
 

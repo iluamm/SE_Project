@@ -57,7 +57,7 @@ p.small{
     text-align: center;
 }
 
-p.bold{
+.bold{
     font-weight: bold;
 }
 

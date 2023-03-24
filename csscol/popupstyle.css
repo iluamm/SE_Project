@@ -1,0 +1,74 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.delConfirm {
+    margin: auto;
+    margin-top: 15%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    width: 25%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    min-width: 10%;
+}
+
+.delConfirm h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: #333;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.popup {
+    margin: 3rem auto;
+    padding: 1.3rem;
+    background: #fff;
+    border-radius: 1rem;
+    width: 30%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    min-width: 10%;
+}
+
+.popup h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: #333;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0.7rem;
+    right: 1.5rem;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #c22626;
+}
+.popup .content {
+    max-height: 30%;
+}
+.popup .content img{
+    width: 20rem;
+}

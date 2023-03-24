@@ -8,13 +8,16 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
 <link rel="stylesheet" href="csscol/tablestyle.css" />
+<link rel="stylesheet" href="csscol/popupstyle.css" />
 </head>
 <body>
 
 <?php
 include("navbar-admin.php") //navbar
 ?>
-
+<?php
+ include("footer.php")
+?>
 <div class="c6">
     <h2 class="">รายการสินค้าที่ต้องตรวจสอบ</h2>
     <table class="t8">
@@ -31,7 +34,7 @@ include("navbar-admin.php") //navbar
             <td>xx/xx/xxxx</td>
             <td>15.00</td>
             <td>500</td>
-            <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
+            <td><a href="#popup1"><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></a></td>
             <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
             <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
         </tr>
@@ -40,15 +43,22 @@ include("navbar-admin.php") //navbar
             <td>xx/xx/xxxx</td>
             <td>15.00</td>
             <td>500</td>
-            <td><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></td>
+            <td><a href="#popup1"><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></a></td>
             <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
             <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
         </tr>
     </table>
+
+    <div id="popup1" class="overlay">
+        <div class="popup center">
+            <h2>ใบเสร็จการโอนเงิน</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="transcript\s1.png">
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
-<?php
- include("footer.php")
-?>
 </html>

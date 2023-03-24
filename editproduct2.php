@@ -8,8 +8,7 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/menuliststyle.css" />
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
-<link rel="stylesheet" href="csscol/tablestyle.css" />
-<link rel="stylesheet" href="csscol/inputstyle.css" />
+<link rel="stylesheet" href="csscol/popupstyle.css" />
 </head>
 <body>
 
@@ -43,6 +42,19 @@ include("navbar-admin.php") //navbar
         }
         ?>
 
+    </div>
+
+    <div id="popup" class="overlay">
+        <div class="delConfirm center">
+            <h2>ยืนยันการลบสินค้าออกจากรายการแนะนำ</h2>
+            <div class="content">
+                <span class="bold">รายการที่ลบ : </span><span>อัลบั้มสอด 3x2 นิ้ว</span>
+                <div class="bn">
+                    <a href="#"><button class="backButton">ยกเลิก</button></a>
+                    <button class="nextButton">ลบสินค้า</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

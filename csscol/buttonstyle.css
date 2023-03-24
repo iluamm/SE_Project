@@ -79,7 +79,7 @@
     color: white;
 }
 
-/* Next - Back - Edit - Save */
+/* Next - Back - Edit - Save - Delete*/
 
 .nextButton{
     color: white;
@@ -153,6 +153,26 @@
 .editButton:hover{
     color: black;
     background-color: #d4d4d4;
+}
+
+.delButton{
+    color: #FF4A4A;
+    border: none;
+    /* border: 1px solid #FF8787; */
+    cursor: pointer;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: white; /* #cbe2c5 */
+    transition: 0.2s;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.delButton:hover{
+    background-color: #FF4A4A;
+    color: white;
 }
 
 /* Operator ตั้งแต่ตรงนี้ไปขอบมน*/
