@@ -74,7 +74,7 @@ include("navbar.php")
             <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
             
             <!-- style="width:50%;height:10rem;" -->
-            <div class="bn">
+            <div class="aa">
                 <!-- <a href="shoppingcart.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a> -->
                 <a href="uploadpayment.php"><input class="nextButton" type="submit" name="addressupdate" value="ถัดไป" /></a>
             </div>
