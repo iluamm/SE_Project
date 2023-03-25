@@ -10,7 +10,7 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-
+    background: #DBD2C6;
     color: #ffffff;
     font-size: 1rem;
     border-top: 1px solid #D9D9D9;
@@ -32,7 +32,7 @@ footer .column {
 footer h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color:#000000;
+  color:#35312F;
 }
 
 footer ul {
@@ -43,14 +43,14 @@ footer ul {
 
 footer li {
   margin-bottom: 0.5rem;
-  color:#000000;
+  color:#35312F;
 }
 footer a{
     text-decoration: none;
-    color:#000000;
+    color:#35312F;
 }
 footer a:hover{
-    color:#A0A0A0;
+    color:#698269;
 }
 
 </style>

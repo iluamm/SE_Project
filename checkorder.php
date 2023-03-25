@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'connect.php';
+$order_id=$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,41 +28,35 @@ include("navbar.php")
                 <th>รายละเอียดสินค้า</th>
                 <th>ราคา</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>รูป img</td>
-                <td class="left">
-                    อัดรูป
-                    <br>ขนาดรูป : 3x3 นิ้ว
-                    <br>จำนวน : 64 รูป
-                </td>
-                <td>500 บาท</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>รูป img</td>
-                <td class="left">
-                    อัลบั้มกาว
-                    <br>ขนาดรูป : 3x3 นิ้ว
-                    <br>จำนวน : 64 รูป
-                    <br>ลายอัลบั้ม : แมวเหมียว
-                </td>
-                <td>500 บาท</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>รูป img</td>
-                <td class="left">
-                    อัลบั้มกาว
-                    <br>ขนาดรูป : 3x3 นิ้ว
-                    <br>จำนวน : 64 รูป
-                    <br>ลายอัลบั้ม : แมวเหมียว
-                </td>
-                <td>500 บาท</td>
-            </tr>
+        <?php
+        $Total=0;
+        $query = "SELECT * FROM list WHERE order_id='$order_id'";
+        $result = mysqli_query($mysqli, $query);
+        while($row = mysqli_fetch_assoc($result)){
+            $sql1 = "SELECT * FROM promotion WHERE promotion_id='".$row['promotion_id']."'";
+            $result1 = mysqli_query($mysqli, $sql1); 
+            $row1 = $result1 -> fetch_array(MYSQLI_ASSOC);
+
+            $sql2 = "SELECT * FROM album WHERE album_id='".$row['album_id']."'";
+            $result2 = mysqli_query($mysqli, $sql2); 
+            $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
+
+            echo '<tr><td>'.$row['list_no'].'</td>';
+            echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
+            echo '<td class="left">';
+            echo $row1['p_type'];
+            echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
+            echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
+            echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
+            echo '</td>';
+            echo '<td>'.$row1['p_price'].' บาท';
+            echo '</td></tr>';
+            $Total+=$row1['p_price'];
+        }
+        ?>
             <tr>
             <td colspan="3" class="left">ราคาสินค้าทั้งหมด</td>
-            <td class="right">1500 บาท</td>
+            <td class="right"><?php echo $Total; ?> บาท</td>
         </tr>
         <tr>
             <td colspan="3" class="left">ค่าจัดส่ง</td>
@@ -69,22 +64,23 @@ include("navbar.php")
         </tr>
         <tr>
             <td colspan="3" class="left">ราคารวม</td>
-            <td class="right">1550 บาท</td>
+            <td class="right"><?php echo $Total+50; ?> บาท</td>
         </tr>
         </table>
 
         <h2 class="left">ที่อยู่ที่ต้องการจัดส่ง</h2>
-        <input class="a10"  type="text" placeholder="เลขที่หมู่"/>
-        <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
-        <!-- style="width:50%;height:10rem;" -->
-        <div class="bn">
-            <a href="shoppingcart.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
-            <a href="uploadpayment.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
-        </div>
+        <form action="addressupdate.php?id=<?php echo $order_id; ?>" enctype="multipart/from-data" method="post">
+            <input class="a10" type="text" placeholder="เลขที่หมู่" name="order_address"/>
+            <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
+            
+            <!-- style="width:50%;height:10rem;" -->
+            <div class="bn">
+                <!-- <a href="shoppingcart.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a> -->
+                <a href="uploadpayment.php"><input class="nextButton" type="submit" name="addressupdate" value="ถัดไป" /></a>
+            </div>
+        </form>
     </div>
 </div>
-
-
 
 </body>
 <?php

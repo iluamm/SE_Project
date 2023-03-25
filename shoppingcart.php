@@ -17,7 +17,7 @@ include("navbar.php")
 
 <div class="padpage">
     <h2>ตะกร้าสินค้า</h2>
-
+    <form action="order.php" method="post" enctype="multipart/form-data">
     <table class="t6">
         <tr>
             <th>ลำดับรายการ   </th>
@@ -25,45 +25,36 @@ include("navbar.php")
             <th>รายละเอียดสินค้า</th>
             <th>ราคา</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>รูป img</td>
-            <td class="left">
-                อัดรูป
-                <br>ขนาดรูป : 3x3 นิ้ว
-                <br>จำนวน : 64 รูป
-            </td>
-            <td>500 บาท
-                <input class="delcButton" type="submit" name="Submit" value="✖" /></input>
-            </td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>รูป img</td>
-            <td class="left">
-                อัดรูป
-                <br>ขนาดรูป : 3x3 นิ้ว
-                <br>จำนวน : 64 รูป
-            </td>
-            <td>500 บาท
-                <input class="delcButton" type="submit" name="Submit" value="✖" /></input>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>รูป img</td>
-            <td class="left">
-                อัดรูป
-                <br>ขนาดรูป : 3x3 นิ้ว
-                <br>จำนวน : 64 รูป
-            </td>
-            <td>500 บาท
-                <input class="delcButton" type="submit" name="Submit" value="✖" /></input>
-            </td>
-        </tr>
+
+        <?php
+        $Total=0;
+        for($i=1; $i<=(int)$_SESSION["intLine"]; $i++){
+            if($_SESSION["promotion_id"][$i] !=""){
+                $sql1 = "SELECT * FROM promotion WHERE promotion_id='".$_SESSION['promotion_id'][$i]."'";
+                $result1 = mysqli_query($mysqli, $sql1); 
+                $row1 = $result1 -> fetch_array(MYSQLI_ASSOC);
+                $sql2 = "SELECT * FROM album WHERE album_id='".$_SESSION['album_id'][$i]."'";
+                $result2 = mysqli_query($mysqli, $sql2); 
+                $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
+                echo '<tr><td>'.$i.'</td>';
+                echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
+                echo '<td class="left">';
+                echo $row1['p_type'];
+                echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
+                echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
+                echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
+                echo '</td>';
+                echo '<td>'.$row1['p_price'].'บาท';
+                echo '<a class="delcButton" href="delete_cart.php?Line='.$i.'">✖</a>';
+                echo '</td></tr>';
+                $Total+=$row1['p_price'];
+            }
+        }
+        ?>
+
         <tr>
             <td colspan="3" class="left">ราคาสินค้าทั้งหมด</td>
-            <td class="right">1500 บาท</td>
+            <td class="right"><?php echo $Total; ?> บาท</td>
         </tr>
         <tr>
             <td colspan="3" class="left">ค่าจัดส่ง</td>
@@ -71,22 +62,23 @@ include("navbar.php")
         </tr>
         <tr>
             <td colspan="3" class="left">ราคารวม</td>
-            <td class="right">1550 บาท</td>
+            <td class="right"><?php echo $Total+50; ?> บาท</td>
         </tr>
     </table>
     <div class="padpage2">
-        <p class="graytext">*รายการในตะกร้าจะหายไปเมื่อคุณออกจากระบบหรือปิดเว็บไซต์</p>
+        <p class="graytext">*รายการในตะกร้าจะหายไปเมื่อคุณออกจากระบบ</p>
     </div>
     
-
-<br>
-<div class="c6" align="right" >
-    <!-- <div class="padpage"> -->
-        <a href="checkorder.php">
-            <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>
-        </a>
-    <!-- </div> -->
-</div>
+    <br>
+    <input type="hidden" name="total" value="<?php echo $Total+50; ?>"/>
+    <div class="c6" align="right" >
+        <!-- <div class="padpage"> -->
+            <a href="order.php">
+                <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>
+            </a>
+        <!-- </div> -->
+    </div>
+    </form>
 
 
 

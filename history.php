@@ -26,7 +26,7 @@ include("navbar.php") //navbar
         <th>สถานะออเดอร์</th>
         <th></th>
     </tr>
-    <tr>
+    <!-- <tr>
         <td>xxxxx</td>
         <td>xx/xx/xxxx</td>
         <td>500</td>
@@ -39,7 +39,20 @@ include("navbar.php") //navbar
         <td>500</td>
         <td>จัดเตรียมสินค้า</td>
         <td><a href="checkorder2.php"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>
-    </tr>
+    </tr> -->
+    <?php
+        $query = "SELECT * FROM order_detail WHERE user_id='".$_SESSION['user_id']."'";
+        $result = mysqli_query($mysqli, $query);
+        while($row = mysqli_fetch_assoc($result)) {
+            echo '<tr>';
+            echo '<td>'.$row['order_id'].'</td>';
+            echo '<td>'.$row['order_date'].'</td>';
+            echo '<td>'.$row['order_price'].'</td>';
+            echo '<td>'.$row['order_status'].'</td>';
+            echo '<td><a href="checkorder.php?id='.$row['order_id'].'"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>';
+            echo '</tr>';
+        }
+    ?>
 </table>
 <div class="c6"></div>
 </body>

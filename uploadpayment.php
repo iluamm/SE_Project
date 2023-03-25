@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'connect.php';
+$order_id=$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,7 @@ include("navbar.php")
 
 <div class="c5">
     <h2>ชำระเงิน</h2>
-
+    <form method="post" action="paymentupdate.php?id=<?php echo $order_id; ?>" enctype="multipart/from-data">
     <div class="center">
         <img class="qrcodepic" src="image\businessQR.jpg">
         <div align="center">
@@ -44,10 +45,12 @@ include("navbar.php")
         </a>
         
     </dd>
+    <input type="hidden" name="order_status" value="รอการตรวจสอบการชำระเงิน">
     <div class="bn">
-        <a href="checkorder.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
-        <a href="history.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
+        <a class="backButton" href="checkorder.php?id=<?php echo $order_id; ?>">ย้อนกลับ</a>
+        <a href="history.php"><input class="nextButton" type="submit" name="paymentupdate" value="ถัดไป" /></a>
     </div>
+    </form>
 </div>
 
 

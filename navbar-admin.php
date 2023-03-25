@@ -12,6 +12,7 @@
     font-family: 'Noto Sans Thai', sans-serif;
     padding: 0.5%;
     align-items: center;
+    background: #B6C298;
 }
 
 .navbarmenu{
@@ -45,7 +46,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 a:hover{
-    color:red;
+    color:#ffffff;
 }
 .dropdown {
   position: relative;

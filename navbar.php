@@ -11,7 +11,7 @@
     font-family: 'Noto Sans Thai', sans-serif;
     padding: 0.5%;
     align-items: center;
-    background: white;
+    background: #B6C298;
 }
 
 
@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 .navbar a:hover{
-    color: red;
+    color: #ffffff;
 }
 .dropdown {
   position: relative;
@@ -61,8 +61,14 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  border-radius:0rem 0rem 1rem 1rem; 
 }
-
+.dropdown-content a{
+    color:#000000;
+}
+.dropdown-content a:hover{
+    color:#B6C298;
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }

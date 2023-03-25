@@ -22,6 +22,7 @@ include("navbar.php")
 ?>
 
 <div class="c5">
+    <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data">
     <h2 class="left">-กรุณาอัพโหลดรูปภาพ-</h2>
     <table class="t10">
         <tr>
@@ -55,13 +56,13 @@ include("navbar.php")
         <?php
             $query2 = "SELECT * FROM album WHERE a_type='$row[1]'";
             $result2 = mysqli_query($mysqli, $query2);
-            while($row2 = mysqli_fetch_row($result2)) {
+            while($row2 = $result2 -> fetch_array(MYSQLI_ASSOC)) {
                 echo "<div class='bchoice'>";
                 echo "<label class='in-choice'>";
-                echo "<input type='radio' id='album' name='album' value='album'>";
+                echo "<input type='radio' id='album_id' name='album_id' value='$row2[album_id]'>";
                 echo "<div class='center'>";
-                echo "<img src='album/$row2[3]' height='120rem'>";
-                echo "<p>$row2[2]</p>";
+                echo "<img src='album/$row2[a_image]' height='120rem'>";
+                echo "<p>$row2[a_name]</p>";
                 echo "</div>";
                 echo "</label>";
                 echo "</div>";
@@ -86,54 +87,16 @@ include("navbar.php")
                     <p>Red</p>
                 </div>
             </label>
-        </div>
-
-        <div class="bchoice">
-            <label class="in-choice">
-                    <input type="radio" id="album" name="album" value="album">
-                <div class="center">
-                    <img src="image/banner2.jpg" height="120rem" width="120rem">
-                    <p>Red</p>
-                </div>
-            </label>
-        </div>
-
-        <div class="bchoice">
-            <label class="in-choice">
-                    <input type="radio" id="album" name="album" value="album">
-                <div class="center">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <p>Red</p>
-                </div>
-            </label>
-        </div>
-
-        <div class="bchoice">
-            <label class="in-choice">
-                    <input type="radio" id="album" name="album" value="album">
-                <div class="center">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <p>Red</p>
-                </div>
-            </label>
-        </div>
-
-        <div class="bchoice">
-            <label class="in-choice">
-                    <input type="radio" id="album" name="album" value="album">
-                <div class="center">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <p>Red</p>
-                </div>
-            </label>
         </div> -->
+
+
 
     </div>
     
 
     <div class="bn">
-        <a href="orderproduct.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
-        <a href="shoppingcart.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
+        <a href="orderproduct.php?id=<?php echo $row[0] ?>" class="backButton graytext">ย้อนกลับ</a>
+        <a href="addcart.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
     </div>
         
 </div>

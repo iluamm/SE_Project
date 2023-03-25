@@ -22,7 +22,7 @@ include("navbar.php")
             $result = mysqli_query($mysqli, $query);
             while($row = mysqli_fetch_row($result)) {
                 if(isset($_SESSION['user_username'])) {
-                    echo "<a href='orderproduct.php'>";
+                    echo "<a href='orderproduct.php?id=$row[0]'>";
                     echo "<div class='menueachitemlist'>";
                     echo "<div class='picturemenu'>";
                     echo "<img src='promotion/$row[5]'>";
