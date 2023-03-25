@@ -143,7 +143,7 @@ include("navbar-admin.php") //navbar
             <div class="content">
                 <span class="bold">รายการที่ลบ : </span><span>อัลบั้มสอด 3x2 นิ้ว</span>
                 <div class="bn">
-                    <a href="#"><button class="delButton">ยกเลิก</button></a>
+                    <a href=""><button class="delButton">ยกเลิก</button></a>
                     <button class="nextButton">ลบสินค้า</button>
                 </div>
             </div>

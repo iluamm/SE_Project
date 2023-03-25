@@ -8,8 +8,6 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/menuliststyle.css" />
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
-<link rel="stylesheet" href="csscol/tablestyle.css" />
-<link rel="stylesheet" href="csscol/inputstyle.css" />
 </head>
 <body>
 
@@ -17,7 +15,52 @@ require_once 'connect.php';
 include("navbar-admin.php")
 ?>
 <div class="c6">
+    <h2>ดาวน์โหลดรูปภาพ</h2>
 
+    <div class="menuitemlist">
+        <div class="DLeachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+        </div>
+
+        <div class="DLeachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+        </div>
+
+        <div class="DLeachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+        </div>
+
+        <div class="DLeachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+        </div>
+
+        <div class="DLeachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+        </div>
+
+        <div class="DLeachitemlist">
+            <div class="picturemenu">
+                <img src="album\elephant.jpg">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="bn">
+        <a href="orderdetail.php"><button class="backButton">ยกเลิก</button></a>
+        <button class="confirmButton">ดาวน์โหลดทั้งหมด</button>
+    </div>
 </div>
     
     

@@ -15,6 +15,11 @@
     transform: scale(1.15);
 }
 
+.DLeachitemlist{
+    text-align: center;
+    transition: transform .2s;
+}
+
 .picturemenu{
     position: relative;
     width: 100%;

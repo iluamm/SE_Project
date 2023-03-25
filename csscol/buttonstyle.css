@@ -57,7 +57,7 @@
     background-color: #929292;
 }
 
-/* Delete in cart */
+/* Delete in cart / detail*/
 .delcButton{
     color: #FF4A4A;
     border: none;
@@ -77,6 +77,27 @@
 
 .delcButton:hover{
     background-color: #FF4A4A;
+    color: white;
+}
+
+.detaButton{
+    color: #000000;
+    border: none;
+    /* border: 1px solid #FF8787; */
+    cursor: pointer;
+    padding: 0.05rem 0.6rem;
+    display: inline-block;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: white; /* #cbe2c5 */
+    transition: 0.2s;
+
+    text-align: center;
+    font-size: 01rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.detaButton:hover{
+    background-color: rgb(196, 196, 196);
     color: white;
 }
 
