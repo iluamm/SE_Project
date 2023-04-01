@@ -10,6 +10,14 @@
     transition: transform .2s;
 }
 
+.menueachitemlist p{
+    color: black;
+}
+
+.menueachitemlist .graytext{
+    color: #8f8f8f;
+}
+
 .menueachitemlist:hover{
     text-align: center;
     transform: scale(1.15);

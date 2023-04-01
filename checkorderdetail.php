@@ -48,20 +48,23 @@ include("navbar-admin.php") //navbar
             <td><input type="submit" class="confirmButton" name="Submit" value="ยอมรับ" /></td>
         </tr> -->
         <?php
-        $query = "SELECT * FROM order_detail WHERE order_status='รอการตรวจสอบการชำระเงิน'";
-        $result = mysqli_query($mysqli, $query);
-        while($row = mysqli_fetch_assoc($result)) {
-            echo '<tr>';
-            echo '<td>'.$row['order_id'].'</td>';
-            echo '<td>xxx</td>';
-            echo '<td>xxx</td>';
-            echo '<td>'.$row['order_price'].'</td>';
-            echo '<td><a href="#popup1"><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></a></td>';
-            echo '<td><input type="submit" class="cancelButton" name="cancel" value="ยกเลิก" /></td>';
-            echo '<td><input type="submit" class="confirmButton" name="confirm" value="ยอมรับ" /></td>';
-            echo '</tr>';
-        }
-    ?>
+            $query = "SELECT * FROM order_detail WHERE order_status='รอการตรวจสอบการชำระเงิน'";
+            $result = mysqli_query($mysqli, $query);
+            while($row = mysqli_fetch_assoc($result)) {
+                echo '<tr>';
+                echo '<td>'.$row['order_id'].'</td>';
+                echo '<td>xxx</td>';
+                echo '<td>xxx</td>';
+                echo '<td>'.$row['order_price'].'</td>';
+                echo '<td><a href="#popup1"><input type="submit" class="checkpicButton" name="Submit" value="ดูรูป" /></a></td>';
+                echo '<td><input type="submit" class="cancelButton" name="cancel" value="ยกเลิก" /></td>';
+                echo '<td><input type="submit" class="confirmButton" name="confirm" value="ยอมรับ" /></td>';
+                echo '</tr>';
+            }
+        ?>
+        <tr>
+            <td colspan="6" class="fat"> <p class="graytext">ยังไม่มีสินค้าที่ต้องตรวจสอบ</p></td>
+        </tr>
     </table>
 
     <div id="popup1" class="overlay">

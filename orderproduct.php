@@ -21,7 +21,8 @@ include("navbar.php")
 ?>
 
 <div class="c6">
-    <h2><img src="promotion/<?php echo $row[5] ?>"></h2>
+    <h6><img src="promotion/<?php echo $row[5] ?>" height="350rem"></h6>
+
     <table class="t6">
         <tr>
             <td>                

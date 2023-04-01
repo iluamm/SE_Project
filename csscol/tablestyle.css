@@ -36,6 +36,11 @@ th, td {
     padding: 1rem;
 }
 
+td.fat{
+    padding: 7rem 0rem;
+    text-align: center;
+}
+
 tr{
     border-bottom: 1px solid #D9D9D9; 
 }

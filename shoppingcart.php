@@ -18,7 +18,7 @@ include("navbar.php")
 <div class="padpage">
     <h2>ตะกร้าสินค้า</h2>
     <form action="order.php" method="post" enctype="multipart/form-data">
-    <table class="t6">
+    <table class="t6 tt1">
         <tr>
             <th>ลำดับรายการ   </th>
             <th>สินค้า</th>
@@ -71,11 +71,9 @@ include("navbar.php")
 
         <?php }
         else{ ?>
-
-        <tr>
-            <td colspan="4" class="center"> คุณยังไม่เพิ่มรายการใดลงในตะกร้า</td>
-        </tr>
-
+            <tr>
+                <td colspan="4" class="fat"> <p class="graytext">คุณยังไม่เพิ่มรายการใดลงในตะกร้า</p></td>
+            </tr>
         <?php } ?>
 
     </table>

@@ -37,7 +37,7 @@ include("navbar-admin.php")
             echo "<td>$row[0]</td>";
             echo "<td>$row[2]</td>";
             echo "<td><img src='album/$row[3]' height='120rem'></td>";
-            echo "<td><a href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
+            echo "<td><a class='delete' href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
             echo "</tr>";
         }
     ?>

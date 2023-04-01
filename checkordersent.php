@@ -17,6 +17,7 @@ include("navbar-admin.php") //navbar
 
 <h2>รายการสินค้าที่จัดส่ง</h2>
 <table class="t4">
+    
     <tr>
         <th>เลขที่ออเดอร์</th>
         <th>เวลา</th>
@@ -33,6 +34,9 @@ include("navbar-admin.php") //navbar
         <td>xx/xx/xxxx</td>
         <td><input type="submit" class="cancelButton" name="Submit" value="ยกเลิก" /></td>
         <td><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></td>
+    </tr>
+    <tr>
+        <td colspan="4" class="fat"> <p class="graytext">ยังไม่มีสินค้าที่ต้องยืนยันการจัดส่ง</p></td>
     </tr>
 </table>
 <h6>&nbsp;</h6>

@@ -67,6 +67,10 @@ a:link{
     text-decoration: none;
 }
 
+a.delete:hover{
+    color: red;
+}
+
 .logsign{
     display: flex;
     justify-content: space-between; 
