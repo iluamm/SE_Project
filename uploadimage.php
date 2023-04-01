@@ -33,6 +33,7 @@ else{
         echo "ERROR!!!";
     }
     
+    //storind the data in your database
     $query= "INSERT into album (album_id,a_type,a_name,a_image)
             VALUES (NULL,'$a_type','$a_name','$new_name ')";
     $objQuery = $mysqli -> query($query);

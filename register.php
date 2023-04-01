@@ -31,7 +31,7 @@ include("navbar.php")
                 <p>&nbsp;</p>
                 <div class="warpborder">
                     <img src="image\phone.png">
-                    <input class="withicon" type="text" name="username" maxlength="10" placeholder="เบอร์โทรศัพท์*">
+                    <input class="withicon" type="text" name="username" maxlength="10" placeholder="Username*">
                 </div>
                 <p>&nbsp;</p>
                 <div class="warpborder">

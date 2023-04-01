@@ -26,17 +26,21 @@ include("navbar.php")
             <th>ราคา</th>
         </tr>
 
+        <?php if(isset($_SESSION["intLine"])){ ?>
+
         <?php
         $Total=0;
+        $m=0;
         for($i=1; $i<=(int)$_SESSION["intLine"]; $i++){
             if($_SESSION["promotion_id"][$i] !=""){
+                $m+=1;
                 $sql1 = "SELECT * FROM promotion WHERE promotion_id='".$_SESSION['promotion_id'][$i]."'";
                 $result1 = mysqli_query($mysqli, $sql1); 
                 $row1 = $result1 -> fetch_array(MYSQLI_ASSOC);
                 $sql2 = "SELECT * FROM album WHERE album_id='".$_SESSION['album_id'][$i]."'";
                 $result2 = mysqli_query($mysqli, $sql2); 
                 $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
-                echo '<tr><td>'.$i.'</td>';
+                echo '<tr><td>'.$m.'</td>';
                 echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
                 echo '<td class="left">';
                 echo $row1['p_type'];
@@ -64,21 +68,35 @@ include("navbar.php")
             <td colspan="3" class="left">ราคารวม</td>
             <td class="right"><?php echo $Total+50; ?> บาท</td>
         </tr>
+
+        <?php }
+        else{ ?>
+
+        <tr>
+            <td colspan="4" class="center"> คุณยังไม่เพิ่มรายการใดลงในตะกร้า</td>
+        </tr>
+
+        <?php } ?>
+
     </table>
+
     <div class="padpage2">
         <p class="graytext">*รายการในตะกร้าจะหายไปเมื่อคุณออกจากระบบ</p>
     </div>
     
     <br>
+    <?php if(isset($_SESSION["intLine"])){ ?>
     <input type="hidden" name="total" value="<?php echo $Total+50; ?>"/>
     <div class="c6" align="right" >
         <!-- <div class="padpage"> -->
             <a href="order.php">
-                <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>
+            <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>
             </a>
         <!-- </div> -->
     </div>
+    <?php } ?>
     </form>
+    
 
 
 

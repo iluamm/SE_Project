@@ -30,9 +30,11 @@ include("navbar.php")
             </tr>
         <?php
         $Total=0;
+        $m=0;
         $query = "SELECT * FROM list WHERE order_id='$order_id'";
         $result = mysqli_query($mysqli, $query);
         while($row = mysqli_fetch_assoc($result)){
+            $m+=1;
             $sql1 = "SELECT * FROM promotion WHERE promotion_id='".$row['promotion_id']."'";
             $result1 = mysqli_query($mysqli, $sql1); 
             $row1 = $result1 -> fetch_array(MYSQLI_ASSOC);
@@ -41,7 +43,7 @@ include("navbar.php")
             $result2 = mysqli_query($mysqli, $sql2); 
             $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
 
-            echo '<tr><td>'.$row['list_no'].'</td>';
+            echo '<tr><td>'.$m.'</td>';
             echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
             echo '<td class="left">';
             echo $row1['p_type'];

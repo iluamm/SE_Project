@@ -21,7 +21,7 @@ include("navbar.php")
 ?>
 
 <div class="c6">
-    <h2>รูปแบบเบิ้มๆ!!! Gallery</h2>
+    <h2><img src="promotion/<?php echo $row[5] ?>"></h2>
     <table class="t6">
         <tr>
             <td>                
