@@ -36,18 +36,24 @@ else{
     $query= "INSERT into album (album_id,a_type,a_name,a_image)
             VALUES (NULL,'$a_type','$a_name','$new_name ')";
     $objQuery = $mysqli -> query($query);
-    if($a_type=='insert'){
+    if($a_type=='อัลบั้มสอด'){
         echo "<script>";
         echo "alert('อัปโหลดสำเร็จ');";
         echo "window.history.back();";
         echo "</script>";
         header( "location: http://localhost/SE_Project/albumdetail1.php" );
-    }elseif($a_type=='adhesive'){
+    }elseif($a_type=='อัลบั้มกาว'){
         echo "<script>";
         echo "alert('อัปโหลดสำเร็จ');";
         echo "window.history.back();";
         echo "</script>";
         header( "location: http://localhost/SE_Project/albumdetail2.php" );
+    }elseif($a_type=='อัดรูป'){
+        echo "<script>";
+        echo "alert('อัปโหลดสำเร็จ');";
+        echo "window.history.back();";
+        echo "</script>";
+        header( "location: http://localhost/SE_Project/albumdetail3.php" );
     }else{
         echo "<script>";
         echo "alert('อัปโหลดสำเร็จ');";

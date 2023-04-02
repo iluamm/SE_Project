@@ -25,7 +25,7 @@ include("navbar-admin.php") //navbar
     <div class="menuitemlist">
 
     <?php
-        $query = "SELECT * FROM promotion WHERE p_type='insert'";
+        $query = "SELECT * FROM promotion WHERE p_type='อัลบั้มสอด'";
         $result = mysqli_query($mysqli, $query);
         while($row = mysqli_fetch_row($result)) {
             echo "<div class='menueachitemlist'>";

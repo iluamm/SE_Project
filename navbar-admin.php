@@ -74,7 +74,7 @@ a:hover{
         <div><a href="editproduct1.php">อัลบั้มสอด</a></div>
         <div><a href="editproduct2.php">อัลบั้มกาว</a></div>
         <div><a href="editproduct3.php">อัดรูป</a></div>
-        <div><a href="history-admin.php">ประวัติลูกค้า</a></div> 
+        <div><a href="history-admin.php?id=0">ประวัติลูกค้า</a></div> 
         <div><a href="checkorderdetail.php">รายการสินค้าที่ต้องตรวจสอบ</a></div>
         <div><a href="checkordersent.php">รายการสินค้าที่ต้องจัดส่ง</a></div>
     </div>

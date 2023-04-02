@@ -26,20 +26,6 @@ include("navbar.php") //navbar
         <th>สถานะออเดอร์</th>
         <th></th>
     </tr>
-    <!-- <tr>
-        <td>xxxxx</td>
-        <td>xx/xx/xxxx</td>
-        <td>500</td>
-        <td>รอตรวจสอบ</td>
-        <td><a href="checkorder2.php"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>
-    </tr>
-    <tr>
-        <td>xxxxx</td>
-        <td>xx/xx/xxxx</td>
-        <td>500</td>
-        <td>จัดเตรียมสินค้า</td>
-        <td><a href="checkorder2.php"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>
-    </tr> -->
     <?php
         $query = "SELECT * FROM order_detail WHERE user_id='".$_SESSION['user_id']."'";
         $result = mysqli_query($mysqli, $query);
@@ -49,8 +35,19 @@ include("navbar.php") //navbar
             echo '<td>'.$row['order_date'].'</td>';
             echo '<td>'.$row['order_price'].'</td>';
             echo '<td>'.$row['order_status'].'</td>';
+
+            if($row['order_status']=='รอการชำระเงิน'){
             echo '<td><a href="checkorder.php?id='.$row['order_id'].'"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>';
+            }else{
+            echo '<td><a href="checkorder2.php?id='.$row['order_id'].'"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>';
+            }
             echo '</tr>';
+        }
+        if(mysqli_num_rows($result)==0){
+            echo '
+            <tr>
+            <td colspan="7" class="fat"> <p class="graytext">ยังไม่มีสินค้าที่เคยทำการสั่ง</p></td>
+            </tr>';
         }
     ?>
 </table>

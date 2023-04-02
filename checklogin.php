@@ -21,6 +21,7 @@
                 $_SESSION["user_username"] = $objResult["username"];
                 $_SESSION["user_name"] = $objResult["user_name"];
                 $_SESSION["user_type"] = $objResult["user_type"];
+                $_SESSION["user_phone"] = $objResult["user_phone"];
                 if($objResult["user_type"]=="admin")
                 {
                     header("location:http://localhost/SE_Project/index-admin.php");

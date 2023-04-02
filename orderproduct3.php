@@ -19,7 +19,7 @@ include("navbar.php")
     <div class="menuitemlist">
 
     <?php
-            $query = "SELECT * FROM promotion WHERE p_type='image'";
+            $query = "SELECT * FROM promotion WHERE p_type='อัดรูป'";
             $result = mysqli_query($mysqli, $query);
             while($row = mysqli_fetch_row($result)) {
                 if(isset($_SESSION['user_username'])) {

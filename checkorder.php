@@ -2,6 +2,10 @@
 session_start();
 require_once 'connect.php';
 $order_id=$_GET['id'];
+$user_id = $_SESSION["user_id"];
+$query6 = "SELECT * FROM user WHERE user_id='$user_id'";
+$result6 = mysqli_query($mysqli, $query6);
+$fetch = mysqli_fetch_assoc($result6)
 ?>
 <!DOCTYPE html>
 <html>
@@ -72,13 +76,13 @@ include("navbar.php")
 
         <h2 class="left">ที่อยู่ที่ต้องการจัดส่ง</h2>
         <form action="addressupdate.php?id=<?php echo $order_id; ?>" enctype="multipart/from-data" method="post">
-            <input class="a10" type="text" placeholder="เลขที่หมู่" name="order_address"/>
+            <input class="a10" type="text" placeholder="เลขที่หมู่" name="order_address" value="<?php echo $fetch['user_address'];?>"/>
             <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
             
             <!-- style="width:50%;height:10rem;" -->
             <div class="aa">
                 <!-- <a href="shoppingcart.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a> -->
-                <a href="uploadpayment.php"><input class="nextButton" type="submit" name="addressupdate" value="ถัดไป" /></a>
+                <input class="nextButton" type="submit" name="addressupdate" value="ถัดไป" />
             </div>
         </form>
     </div>

@@ -30,7 +30,7 @@ include("navbar-admin.php")
             <th>&nbsp;</th>
         </tr>
         <?php
-        $query = "SELECT * FROM album WHERE a_type='insert'";
+        $query = "SELECT * FROM album WHERE a_type='อัลบั้มสอด'";
         $result = mysqli_query($mysqli, $query);
         while($row = mysqli_fetch_row($result)) {
             echo "<tr>";

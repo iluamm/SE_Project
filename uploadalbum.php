@@ -24,8 +24,8 @@ include("navbar-admin.php") //navbar
         <div class="tt1">
             <p> ประเภทอัลบั้ม<span class="red">*</span> : 
             <select class="select-add" name="album_type" id="album_type">
-                <option value="insert">อัลบั้มสอด</option>
-                <option value="adhesive">อัลบั้มกาว</option>
+                <option value="อัลบั้มสอด">อัลบั้มสอด</option>
+                <option value="อัลบั้มกาว">อัลบั้มกาว</option>
             </select></p>
         </div>
 

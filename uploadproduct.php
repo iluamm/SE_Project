@@ -25,9 +25,9 @@ include("navbar-admin.php") //navbar
         <div class="tt1">
             <p> ประเภทสินค้า<span class="red">*</span> 
             <select class="select-add" name="p_type" id="p_type">
-                <option value="insert">อัลบั้มสอด</option>
-                <option value="adhesive">อัลบั้มกาว</option>
-                <option value="image">อัดรูป</option>
+                <option value="อัลบั้มสอด">อัลบั้มสอด</option>
+                <option value="อัลบั้มกาว">อัลบั้มกาว</option>
+                <option value="อัดรูป">อัดรูป</option>
             </select></p>
         </div>
 

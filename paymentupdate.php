@@ -21,10 +21,9 @@ if(isset($_POST['paymentupdate'])){
     $target_file = $target_dir .$new_name;
 
     $order_status = $_POST['order_status'];
-    $t_date = $_POST['t_date'];
     $t_time = $_POST['t_time'];
-
-    if($t_date="" || $t_time=="" || empty($_FILES['image']['name'])){
+    $t_date = $mysqli -> real_escape_string($_POST['t_date']);
+    if($t_date=="0000-00-00" || $t_time=="" || empty($_FILES['image']['name'])){
         echo "<script>";
         echo "alert('กรุณากรอกข้อมูลให้ครบถ้วน');";
         echo "window.history.back();";

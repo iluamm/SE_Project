@@ -1,4 +1,4 @@
-<?php
+    <?php
 session_start();
 require_once 'connect.php';
 $promotion_id = $_GET['id'];
@@ -50,7 +50,7 @@ include("navbar.php")
             </td>
         </tr>
     </table>
-
+    <?php if($row[1]!='อัดรูป'){ ?>
     <h2 class="left">-เลือกลายอัลบั้ม-</h2>
 
     <div class="albumlist">
@@ -70,30 +70,11 @@ include("navbar.php")
                 echo "</div>";
             }
         ?>
-    <!-- <div class="albumlist">
-        <div class="bchoice">
-            <label class="in-choice">
-                <input type="radio" id="album" name="album" value="album">
-                <div class="center">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <p>Red</p>
-                </div>
-            </label>
-        </div>
-
-        <div class="bchoice">
-            <label class="in-choice">
-                <input type="radio" id="album" name="album" value="album">
-                <div class="center">
-                    <img src="image/banner1.jpg" height="120rem" width="120rem">
-                    <p>Red</p>
-                </div>
-            </label>
-        </div> -->
-
-
 
     </div>
+    <?php }else{
+        echo '<input type="hidden" name="album_id" value="0">';
+    } ?>
     
 
     <div class="bn">

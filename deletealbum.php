@@ -7,12 +7,10 @@ $result = mysqli_query($mysqli, $query);
 $row = mysqli_fetch_row($result);
 chown("album/$row[3]",666);
 $flgDelete = unlink("album/$row[3]");
-if($flgDelete){
     $query = "DELETE FROM album WHERE album_id='$album_id'";
     $objQuery = $mysqli -> query($query);
     echo "<script>";
     echo "alert('ลบสำเร็จ');";
     echo "window.history.back();";
     echo "</script>";
-}
 ?>
