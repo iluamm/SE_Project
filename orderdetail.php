@@ -42,14 +42,15 @@ include("navbar-admin.php")
             $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
 
             echo '<tr><td>'.$m.'</td>';
-            echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
+            echo '<td><img class="crop-album" src="album/'.$row2['a_image'].'" height="120rem">';
             echo '<td class="left">';
             echo $row1['p_type'];
             echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
             echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
             echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
             echo '</td>';
-            echo '<td>'.$row1['p_price'].' บาท';
+            echo '<td>'.$row1['p_price'].' บาท ';
+            echo '<a href="downloadpic.php?id='.$row['list_no'].'"><input class="detaButton" type="submit" name="Submit" value="❯" /></input></a>';
             echo '</td></tr>';
             $Total+=$row1['p_price'];
         }

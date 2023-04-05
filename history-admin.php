@@ -50,11 +50,11 @@ include("navbar-admin.php") //navbar
     <div class="padpage">
         <h2 class="left">ค้นหาประวัติลูกค้า</h2>
         <form method="post" action="find-cus.php" enctype="multipart/form-data">
-            <div class="warpborder">
+            <div class="warpborder tt1">
                 <img src="image\search.png">
                 <input class="withicon" name="user_phone" placeholder="ค้นหา" />
             </div>
-            <input class="nextButton" name="find"type="submit">
+            <input class="nextButton" name="find"type="submit" value="ค้นหา">
         </form>
 
         <div class="addressbox">

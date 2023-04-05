@@ -136,3 +136,9 @@ a:link{
 .qrcodepic{
     width: 30%;
 }
+
+.crop-album{
+    width: 8rem; /* width of container */
+    height: 8rem; /* height of container */
+    object-fit: cover;
+}

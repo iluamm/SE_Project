@@ -39,7 +39,7 @@ include("navbar.php")
         </div>
         <?php } ?>
         <div align="right">
-            <a href="editprofile.php"><input type="editconfirm" class="editButton" name="editconfirm" value="แก้ไขโปรไฟล์"  /></a>
+            <a href="editprofile.php"><input type="submit" class="editButton" name="editconfirm" value="แก้ไขโปรไฟล์"  /></a>
         </div>
 
     </div>

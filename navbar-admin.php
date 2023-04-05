@@ -46,7 +46,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 a:hover{
-    color:#ffffff;
+    color: white;
 }
 .dropdown {
   position: relative;
@@ -61,6 +61,14 @@ a:hover{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  border-radius:0rem 0rem 1rem 1rem; 
+}
+
+.dropdown-content a{
+    color:#000000;
+}
+.dropdown-content a:hover{
+    color:#B6C298;
 }
 
 .dropdown:hover .dropdown-content {

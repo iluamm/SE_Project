@@ -20,7 +20,7 @@ include("navbar-admin.php") //navbar
  include("footer.php")
 ?>
 <div class="c6">
-<div>
+    <div>
         <img class="bannercrop" src="image\banner.jpg">
     </div>
     <!-- <h1>BANNER!!!</h1> -->
@@ -29,6 +29,7 @@ include("navbar-admin.php") //navbar
 
     <div class="menuitemlist">
 
+        <!-- Add recommend -->
         <div>
             <a href="#popup1">
                 <div class="addRec">
@@ -40,6 +41,7 @@ include("navbar-admin.php") //navbar
             </a>
         </div>
 
+        <!-- list -->
         <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">

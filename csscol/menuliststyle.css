@@ -60,9 +60,11 @@
 }
 
 .picturemenu .btn img{
-    width: 50%;
+    width: 60%;
+    height: 60%;
     align-items: center;
-    left: 25%;
+    top: 15%;
+    left: 21%;
 }
 
 .picturemenu .btn:hover {

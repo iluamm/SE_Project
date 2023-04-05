@@ -39,7 +39,7 @@ include("navbar.php")
     <h2 class="left">ข้อมูลการโอนเงิน</h2>
     <dd>
         <p class="tt1">วันที่โอนเงิน <input name="t_date" class="a1-5" type="date" /></p>
-        <p class="tt1">เวลาที่โอนเงิน <input  name="t_time" class="a1" type="time" /></p>
+        <p class="tt1">เวลาที่โอนเงิน <input  name="t_time" class="a1-5" type="time" /></p>
         <a  href="#">
             <img src="image\bin2.png" width="20rem"> 
             <span class="graytext">ยกเลิกออเดอร์<br>

@@ -41,7 +41,7 @@ include("navbar.php")
         </div>
 
         <p align="center">
-            <a class="black" href="register.php">ยังไม่มีบัญชี? สมัครเลย</a>
+            ยังไม่มีบัญชี? <a class="black" href="register.php">สมัครเลย</a>
         </p>
     </div>
 </div>

@@ -23,20 +23,22 @@ include("navbar-admin.php")
 
         <div class="padpage2">
             <form align="center">
-                <div class="warpborder">
-                    <img src="image\user.png">
-                    <input class="withicon a10" type="text" name="username" placeholder="ชื่อผู้ใช้">
-                </div>
-                <p>&nbsp;</p>
-                <div class="warpborder tt1">
-                    <img src="image\key.png">
-                    <input class="withicon" type="password" name="password" placeholder="รหัสผ่าน">
-                </div>
-                <div class="tt1">
-                    <input class="losicButton" type="submit" name="Submit" value="ยืนยันการลงทะเบียน" /></input>
-                </div>
+                <div class="c6">
+                    <div class="warpborder">
+                        <img src="image\user.png">
+                        <input class="withicon a10" type="text" name="username" placeholder="ชื่อผู้ใช้">
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="warpborder tt1">
+                        <img src="image\key.png">
+                        <input class="withicon" type="password" name="password" placeholder="รหัสผ่าน">
+                    </div>
+                    <div class="tt1">
+                        <input class="saveButton" type="submit" name="Submit" value="ยืนยันการลงทะเบียน" /></input>
+                    </div>
 
-                <p class="graytext">เพิ่มพนักงานเสร็จสิ้น</p>
+                    <p class="graytext">เพิ่มพนักงานเสร็จสิ้น</p>
+                </div>
             </form>
         </div>
 

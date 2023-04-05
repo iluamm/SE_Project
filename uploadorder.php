@@ -63,7 +63,7 @@ include("navbar.php")
                 echo "<label class='in-choice'>";
                 echo "<input type='radio' id='album_id' name='album_id' value='$row2[album_id]'>";
                 echo "<div class='center'>";
-                echo "<img src='album/$row2[a_image]' height='120rem'>";
+                echo "<img class='crop-album' src='album/$row2[a_image]' height='120rem'>";
                 echo "<p>$row2[a_name]</p>";
                 echo "</div>";
                 echo "</label>";

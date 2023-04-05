@@ -10,6 +10,7 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
 <link rel="stylesheet" href="csscol/tablestyle.css" />
 <link rel="stylesheet" href="csscol/inputstyle.css" />
+<link rel="stylesheet" href="csscol/choicestyle.css" />
 </head>
 <body>
 
@@ -19,7 +20,7 @@ include("navbar-admin.php")
 <div class="c6">
     <h2 class="tt1">อัลบั้มกาว</h2>
     <div class="tt1 aa padpage2">
-        <a href="uploadalbum.php"><button class="detailCheckButton">เพิ่มลายอัลบั้ม</button></a>
+        <a href="uploadalbum.php"><button class="confirmButton">เพิ่มลายอัลบั้ม</button></a>
     </div>
     
     <table class="t6 tt1">
@@ -36,8 +37,8 @@ include("navbar-admin.php")
             echo "<tr>";
             echo "<td>$row[0]</td>";
             echo "<td>$row[2]</td>";
-            echo "<td><img src='album/$row[3]' height='120rem'></td>";
-            echo "<td><a class='delete' href='deletealbum.php?id=$row[0]'>ลบลายอัลบั้ม</a></td>";
+            echo "<td><img class='crop-album' src='album/$row[3]' height='120rem'></td>";
+            echo "<td><a href='deletealbum.php?id=$row[0]'><input class='cancelButton' type='submit' name='Submit' value='ลบลายอัลบั้ม' /></a></td>";
             echo "</tr>";
         }
     ?>

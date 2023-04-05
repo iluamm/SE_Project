@@ -31,7 +31,7 @@ include("navbar-admin.php") //navbar
             echo '<td>'.$row['order_id'].'</td>';
             echo '<td>'.$row['order_date'].'</td>';
             echo '<td><input type="submit" class="cancelButton" name="cancel" value="ยกเลิก" /></td>';
-            echo '<td><a href="orderdetail.php?id='.$row['order_id'].'"><input type="submit" class="confirmButton" name="confirm" value="รายละเอียด" /></a></td>';
+            echo '<td><a href="orderdetail.php?id='.$row['order_id'].'"><input type="submit" class="detailCheckButton" name="confirm" value="รายละเอียด" /></a></td>';
             echo '</tr>';
         }
         if(mysqli_num_rows($result)==0){
