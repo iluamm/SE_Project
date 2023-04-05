@@ -20,8 +20,8 @@ include("navbar-admin.php") //navbar
  include("footer.php")
 ?>
 <div class="c6">
-    <div class="banner">
-        <img src="image\banner2.jpg">
+<div>
+        <img class="bannercrop" src="image\banner.jpg">
     </div>
     <!-- <h1>BANNER!!!</h1> -->
     <h2 class="left">สินค้าแนะนำ</h2>

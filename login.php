@@ -6,6 +6,7 @@ require_once 'connect.php';
 <html>
 <head>
 <link rel="stylesheet" href="csscol/style.css" />
+<link rel="stylesheet" href="csscol/logsignstyle.css" />
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
 <link rel="stylesheet" href="csscol/inputstyle.css" />
 </head>

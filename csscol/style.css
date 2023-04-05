@@ -61,32 +61,10 @@ p.small{
     font-weight: bold;
 }
 
-/* Link & log in-sign in page */
+/* Link */
 
 a:link{
     text-decoration: none;
-}
-
-a.delete:hover{
-    color: red;
-}
-
-.logsign{
-    display: flex;
-    justify-content: space-between; 
-}
-
-.logsign a:hover{
-    color: red;
-}
-
-.logsigncolumn{
-    width: 50%;
-    margin: auto;
-}
-
-.logsigncolumn img{
-    float: right;
 }
 
 /* padpage */
@@ -136,13 +114,19 @@ a.delete:hover{
     margin-bottom: 5rem;
 }
 
-.banner{
+/* .banner{
     width: 100%;
     text-align: center;
 }
 
 .banner img{
     width: 100%;
+} */
+
+.bannercrop {
+    width: 100%; /* width of container */
+    height: 20rem; /* height of container */
+    object-fit: cover;
 }
 
 .center{
