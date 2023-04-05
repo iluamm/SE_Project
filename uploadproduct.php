@@ -62,7 +62,7 @@ include("navbar-admin.php") //navbar
         </div>
 
         <div class="bn">
-            <a href="index-admin.php" class="backButton graytext" value="ยืนยัน">ย้อนกลับ</a>
+            <a href="javascript:history.back()" class="backButton">ย้อนกลับ</a>
             <a href="#"><input class="nextButton" type="submit" name="Submit" value="ยืนยัน" /></a>
         </div>
 

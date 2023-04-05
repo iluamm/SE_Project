@@ -48,9 +48,9 @@ include("navbar-admin.php")
             echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
             echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
             echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
+            echo '<br><a class="more-detail" href="downloadpic.php?id='.$row['list_no'].'">คลิกเพื่อดูรายละเอียดเพิ่มเติม</a>';
             echo '</td>';
-            echo '<td>'.$row1['p_price'].' บาท ';
-            echo '<a href="downloadpic.php?id='.$row['list_no'].'"><input class="detaButton" type="submit" name="Submit" value="❯" /></input></a>';
+            echo '<td>'.$row1['p_price'].' บาท';
             echo '</td></tr>';
             $Total+=$row1['p_price'];
         }

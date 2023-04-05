@@ -82,6 +82,7 @@
 }
 
 /* detail */
+
 .detaButton{
     color: #000000;
     border: none;
@@ -103,7 +104,7 @@
     color: #000000;
 }
 
-/* Next - Back - Edit - Save - Delete*/
+/* Next - Back - Edit - Save - Delete ปุ่มกลม*/
 
 .nextButton{
     color: white;
@@ -123,6 +124,12 @@
     background-color: #25814c;
 }
 
+a.backButton:link{
+    color: #FFB500;
+}
+a.backButton:hover{
+    color: black;
+}
 .backButton{
     color: #FFB500;
     border: 1px solid #FFB500;
@@ -278,7 +285,7 @@
     color: white;
 }
 
-/* admin */
+/* admin เพิ่มสินค้าแนะนำ */
 
 .addRec{
     display: block;

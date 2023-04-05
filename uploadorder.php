@@ -78,7 +78,7 @@ include("navbar.php")
     
 
     <div class="bn">
-        <a href="orderproduct.php?id=<?php echo $row[0] ?>" class="backButton graytext">ย้อนกลับ</a>
+        <a class="backButton" href="orderproduct.php?id=<?php echo $row[0] ?>">ย้อนกลับ</a>
         <a href="addcart.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
     </div>
         

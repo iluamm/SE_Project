@@ -25,7 +25,7 @@ include("navbar.php")
     <div class="padpage">
         <h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
         <h2 class="left">รายละเอียดสินค้า</h2>
-        <table class="t8">
+        <table class="t10">
             <tr>
                 <th>ลำดับรายการ   </th>
                 <th>สินค้า</th>
@@ -48,12 +48,13 @@ include("navbar.php")
             $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
 
             echo '<tr><td>'.$m.'</td>';
-            echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
+            echo '<td><img img class="crop-album" src="album/'.$row2['a_image'].'" height="120rem">';
             echo '<td class="left">';
             echo $row1['p_type'];
             echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
             echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
             echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
+            echo '<br><a class="more-detail" href="downloadpic.php?id='.$row['list_no'].'">คลิกเพื่อดูรายละเอียดเพิ่มเติม</a>';
             echo '</td>';
             echo '<td>'.$row1['p_price'].' บาท';
             echo '</td></tr>';
