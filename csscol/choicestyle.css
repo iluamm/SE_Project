@@ -18,3 +18,14 @@
     gap: 1rem;
     align-items: center;
 }
+
+.uploadlist{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.crop-upload{
+    width: 7rem; /* width of container */
+    height: 7rem; /* height of container */
+    object-fit: cover;
+}

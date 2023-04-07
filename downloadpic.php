@@ -62,8 +62,11 @@ include("navbar-admin.php")
 
 
     <div class="bn">
-        <a href="orderdetail.php?id=<?php echo $row['order_id']; ?>"><button class="backButton">ย้อนกลับ</button></a>
-        <button class="confirmButton">ดาวน์โหลดทั้งหมด</button>
+        <a href="javascript:history.back()"><button class="backButton">ยกเลิก</button></a>
+        <?php
+            if($_SESSION["user_type"]=="admin"){ ?>
+                <button class="confirmButton">ดาวน์โหลดทั้งหมด</button> 
+        <?php } ?>
     </div>
 </div>
     

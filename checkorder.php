@@ -25,7 +25,7 @@ include("navbar.php")
     <div class="padpage">
         <h2>ตรวจสอบความถูกต้องและกรอกที่อยู่</h2>
         <h2 class="left">รายละเอียดสินค้า</h2>
-        <table class="t8">
+        <table class="t10">
             <tr>
                 <th>ลำดับรายการ   </th>
                 <th>สินค้า</th>
@@ -48,12 +48,13 @@ include("navbar.php")
             $row2 = $result2 -> fetch_array(MYSQLI_ASSOC);
 
             echo '<tr><td>'.$m.'</td>';
-            echo '<td><img src="album/'.$row2['a_image'].'" height="120rem">';
+            echo '<td><img img class="crop-album" src="album/'.$row2['a_image'].'" height="120rem">';
             echo '<td class="left">';
             echo $row1['p_type'];
             echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
             echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
             echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
+            echo '<br><a class="more-detail" href="downloadpic.php?id='.$row['list_no'].'">คลิกเพื่อดูรายละเอียดเพิ่มเติม</a>';
             echo '</td>';
             echo '<td>'.$row1['p_price'].' บาท';
             echo '</td></tr>';
@@ -74,10 +75,19 @@ include("navbar.php")
         </tr>
         </table>
 
-        <h2 class="left">ที่อยู่ที่ต้องการจัดส่ง</h2>
+        <h2 class="left">ชื่อผู้รับ ที่อยู่ และเบอร์โทรศัพท์</h2>
         <form action="addressupdate.php?id=<?php echo $order_id; ?>" enctype="multipart/from-data" method="post">
-            <input class="a10" type="text" placeholder="เลขที่หมู่" name="order_address" value="<?php echo $fetch['user_address'];?>"/>
-            <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
+            <div class="tt1">
+                <input class="common" type="text" placeholder="ชื่อ-นามสกุลผู้รับ" name="order_customerName" value="<?php echo $fetch['user_name'];?>"/>
+            </div>
+            <div class="tt1">
+                <input class="a10" type="text" placeholder="ที่อยู่ที่ต้องการจัดส่งให้ผู้รับ" name="order_address" value="<?php echo $fetch['user_address'];?>"/>
+            </div>
+            <div class="tt1">
+                <input class="common" type="text" placeholder="เบอร์โทรศัพท์" name="order_phone" value="<?php echo $fetch['user_phone'];?>"/>
+            </div>
+            
+            <p class="graytext">*กรุณาตรวจสอบความถูกต้องของชื่อ-นามสกุลผู้รับ ที่อยู่ และเบอร์โทรศัพท์</p>
             
             <!-- style="width:50%;height:10rem;" -->
             <div class="aa">

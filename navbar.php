@@ -64,10 +64,10 @@
   border-radius:0rem 0rem 1rem 1rem; 
 }
 .dropdown-content a{
-    color:#000000;
+    color: #000000;
 }
 .dropdown-content a:hover{
-    color:#B6C298;
+    color: #B6C298;
 }
 .dropdown:hover .dropdown-content {
   display: block;

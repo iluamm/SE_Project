@@ -88,7 +88,7 @@ include("navbar.php")
                     <!-- <img src="album/elephant.jpg" height="120rem"> -->
                     <?php if (!empty($_SESSION['file_paths'])): ?>
                         <?php foreach ($_SESSION['file_paths'] as $index => $file_path): ?>
-                        <img src="<?php echo $file_path; ?>" alt="Uploaded file" height="120rem">
+                        <img class="crop-upload" src="<?php echo $file_path; ?>" alt="Uploaded file" height="120rem">
                         <form method="GET">
                             <input type="hidden" name="remove" value="<?php echo $index; ?>">
                             <button type="submit">Remove</button>
@@ -128,7 +128,7 @@ include("navbar.php")
     
 
     <div class="bn">
-        <a href="orderproduct.php?id=<?php echo $row[0] ?>" class="backButton graytext">ย้อนกลับ</a>
+        <a class="backButton" href="orderproduct.php?id=<?php echo $row[0] ?>">ย้อนกลับ</a>
         <a href="addcart.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
     </div>
         
