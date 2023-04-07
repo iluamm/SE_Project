@@ -115,7 +115,7 @@ include("navbar-admin.php")
 
 
         <div class="bn">
-            <a href="history-admin.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
+            <a class="backButton" href="javascript:history.back()">ย้อนกลับ</a>
             <input class="nextButton" type="submit" name="Submit" value="จัดเตรียมสำเร็จ" />
         </div>
     </div>

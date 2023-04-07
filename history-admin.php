@@ -96,8 +96,8 @@ include("navbar-admin.php") //navbar
             echo '<td>'.$row2['order_price'].'</td>';
             echo '<td>'.$row2['order_status'].'</td>';
 
-            if($row2['order_status']=='รอการชำระเงิน'){
-            echo '<td><a href="checkorder2.php?id='.$row2['order_id'].'"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>';
+            if($row2['order_status']=='จัดเตรียมสินค้า'){
+            echo '<td><a href="orderdetail.php?id='.$row2['order_id'].'"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>';
             }else{
             echo '<td><a href="checkorder2.php?id='.$row2['order_id'].'"><input type="submit" class="detailCheckButton" name="Submit" value="รายละเอียด" /></a></td>';
             }

@@ -73,6 +73,7 @@ include("navbar-admin.php") //navbar
         
             // Set the image source of the popup window
             document.getElementById("popup-image").src = imageUrl;
+            console.log('test');
 
             // Show the popup window
             document.getElementById("popup").style.display = "block";

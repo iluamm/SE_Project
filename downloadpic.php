@@ -1,6 +1,10 @@
 <?php
 session_start();
 require_once 'connect.php';
+$list_no=$_GET['id'];
+$query = "SELECT * FROM list WHERE list_no='".$list_no."'";
+$result = mysqli_query($mysqli, $query);
+$row = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,7 +62,7 @@ include("navbar-admin.php")
 
 
     <div class="bn">
-        <a href="orderdetail.php"><button class="backButton">ยกเลิก</button></a>
+        <a href="orderdetail.php?id=<?php echo $row['order_id']; ?>"><button class="backButton">ย้อนกลับ</button></a>
         <button class="confirmButton">ดาวน์โหลดทั้งหมด</button>
     </div>
 </div>

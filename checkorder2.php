@@ -96,10 +96,10 @@ else{include("navbar-admin.php");}
                 <td>
                     <p class="bold tt1">ติดตามสถานะพัสดุ</p>
                     <?php 
-                        if($row6['c_company']=="thaiexpress"){echo 'ไปรษณีย์ไทย : <a href="https://track.thailandpost.co.th/">track.thailandpost.co.th</a>';}
-                        elseif($row6['c_company']=="kerryexpress"){echo 'Kerry Express : <a href="https://th.kerryexpress.com/th/track/">th.kerryexpress.com/th/track/</a>';}
-                        elseif($row6['c_company']=="lalamove"){echo 'Lalamove : <a href="https://pkge.net/th/couriers/lalamove">pkge.net/th/couriers/lalamove</a>';}
-                        elseif($row6['c_company']=="flashexpress"){echo 'Flash Express : <a href="https://flashexpress.co.th/zip-code/">flashexpress.co.th/zip-code/</a>';}
+                        if($row6['c_company']=="thaiexpress"){echo 'ไปรษณีย์ไทย : <a href="https://track.thailandpost.co.th/" target="_blank">track.thailandpost.co.th</a>';}
+                        elseif($row6['c_company']=="kerryexpress"){echo 'Kerry Express : <a href="https://th.kerryexpress.com/th/track/" target="_blank">th.kerryexpress.com/th/track/</a>';}
+                        elseif($row6['c_company']=="lalamove"){echo 'Lalamove : <a href="https://pkge.net/th/couriers/lalamove" target="_blank">pkge.net/th/couriers/lalamove</a>';}
+                        elseif($row6['c_company']=="flashexpress"){echo 'Flash Express : <a href="https://flashexpress.co.th/zip-code/" target="_blank">flashexpress.co.th/zip-code/</a>';}
                         
                         ?>
                 </td>
@@ -120,9 +120,15 @@ else{include("navbar-admin.php");}
             <br>&nbsp;
             <br>วันที่สั่ง: <?php echo $row4['order_date'] ?>
         </div>
-
-
-        <p class="graytext">*หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน</p>
+        
+        <?php if($row4['order_status']=='รอการตรวจสอบการชำระเงิน' && $_SESSION['user_type']=='customer'){ ?>
+        <a href="#">
+            <img src="image\bin2.png" width="20rem"> 
+            <span class="graytext">ยกเลิกออเดอร์<br>
+            *หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน
+            </span>
+        </a>
+        <?php } ?>
         <?php if($_SESSION["user_type"]=="customer"){ ?><a href="history.php"><input class="backButton ba" type="submit" name="Submit" value="ย้อนกลับ" /></a>
             <?php }else{ ?>
                 <a href="history-admin.php?id=<?php echo $row4['user_id']; ?>" ><input class="backButton ba" type="submit" name="Submit" value="ย้อนกลับ" /></a>

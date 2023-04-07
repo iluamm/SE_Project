@@ -5,6 +5,49 @@ $promotion_id = $_GET['id'];
 $query = "SELECT * FROM promotion WHERE promotion_id = '".$promotion_id."'";
 $result = mysqli_query($mysqli, $query);
 $row = mysqli_fetch_row($result);
+
+
+$max_files = $row[3];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $file_paths = $_SESSION['file_paths'] ?? [];
+
+    // Loop through the uploaded files
+    for ($i = 0; $i < $max_files; $i++) {
+        if (isset($_FILES['file']['name'][$i])) {
+            $file_name = $_FILES['file']['name'][$i];
+            $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+            $file_tmp = $_FILES['file']['tmp_name'][$i];
+            $file_size = $_FILES['file']['size'][$i];
+            $file_error = $_FILES['file']['error'][$i];
+
+            // Check if the file is uploaded successfully
+            if ($file_error === UPLOAD_ERR_OK) {
+                $new_file_name = uniqid() . '.jpg';
+                $file_path = 'uploads/' . $new_file_name;
+                if (move_uploaded_file($file_tmp, $file_path)) {
+                    $file_paths[] = $file_path;
+                }
+            }
+        }
+    }
+
+    $_SESSION['file_paths'] = $file_paths;
+    header("Refresh:0");
+}
+
+if (isset($_GET['remove']) && is_numeric($_GET['remove'])) {
+    $index = $_GET['remove'];
+    $file_paths = $_SESSION['file_paths'] ?? [];
+    if (isset($file_paths[$index])) {
+        unlink($file_paths[$index]);
+        unset($file_paths[$index]);
+        $_SESSION['file_paths'] = $file_paths;
+    }
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,35 +65,42 @@ include("navbar.php")
 ?>
 
 <div class="c5">
-    <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data">
+    <!-- <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data"> -->
     <h2 class="left">-กรุณาอัพโหลดรูปภาพ-</h2>
     <table class="t10">
         <tr>
             <td>
+                <form method="POST" enctype="multipart/form-data">
                 <div class="tt1" align="center">
                     <label for="image" class="label-upload" >
-                        <div class="warpupload">
+                        <!-- <div class="warpupload">
                             <p class="graytext">Select file to upload</p>
                             <img src="image\upload.png" width="30rem">
-                            <input class="custom-upload" type="file" name="image" id="image"/>
-                        </div>
+                            <input class="custom-upload" type="file" name="files[]" multiple accept="image/*" id="image" multiple="3"/>
+                        </div> -->
+                        <input type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png">
+                        <input type="submit" value="Upload">
                     </label>
                 </div>
-                
+                </form>
                 <p>
                 <div>
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
+                    <!-- <img src="album/elephant.jpg" height="120rem"> -->
+                    <?php if (!empty($_SESSION['file_paths'])): ?>
+                        <?php foreach ($_SESSION['file_paths'] as $index => $file_path): ?>
+                        <img src="<?php echo $file_path; ?>" alt="Uploaded file" height="120rem">
+                        <form method="GET">
+                            <input type="hidden" name="remove" value="<?php echo $index; ?>">
+                            <button type="submit">Remove</button>
+                        </form>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             </td>
         </tr>
     </table>
     <?php if($row[1]!='อัดรูป'){ ?>
+        <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data">
     <h2 class="left">-เลือกลายอัลบั้ม-</h2>
 
     <div class="albumlist">

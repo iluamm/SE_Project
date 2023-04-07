@@ -18,12 +18,22 @@
             $sql2= "INSERT INTO list (list_no,promotion_id,album_id,order_id)
             VALUES (NULL,$promotion_id,$album_id,$order_id)";
             $objQuery2 = $mysqli -> query($sql2);
+
+            $list_no = mysqli_insert_id($mysqli);
+            print_r($_SESSION["order_image"][$i]);
+            foreach ($_SESSION["order_image"][$i] as $row) {
+                $img_name=substr($row,8);
+                echo $img_name.'<br>';
+                echo $list_no;
+                $sql3="INSERT INTO order_image (img_id,img_name,list_no)
+                VALUES (NULL,'$img_name',$list_no)";
+                $objQuery3 = $mysqli -> query($sql3); 
+            }
         }
         $status = 'success';
     }
-
     if($status=='success'){
-        unset($_SESSION["promotion_id"],$_SESSION["album_id"],$_SESSION["intLine"]);
+        unset($_SESSION["promotion_id"],$_SESSION["album_id"],$_SESSION["intLine"],$_SESSION["order_image"]);
         header("location:http://localhost/SE_Project/checkorder.php?id=$order_id");
     }
 
