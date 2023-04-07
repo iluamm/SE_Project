@@ -39,13 +39,16 @@ include("navbar.php")
                 
                 <p>
                 <div>
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
-                    <img src="album/elephant.jpg" height="120rem">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
+                    <img class="crop-upload" src="album/elephant.jpg">
                 </div>
             </td>
         </tr>

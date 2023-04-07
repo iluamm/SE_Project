@@ -52,9 +52,12 @@ include("navbar-admin.php") //navbar
         <form method="post" action="find-cus.php" enctype="multipart/form-data">
             <div class="warpborder tt1">
                 <img src="image\search.png">
-                <input class="withicon" name="user_phone" placeholder="ค้นหา" />
+                <input class="withicon" name="user_phone" placeholder="ค้นหาด้วยเบอร์โทรศัพท์" />
             </div>
-            <input class="nextButton" name="find"type="submit" value="ค้นหา">
+            <div class="aa">
+                <input class="nextButton" name="find"type="submit" value="ค้นหา">
+            </div>
+            
         </form>
 
         <div class="addressbox">

@@ -75,10 +75,19 @@ include("navbar.php")
         </tr>
         </table>
 
-        <h2 class="left">ที่อยู่ที่ต้องการจัดส่ง</h2>
+        <h2 class="left">ชื่อผู้รับ ที่อยู่ และเบอร์โทรศัพท์</h2>
         <form action="addressupdate.php?id=<?php echo $order_id; ?>" enctype="multipart/from-data" method="post">
-            <input class="a10" type="text" placeholder="เลขที่หมู่" name="order_address" value="<?php echo $fetch['user_address'];?>"/>
-            <p class="graytext">*กรุณาตรวจสอบความถูกต้องของที่อยู่</p>
+            <div class="tt1">
+                <input class="common" type="text" placeholder="ชื่อ-นามสกุลผู้รับ" name="order_customerName" value="<?php echo $fetch['user_name'];?>"/>
+            </div>
+            <div class="tt1">
+                <input class="a10" type="text" placeholder="ที่อยู่ที่ต้องการจัดส่งให้ผู้รับ" name="order_address" value="<?php echo $fetch['user_address'];?>"/>
+            </div>
+            <div class="tt1">
+                <input class="common" type="text" placeholder="เบอร์โทรศัพท์" name="order_phone" value="<?php echo $fetch['user_phone'];?>"/>
+            </div>
+            
+            <p class="graytext">*กรุณาตรวจสอบความถูกต้องของชื่อ-นามสกุลผู้รับ ที่อยู่ และเบอร์โทรศัพท์</p>
             
             <!-- style="width:50%;height:10rem;" -->
             <div class="aa">
