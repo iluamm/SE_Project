@@ -65,39 +65,47 @@ include("navbar.php")
 <div class="c5">
     <!-- <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data"> -->
     <h2 class="left">-กรุณาอัพโหลดรูปภาพ-</h2>
-    <table class="t10">
+    <table class="t10 tt1">
         <tr>
             <td>
                 <form method="POST" enctype="multipart/form-data">
                 <div class="tt1" align="center">
-                    <label for="image" class="label-upload" >
-                        <!-- <div class="warpupload">
-                            <p class="graytext">Select file to upload</p>
-                            <img src="image\upload.png" width="30rem">
-                            <input class="custom-upload" type="file" name="files[]" multiple accept="image/*" id="image" multiple="3"/>
-                        </div> -->
-                        <input type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png">
-                        <input type="submit" value="Upload">
+                    <label class="label-upload" >
+                        <div class="uploadbox">
+                            <div class="warpupload">
+                                <p class="graytext">Select file to upload</p>
+                                <img src="image\upload.png" width="30rem">
+                                <input class="custom-upload" type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png">
+                            </div>
+                            
+                            <!-- <input type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png"> -->
+                            <input type="submit" class="confirmButton" value="อัพโหลดรูป">
+                        </div>
                     </label>
+                    
                 </div>
                 </form>
-                <p>
-                <div>
+                <p class="aa red">*อัพโหลดรูปได้สูงสุด 64 รูป</p>
+                <div class="uploadlist">
+                    
                     <!-- <img src="album/elephant.jpg" height="120rem"> -->
                     <?php if (!empty($_SESSION['file_paths'])): ?>
                         <?php foreach ($_SESSION['file_paths'] as $index => $file_path): ?>
-                        <img class="crop-upload" src="<?php echo $file_path; ?>" alt="Uploaded file" height="120rem">
-                        <form method="GET">
-                            <input type="hidden" name="remove" value="<?php echo $index; ?>">
-                            <button type="submit">Remove</button>
-                        </form>
+                        <div class="upload-pic">
+                            <img src="<?php echo $file_path; ?>" alt="Uploaded file" height="120rem">
+                            <form method="GET">
+                                <input type="hidden" name="remove" value="<?php echo $index; ?>">
+                                <button class="btn" type="submit">✖</button>
+                            </form>
+                        </div>
+                        
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
             </td>
         </tr>
     </table>
-    
+
     <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data">
     <?php if($row[1]!='อัดรูป'){ ?>
     <h2 class="left">-เลือกลายอัลบั้ม-</h2>

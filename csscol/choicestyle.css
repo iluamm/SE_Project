@@ -21,11 +21,56 @@
 
 .uploadlist{
     display: flex;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
-.crop-upload{
+/* .crop-upload{
+    width: 7rem; /* width of container 
+    height: 7rem; /* height of container 
+    object-fit: cover;
+} */
+
+.upload-pic{
+    position: relative;
     width: 7rem; /* width of container */
     height: 7rem; /* height of container */
     object-fit: cover;
+    /* padding-bottom: 100%; */
+}
+.upload-pic img{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 0%;
+}
+
+.upload-pic .btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 70, 70, 0.8);
+    padding: 0.1rem 0.3rem;
+    top: 15%;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.upload-pic .btn:hover {
+    color: white;
+    background-color: rgba(210, 10, 10, 0.8);
+    /* background-color: rgba(255, 28, 28, 0.7); */
+}
+
+.uploadbox{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
