@@ -17,7 +17,10 @@ if($_SESSION["user_type"]=="customer"){ include("navbar.php");}
 else{include("navbar-admin.php");}
 ?>
 <div class="c6">
-    <h2>ดาวน์โหลดรูปภาพ</h2>
+
+<?php
+if($_SESSION["user_type"]=="customer"){ echo '<h2>รูปที่อัพโหลด</h2>'; ?>
+<?php }else{echo '<h2>ดาวน์โหลดรูปภาพ</h2>';} ?>
 
     <div class="menuitemlist">
 
@@ -27,11 +30,22 @@ else{include("navbar-admin.php");}
         while($row = mysqli_fetch_assoc($result)){
             echo '<div class="DLeachitemlist">';
             echo '<div class="picturemenu">';
-            echo '<img src="uploads/'.$row['img_name'].'">';
+            echo '<img src="uploads/'.$row['img_name'].'" >';
             echo '</div>';
             echo '</div>';
         }
         ?>
+
+        <?php if (!empty($_SESSION['order_image'][$list_no])):
+            ?>
+                <?php foreach ($_SESSION['order_image'][$list_no] as $index2 => $file_path2): ;?> 
+                    <div class="DLeachitemlist">
+                        <div class="picturemenu">
+                        <img src="<?php echo $file_path2; ?>" alt="Uploaded file" >
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+        <?php endif; ?>
 
     </div>
 

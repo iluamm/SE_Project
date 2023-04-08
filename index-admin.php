@@ -31,7 +31,7 @@ include("navbar-admin.php") //navbar
 
         <!-- Add recommend -->
         <div>
-            <a href="#popup1">
+            <a href="#" onclick="showPopup(this.getAttribute('href'))">
                 <div class="addRec">
                     <div class="item">
                         <img src="image\camera.png" width="30rem">
@@ -42,7 +42,7 @@ include("navbar-admin.php") //navbar
         </div>
 
         <!-- list -->
-        <div class="menueachitemlist">
+        <!-- <div class="menueachitemlist">
             <div class="picturemenu">
                 <img src="album\elephant.jpg">
                 <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
@@ -62,96 +62,111 @@ include("navbar-admin.php") //navbar
                 <p>อัลบั้มสอด 3x2 นิ้ว</p>
                 <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
             </div>
-        </div>
+        </div> -->
 
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
+        <?php 
+        $query2 = "SELECT * FROM recommend";
+        $result2 = mysqli_query($mysqli, $query2);
+        
+        while($row2 = mysqli_fetch_row($result2)) {
+            $query3 = "SELECT * FROM promotion WHERE promotion_id='$row2[1]'";
+            $result3 = mysqli_query($mysqli, $query3);
+            while($row3 = mysqli_fetch_row($result3)){ ?>
+                <div class="menueachitemlist">
+                    <div class="picturemenu">
+                        <img src="promotion/<?php echo $row3[5]; ?>">
+                        <button class="btn" onclick="delConfirm('<?php echo $row2[0]; ?>')"><img src="image\bin.png"></button>
+                    </div>
+                    <div>
+                        <p><?php echo $row3[1]." ".$row3[2]." นิ้ว"; ?></p>
+                        <p class="graytext">จำนวน <?php echo $row3[3]?> รูป ราคา <?php echo $row3[4]?> บาท</p>
+                    </div>
+                </div>
+            <?php }
+        }
 
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
+        ?>
 
     </div>
 
-    <div id="popup1" class="overlay">
+    <div id="popup" class="overlay">
         <div class="popup center">
+            <form action="addrecommend.php" method="post" enctype="multipart/from-data">
             <h2>เพิ่มสินค้าแนะนำ</h2>
-            <a class="close" href="#">&times;</a>
+            <a class="close" href="#" onclick="hidePopup()">&times;</a>
             <div class="content">
                 <div class="tt1">
-                    <select class="select-addRec">
+                <?php
+                    $query = "SELECT * FROM promotion";
+                    $result = mysqli_query($mysqli, $query); ?>
+                    <select class="select-addRec" id="mySelect" name="recid" onchange="myFunction()"> 
+                    <?php while($row = mysqli_fetch_assoc($result)) { ?> 
                         <option value="" disabled selected hidden>ค้นหาจากไอดี</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
+                        <option value="<?php echo $row['promotion_id']?>"><?php echo $row['promotion_id']?></option>
+                        <?php } ?>
                     </select>
                 </div>
                 <div class="left padpage">
                     <p class="bold">รายละเอียดสินค้า</p>
-                    <p>ประเภท : อัลบั้มกาว
-                        <br>ขนาด : 3x3 นิ้ว
-                        <br>จำนวนรูป : 54 รูป
-                        <br>ขนาด : 299 บาท
-                    </p>
+                    <p id="demo"></p>
                 </div>
                 <div class="padpage aa">
+                    <input type="hidden">
                     <button class="saveButton">เพิ่มสินค้าแนะนำ</button>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 
-    <div id="popup2" class="overlay">
+    <div id="delConfirm" class="overlay">
         <div class="delConfirm center">
             <h2>ยืนยันการลบสินค้าออกจากรายการแนะนำ</h2>
             <div class="content">
                 <span class="bold">รายการที่ลบ : </span><span>อัลบั้มสอด 3x2 นิ้ว</span>
                 <div class="bn">
                     <a href=""><button class="delButton">ยกเลิก</button></a>
-                    <button class="nextButton">ลบสินค้า</button>
+                    <a href="#" id="myLink" class="nextButton">ลบสินค้า</a>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
+
+<script>
+        function myFunction(){
+            var x = document.getElementById("mySelect").value;
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "get_data.php?promotion_id=" + x, true);
+            xhttp.send();
+
+        }
+        function showPopup() {
+            console.log('TEST popup');
+            // Show the popup window
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function hidePopup() {
+            // Hide the popup window
+            document.getElementById("popup").style.display = "none";
+        }
+        function delConfirm(rec_id){
+            console.log('TEST del',rec_id);
+            document.getElementById("delConfirm").style.display = "block";
+            var myVariable = "deleterec.php?id=";
+            var myValue = rec_id;
+            var link = document.getElementById("myLink");
+            link.href = myVariable + myValue;
+        }
+
+    </script>
 
 </body>
 

@@ -31,6 +31,44 @@ include("navbar.php")
 
     <div class="menuitemlist">
 
+    <?php 
+        $query2 = "SELECT * FROM recommend";
+        $result2 = mysqli_query($mysqli, $query2);
+        
+        while($row2 = mysqli_fetch_row($result2)) {
+            $query3 = "SELECT * FROM promotion WHERE promotion_id='$row2[1]'";
+            $result3 = mysqli_query($mysqli, $query3);
+            while($row3 = mysqli_fetch_row($result3)){ ?>
+                <?php if(isset($_SESSION['user_username'])) { ?>
+                <a href="orderproduct.php?id=<?php echo $row3[0]; ?>">
+                <div class="menueachitemlist">
+                    <div class="picturemenu">
+                        <img src="promotion/<?php echo $row3[5]; ?>">
+                    </div>
+                    <div>
+                        <p><?php echo $row3[1]." ".$row3[2]." นิ้ว"; ?></p>
+                        <p class="graytext">จำนวน <?php echo $row3[3]?> รูป ราคา <?php echo $row3[4]?> บาท</p>
+                    </div>
+                </div>
+                </a>
+                <?php }else{ ?>
+                    <a href="login.php">
+                    <div class="menueachitemlist">
+                        <div class="picturemenu">
+                            <img src="promotion/<?php echo $row3[5]; ?>">
+                        </div>
+                        <div>
+                            <p><?php echo $row3[1]." ".$row3[2]." นิ้ว"; ?></p>
+                            <p class="graytext">จำนวน <?php echo $row3[3]?> รูป ราคา <?php echo $row3[4]?> บาท</p>
+                        </div>
+                    </div>
+                    </a>
+                    <?php } ?>
+            <?php }
+        }
+
+        ?>
+<!-- 
     <?php if(isset($_SESSION['user_username'])) { ?>
         <a href="orderproduct.php">
         <div class="menueachitemlist">
@@ -56,141 +94,7 @@ include("navbar.php")
         </div>
         </a>
         <?php } ?>
-        
-
-        <?php if(isset($_SESSION['user_username'])) { ?>
-        <a href="orderproduct.php">
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php }else{ ?>
-            <a href="login.php">
-            <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php } ?>        
-        
-        
-        <?php if(isset($_SESSION['user_username'])) { ?>
-        <a href="orderproduct.php">
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php }else{ ?>
-            <a href="login.php">
-            <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php } ?>
-        
-
-        <?php if(isset($_SESSION['user_username'])) { ?>
-        <a href="orderproduct.php">
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php }else{ ?>
-            <a href="login.php">
-            <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php } ?>
-        
-
-        <?php if(isset($_SESSION['user_username'])) { ?>
-        <a href="orderproduct.php">
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php }else{ ?>
-            <a href="login.php">
-            <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php } ?>
-        
-        
-        <?php if(isset($_SESSION['user_username'])) { ?>
-        <a href="orderproduct.php">
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php }else{ ?>
-            <a href="login.php">
-            <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php } ?>
+         -->
 
     </div>
 </div>

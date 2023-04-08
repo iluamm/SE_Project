@@ -7,13 +7,13 @@ $result = mysqli_query($mysqli, $query);
 $row = mysqli_fetch_row($result);
 
 
-$max_files = $row[3];
-
+$max_files = (int)$row[3];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $file_paths = $_SESSION['file_paths'] ?? [];
+    $num_files_uploaded = count($file_paths);
 
     // Loop through the uploaded files
-    for ($i = 0; $i < $max_files; $i++) {
+    for ($i = 0; $i < $max_files-$num_files_uploaded; $i++) {
         if (isset($_FILES['file']['name'][$i])) {
             $file_name = $_FILES['file']['name'][$i];
             $file_tmp = $_FILES['file']['tmp_name'][$i];
@@ -85,7 +85,7 @@ include("navbar.php")
                     
                 </div>
                 </form>
-                <p class="aa red">*อัพโหลดรูปได้สูงสุด 64 รูป</p>
+                <p class="aa red">*อัพโหลดรูปได้สูงสุด <?php echo $row[3]; ?> รูป</p>
                 <div class="uploadlist">
                     
                     <!-- <img src="album/elephant.jpg" height="120rem"> -->

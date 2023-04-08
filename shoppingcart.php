@@ -47,7 +47,7 @@ include("navbar.php")
                 echo '<br>ขนาดรูป : '.$row1['pic_size'].' นิ้ว';
                 echo '<br>จำนวน : '.$row1['pic_amount'].' รูป';
                 echo '<br>ลายอัลบั้ม : '.$row2['a_name'];
-                // echo '<br><a class="more-detail" href="downloadpic.php?id='.$row['list_no'].'">คลิกเพื่อดูรายละเอียดเพิ่มเติม</a>';
+                echo '<br><a class="more-detail" href="downloadpic.php?id='.$i.'">คลิกเพื่อดูรายละเอียดเพิ่มเติม</a>';
                 echo '</td>';
                 echo '<td>'.$row1['p_price'].'บาท ';
                 echo '<a class="delcButton" href="delete_cart.php?Line='.$i.'">✖</a>';
