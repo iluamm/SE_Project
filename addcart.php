@@ -2,7 +2,7 @@
 session_start();
 require_once 'connect.php';
 
-if(!isset($_SESSION["intLine"]))    //เช็คว่าแถวเป็นค่าว่างมั๊ย ถ้าว่างให้ทำงานใน {}
+if(!isset($_SESSION["intLine"]))    //เช็คว่าแถวเป็นค่าว่างมั้ย ถ้าว่างให้ทำงานใน {}
 {
 	 $_SESSION["intLine"] = 1;
 	 $_SESSION["promotion_id"][1] = $_GET["id"];   //รหัสสินค้า
