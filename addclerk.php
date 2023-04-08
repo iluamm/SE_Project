@@ -20,9 +20,8 @@ include("navbar-admin.php")
 
     <div class="logsigncolumn">
         <h1>เพิ่มพนักงานใหม่</h1>
-
         <div class="padpage2">
-            <form align="center">
+            <form align="center" method="post" action="addadminrole.php" enctype="multipart/form-data">
                 <div class="c6">
                     <div class="warpborder">
                         <img src="image\user.png">
@@ -34,10 +33,8 @@ include("navbar-admin.php")
                         <input class="withicon" type="password" name="password" placeholder="รหัสผ่าน">
                     </div>
                     <div class="tt1">
-                        <input class="saveButton" type="submit" name="Submit" value="ยืนยันการลงทะเบียน" /></input>
+                        <input class="saveButton" type="submit" name="addrole" value="ยืนยันการลงทะเบียน" /></input>
                     </div>
-
-                    <p class="graytext">เพิ่มพนักงานเสร็จสิ้น</p>
                 </div>
             </form>
         </div>

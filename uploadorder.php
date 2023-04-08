@@ -16,9 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     for ($i = 0; $i < $max_files; $i++) {
         if (isset($_FILES['file']['name'][$i])) {
             $file_name = $_FILES['file']['name'][$i];
-            $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
             $file_tmp = $_FILES['file']['tmp_name'][$i];
-            $file_size = $_FILES['file']['size'][$i];
             $file_error = $_FILES['file']['error'][$i];
 
             // Check if the file is uploaded successfully
@@ -99,8 +97,9 @@ include("navbar.php")
             </td>
         </tr>
     </table>
+    
+    <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data">
     <?php if($row[1]!='อัดรูป'){ ?>
-        <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data">
     <h2 class="left">-เลือกลายอัลบั้ม-</h2>
 
     <div class="albumlist">

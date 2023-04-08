@@ -24,11 +24,11 @@ include("navbar.php")
         $result = mysqli_query($mysqli, $query);
         while ($fetch = mysqli_fetch_assoc($result)) {
         ?>
+        <form name="frm"  method="post" action="updateprofile.php" enctype="multipart/form-data">
         <div class="addressbox">
             เบอร์โทรศัพท์ (Phone number)
-            <br><dd>09x-xxx-xxxx</dd>
+            <br><input type="text" class="common" name ="user_phone" value="<?php echo $fetch['user_phone'];?>"/>
         </div>
-        <form name="frm"  method="post" action="updateprofile.php" enctype="multipart/form-data">
         <div class="addressbox">
             <p>ชื่อ-นามสกุล (Firstname - Lastname)
             <br><input type="text" class="common" name ="user_name" value="<?php echo $fetch['user_name'];?>"/>

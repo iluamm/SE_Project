@@ -5,6 +5,7 @@ $promotion_id = $_GET['id'];
 $query = "SELECT * FROM promotion WHERE promotion_id = '".$promotion_id."'";
 $result = mysqli_query($mysqli, $query);
 $row = mysqli_fetch_row($result);
+unset($_SESSION['file_paths']);
 ?>
 <!DOCTYPE html>
 <html>

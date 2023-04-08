@@ -40,7 +40,7 @@ include("navbar.php")
     <dd>
         <p class="tt1">วันที่โอนเงิน <input name="t_date" class="a1-5" type="date" /></p>
         <p class="tt1">เวลาที่โอนเงิน <input  name="t_time" class="a1-5" type="time" /></p>
-        <a  href="#">
+        <a href="deleteorder.php?id=<?php echo $order_id; ?>">
             <img src="image\bin2.png" width="20rem"> 
             <span class="graytext">ยกเลิกออเดอร์<br>
             *หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน

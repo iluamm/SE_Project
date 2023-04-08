@@ -25,7 +25,7 @@ include("navbar.php")
 
         <div class="addressbox">
             เบอร์โทรศัพท์ (Phone number)
-            <br><dd>09x-xxx-xxxx</dd>
+            <br><input type="text" class="common" value="<?php echo $fetch['user_phone'];?>" readonly/>
         </div>
 
         <div class="addressbox">
