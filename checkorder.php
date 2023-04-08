@@ -89,9 +89,7 @@ include("navbar.php")
             
             <p class="graytext">*กรุณาตรวจสอบความถูกต้องของชื่อ-นามสกุลผู้รับ ที่อยู่ และเบอร์โทรศัพท์</p>
             
-            <!-- style="width:50%;height:10rem;" -->
             <div class="aa">
-                <!-- <a href="shoppingcart.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a> -->
                 <input class="nextButton" type="submit" name="addressupdate" value="ถัดไป" />
             </div>
         </form>

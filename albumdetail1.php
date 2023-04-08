@@ -12,8 +12,8 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/inputstyle.css" />
 <link rel="stylesheet" href="csscol/choicestyle.css" />
 </head>
-<body>
 
+<body>
 <?php
 include("navbar-admin.php")
 ?>
@@ -49,8 +49,6 @@ include("navbar-admin.php")
     </div>
 
 </div>
-    
-    
 </body>
 <?php
  include("footer.php")

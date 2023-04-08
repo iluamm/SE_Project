@@ -13,7 +13,7 @@ require_once 'connect.php';
 <body>
 
 <?php
-include("navbar-admin.php") //navbar
+include("navbar-admin.php")
 ?>
 <?php
  include("footer.php")
