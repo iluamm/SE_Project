@@ -23,12 +23,10 @@ include("navbar-admin.php") //navbar
     <div>
         <img class="bannercrop" src="image\banner.jpg">
     </div>
-    <!-- <h1>BANNER!!!</h1> -->
     <h2 class="left">สินค้าแนะนำ</h2>
     
 
     <div class="menuitemlist">
-
         <!-- Add recommend -->
         <div>
             <a href="#" onclick="showPopup(this.getAttribute('href'))">
@@ -40,29 +38,6 @@ include("navbar-admin.php") //navbar
                 </div>
             </a>
         </div>
-
-        <!-- list -->
-        <!-- <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-                <a href="#popup2"><button class="btn"><img src="image\bin.png"></button></a>
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div> -->
 
         <?php 
         $query2 = "SELECT * FROM recommend";
@@ -83,10 +58,7 @@ include("navbar-admin.php") //navbar
                     </div>
                 </div>
             <?php }
-        }
-
-        ?>
-
+        }?>
     </div>
 
     <div id="popup" class="overlay">
@@ -167,7 +139,6 @@ include("navbar-admin.php") //navbar
         }
 
     </script>
-
 </body>
 
 </html>

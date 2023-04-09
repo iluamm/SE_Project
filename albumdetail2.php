@@ -10,7 +10,6 @@ require_once 'connect.php';
 <link rel="stylesheet" href="csscol/buttonstyle.css" />
 <link rel="stylesheet" href="csscol/tablestyle.css" />
 <link rel="stylesheet" href="csscol/inputstyle.css" />
-<link rel="stylesheet" href="csscol/choicestyle.css" />
 </head>
 <body>
 
@@ -47,10 +46,7 @@ include("navbar-admin.php")
     <div class="c6">
         <a href="editproduct2.php"><input class="backButton" type="submit" name="Submit" value="ย้อนกลับ" /></a>
     </div>
-
 </div>
-    
-    
 </body>
 <?php
  include("footer.php")

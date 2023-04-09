@@ -8,11 +8,6 @@ require_once 'connect.php';
 <head>
 <link rel="stylesheet" href="csscol/style.css" />
 <link rel="stylesheet" href="csscol/menuliststyle.css" />
-<style>
-    body{
-        margin:0;
-    }
-    </style>
 </head>
 
 <body>
@@ -20,7 +15,6 @@ require_once 'connect.php';
 <?php
 include("navbar.php")
 ?>
-
 
 <div class="c6">
     <div>
@@ -30,7 +24,6 @@ include("navbar.php")
     <h2 class="left">สินค้าแนะนำ</h2>
 
     <div class="menuitemlist">
-
     <?php 
         $query2 = "SELECT * FROM recommend";
         $result2 = mysqli_query($mysqli, $query2);
@@ -65,37 +58,7 @@ include("navbar.php")
                     </a>
                     <?php } ?>
             <?php }
-        }
-
-        ?>
-<!-- 
-    <?php if(isset($_SESSION['user_username'])) { ?>
-        <a href="orderproduct.php">
-        <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php }else{ ?>
-            <a href="login.php">
-            <div class="menueachitemlist">
-            <div class="picturemenu">
-                <img src="album\elephant.jpg">
-            </div>
-            <div>
-                <p>อัลบั้มสอด 3x2 นิ้ว</p>
-                <p class="graytext">จำนวน 64 รูป ราคา 279 บาท</p>
-            </div>
-        </div>
-        </a>
-        <?php } ?>
-         -->
-
+        }?>
     </div>
 </div>
 

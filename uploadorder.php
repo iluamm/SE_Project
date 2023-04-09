@@ -1,11 +1,10 @@
-    <?php
+<?php
 session_start();
 require_once 'connect.php';
 $promotion_id = $_GET['id'];
 $query = "SELECT * FROM promotion WHERE promotion_id = '".$promotion_id."'";
 $result = mysqli_query($mysqli, $query);
 $row = mysqli_fetch_row($result);
-
 
 $max_files = (int)$row[3];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -29,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     }
-
     $_SESSION['file_paths'] = $file_paths;
     header("Refresh:0");
 }
@@ -44,7 +42,6 @@ if (isset($_GET['remove']) && is_numeric($_GET['remove'])) {
     }
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -63,32 +60,26 @@ include("navbar.php")
 ?>
 
 <div class="c5">
-    <!-- <form action="addcart.php?id=<?php echo $row[0] ?>" method="post" enctype="multipart/form-data"> -->
     <h2 class="left">-กรุณาอัพโหลดรูปภาพ-</h2>
     <table class="t10 tt1">
         <tr>
             <td>
                 <form method="POST" enctype="multipart/form-data">
-                <div class="tt1" align="center">
-                    <label class="label-upload" >
-                        <div class="uploadbox">
-                            <div class="warpupload">
-                                <p class="graytext">Select file to upload</p>
-                                <img src="image\upload.png" width="30rem">
-                                <input class="custom-upload" type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png">
+                    <div class="tt1" align="center">
+                        <label class="label-upload" >
+                            <div class="uploadbox">
+                                <div class="warpupload">
+                                    <p class="graytext">Select file to upload</p>
+                                    <img src="image\upload.png" width="30rem">
+                                    <input class="custom-upload" type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png">
+                                </div>
+                                <input type="submit" class="confirmButton" value="อัพโหลดรูป">
                             </div>
-                            
-                            <!-- <input type="file" name="file[]" id="file" multiple accept=".jpg,.jpeg,.png"> -->
-                            <input type="submit" class="confirmButton" value="อัพโหลดรูป">
-                        </div>
-                    </label>
-                    
-                </div>
+                        </label>
+                    </div>
                 </form>
                 <p class="aa red">*อัพโหลดรูปได้สูงสุด <?php echo $row[3]; ?> รูป</p>
                 <div class="uploadlist">
-                    
-                    <!-- <img src="album/elephant.jpg" height="120rem"> -->
                     <?php if (!empty($_SESSION['file_paths'])): ?>
                         <?php foreach ($_SESSION['file_paths'] as $index => $file_path): ?>
                         <div class="upload-pic">
@@ -98,7 +89,6 @@ include("navbar.php")
                                 <button class="btn" type="submit">✖</button>
                             </form>
                         </div>
-                        
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
@@ -133,12 +123,10 @@ include("navbar.php")
         echo '<input type="hidden" name="album_id" value="0">';
     } ?>
     
-
     <div class="bn">
         <a class="backButton" href="orderproduct.php?id=<?php echo $row[0] ?>">ย้อนกลับ</a>
         <a href="addcart.php"><input class="nextButton" type="submit" name="Submit" value="ถัดไป" /></a>
     </div>
-        
 </div>
 
 </body>

@@ -14,7 +14,6 @@ require_once 'connect.php';
 include("navbar.php")
 ?>
 
-
 <div class="padpage">
     <h2>ตะกร้าสินค้า</h2>
     <form action="order.php" method="post" enctype="multipart/form-data">
@@ -76,7 +75,6 @@ include("navbar.php")
                 <td colspan="4" class="fat"> <p class="graytext">คุณยังไม่เพิ่มรายการใดลงในตะกร้า</p></td>
             </tr>
         <?php } ?>
-
     </table>
 
     <div class="padpage2">
@@ -87,22 +85,13 @@ include("navbar.php")
     <?php if(isset($_SESSION["intLine"])){ ?>
     <input type="hidden" name="total" value="<?php echo $Total+50; ?>"/>
     <div class="c6" align="right" >
-        <!-- <div class="padpage"> -->
-            <a href="order.php">
-            <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>
-            </a>
-        <!-- </div> -->
+        <a href="order.php">
+        <input class="orderConfirmButton" type="submit" name="Submit" value="ยืนยันคำสั่งซื้อ" /></input>
+        </a>
     </div>
     <?php } ?>
     </form>
-    
-
-
-
 </div>
-
-
-
 </body>
 <?php
  include("footer.php")

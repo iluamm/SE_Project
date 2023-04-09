@@ -87,12 +87,6 @@ include("navbar-admin.php")
                     <p class="tt1">จัดส่งวันที่ : <input class="a1-5" name="c_date" type="date" /></p>
                 </td>
             </tr>
-            <!-- <tr>
-                <td>
-                    <p class="bold tt1">ติดตามพัสดุ</p>
-                    Kerry Express : ลิงค์
-                </td>
-            </tr> -->
         </table>
     </div>
 
@@ -112,8 +106,6 @@ include("navbar-admin.php")
             <br>&nbsp;
             <br>วันที่สั่ง: <?php echo $row4['order_date'] ?>
         </p>
-
-
         <div class="bn">
             <a class="backButton" href="javascript:history.back()">ย้อนกลับ</a>
             <input class="nextButton" type="submit" name="Submit" value="จัดเตรียมสำเร็จ" />
@@ -121,11 +113,8 @@ include("navbar-admin.php")
     </div>
     </form>
 </div>
-
-
 </body>
 <?php
  include("footer.php")
 ?>
 </html>
-    

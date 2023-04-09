@@ -1,4 +1,4 @@
-    <?php
+<?php
 session_start();
 require_once 'connect.php';
 ?>
@@ -23,7 +23,6 @@ include("navbar-admin.php") //navbar
     </div>
     
     <div class="menuitemlist">
-
     <?php
         $query = "SELECT * FROM promotion WHERE p_type='อัลบั้มสอด'";
         $result = mysqli_query($mysqli, $query);
@@ -40,7 +39,6 @@ include("navbar-admin.php") //navbar
             echo "</div>";
         }
         ?>
-
     </div>
 
     <div id="popup" class="overlay">
@@ -55,9 +53,7 @@ include("navbar-admin.php") //navbar
             </div>
         </div>
     </div>
-
 </div>
-
 </body>
 <?php
  include("footer.php")

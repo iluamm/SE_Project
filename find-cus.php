@@ -3,7 +3,6 @@ session_start();
 require_once 'connect.php';
 
 if(isset($_POST['find'])){
-
     $user_phone = $_POST['user_phone'];
     $query = "SELECT * FROM user WHERE user_phone='$user_phone'";
     $result = mysqli_query($mysqli, $query);

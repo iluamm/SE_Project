@@ -1,5 +1,4 @@
 /* Layout button */
-
 .bn{    /* back - next */
     display: flex;
     margin-top: 2rem;
@@ -18,7 +17,6 @@
 }
 
 /* Log-in sign-in */
-
 .losicButton{
     color: #FFB500;
     border: 1px solid #FFB500;
@@ -39,7 +37,6 @@
 }
 
 /* Order confirm */
-
 .orderConfirmButton{
     color: white;
     border: none;
@@ -82,7 +79,6 @@
 }
 
 /* detail */
-
 .detaButton{
     color: #000000;
     border: none;
@@ -105,7 +101,6 @@
 }
 
 /* Next - Back - Edit - Save - Delete ปุ่มกลม*/
-
 .nextButton{
     color: white;
     border: none;
@@ -201,13 +196,15 @@ a.backButton:hover{
     font-size: 1rem;
     font-family: 'Noto Sans Thai', sans-serif;
 }
+.delButton:visited{
+    color: #FF4A4A;
+}
 .delButton:hover{
     background-color: #FF4A4A;
     color: white;
 }
 
 /* Operator ตั้งแต่ตรงนี้ไปขอบมน*/
-
 .confirmButton{
     color: white;
     border: none;
@@ -286,7 +283,6 @@ a.backButton:hover{
 }
 
 /* admin เพิ่มสินค้าแนะนำ */
-
 .addRec{
     display: block;
     margin: auto;

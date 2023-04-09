@@ -13,9 +13,8 @@ require_once 'connect.php';
 <body>
 
 <?php
-include("navbar-admin.php") //navbar
+include("navbar-admin.php")
 ?>
-
 
 <div class="c5">
     <h2>เพิ่มลายอัลบั้ม</h2>
@@ -36,7 +35,6 @@ include("navbar-admin.php") //navbar
 
         <div class="tt1">
             <p>อัปโหลดรูปภาพลายอัลบั้ม<span class="red">*</span></p>
-            
             <!-- label -->
             <label for="image" class="label-upload">
                 <div class="warpupload">
@@ -51,10 +49,8 @@ include("navbar-admin.php") //navbar
             <a href="javascript:history.back()" class="backButton">ย้อนกลับ</a>
             <a href="#"><input class="nextButton" type="submit" name="Submit" value="ยืนยัน" /></a>
         </div>
-
     </form>
 </div>
-
 
 </body>
 <?php

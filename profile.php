@@ -41,11 +41,8 @@ include("navbar.php")
         <div align="right">
             <a href="editprofile.php"><input type="submit" class="editButton" name="editconfirm" value="แก้ไขโปรไฟล์"  /></a>
         </div>
-
     </div>
 </div>
-
-
 </body>
 <?php
  include("footer.php")
