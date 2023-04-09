@@ -32,7 +32,6 @@ include("navbar.php")
                     </div>
                 </label>
             </div>
-            
             <p class="red">**หากไม่ชำระเงินภายใน 24 ชั่วโมง ระบบจะยกเลิกออเดอร์อัตโนมัติ</p>
         </div>
 
@@ -46,7 +45,6 @@ include("navbar.php")
             *หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน
             </span>
         </a>
-        
     </dd>
     <input type="hidden" name="order_status" value="รอการตรวจสอบการชำระเงิน">
     <div class="bn">
@@ -55,9 +53,6 @@ include("navbar.php")
     </div>
     </form>
 </div>
-
-
-
 </body>
 <?php
  include("footer.php")

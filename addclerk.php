@@ -17,7 +17,6 @@ require_once 'connect.php';
 include("navbar-admin.php")
 ?>
 <div class="c6">
-
     <div class="logsigncolumn">
         <h1>เพิ่มพนักงานใหม่</h1>
         <div class="padpage2">
@@ -38,18 +37,11 @@ include("navbar-admin.php")
                 </div>
             </form>
         </div>
-
-        <p class="graytext" align="center">
-            <br>
-        </p>
+        <p class="graytext" align="center"><br></p>
     </div>
-
 </div>
-    
-    
 </body>
 <?php
  include("footer.php")
 ?>
-
 </html>

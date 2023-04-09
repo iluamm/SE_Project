@@ -2,12 +2,9 @@
 require_once 'connect.php';
 session_start();
 
-
 $order_id=$_GET['id'];
 $target_dir = "transcript/";
 if(isset($_POST['paymentupdate'])){
-
-
     do{
         $uniq = uniqid(); 
         $strSQL = "SELECT * FROM order_transcript WHERE t_image = '".$uniq.".jpg'";
@@ -46,6 +43,5 @@ if(isset($_POST['paymentupdate'])){
     
         header("location: http://localhost/SE_Project/history.php");
     }
-
 }
 ?>

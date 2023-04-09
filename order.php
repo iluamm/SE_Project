@@ -36,5 +36,4 @@
         unset($_SESSION["promotion_id"],$_SESSION["album_id"],$_SESSION["intLine"],$_SESSION["order_image"]);
         header("location:http://localhost/SE_Project/checkorder.php?id=$order_id");
     }
-
     ?>

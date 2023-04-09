@@ -39,7 +39,6 @@ include("navbar-admin.php") //navbar
             echo "</div>";
         }
         ?>
-
     </div>
 
     <div id="popup" class="overlay">
@@ -54,7 +53,6 @@ include("navbar-admin.php") //navbar
             </div>
         </div>
     </div>
-
 </div>
 </body>
 <?php

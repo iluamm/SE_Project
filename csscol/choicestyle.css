@@ -25,18 +25,11 @@
     flex-wrap: wrap;
 }
 
-/* .crop-upload{
-    width: 7rem; /* width of container 
-    height: 7rem; /* height of container 
-    object-fit: cover;
-} */
-
 .upload-pic{
     position: relative;
-    width: 7rem; /* width of container */
-    height: 7rem; /* height of container */
+    width: 7rem;
+    height: 7rem;
     object-fit: cover;
-    /* padding-bottom: 100%; */
 }
 .upload-pic img{
     position: absolute;

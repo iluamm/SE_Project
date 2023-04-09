@@ -6,18 +6,18 @@
 <script src="https://kit.fontawesome.com/dd5dc441b1.js" crossorigin="anonymous"></script>
 <style>
 footer {
-    position: absolute;
-    width:100%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #DBD2C6;
-    color: #ffffff;
-    font-size: 1rem;
-    border-top: 1px solid #D9D9D9;
-    font-family: 'Noto Sans Thai', sans-serif;
+  position: absolute;
+  width:100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #DBD2C6;
+  color: #ffffff;
+  font-size: 1rem;
+  border-top: 1px solid #D9D9D9;
+  font-family: 'Noto Sans Thai', sans-serif;
 
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 footer .container {
   display: flex;

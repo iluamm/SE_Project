@@ -1,7 +1,6 @@
 <?php
     require_once 'connect.php';
     session_start();
-
 $target_dir = "album/";
 
 do{
@@ -62,4 +61,4 @@ else{
         header( "location: http://localhost/SE_Project/index-admin.php" );
     }
 }
-    ?>
+?>

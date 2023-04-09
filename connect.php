@@ -12,5 +12,4 @@ if(!$link){
 else{
     mysqli_select_db($link ,$db);
 }
-
 ?>
