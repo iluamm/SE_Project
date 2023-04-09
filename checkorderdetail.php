@@ -34,16 +34,15 @@ include("navbar-admin.php")
             $query = "SELECT * FROM order_detail WHERE order_status='รอการตรวจสอบการชำระเงิน'";
             $result = mysqli_query($mysqli, $query);
             while($row = mysqli_fetch_assoc($result)) {
-                echo '<tr>';
-                echo '<td>'.$row['order_id'].'</td>';
-                echo '<td>xxx</td>';
-                echo '<td>xxx</td>';
-                echo '<td>'.$row['order_price'].'</td>';
                 $query2 = "SELECT * FROM order_transcript WHERE order_id='".$row['order_id']."'";
                 $result2 = mysqli_query($mysqli, $query2);
                 $row2 = $result2->fetch_array(MYSQLI_ASSOC);
+                echo '<tr>';
+                echo '<td>'.$row['order_id'].'</td>';
+                echo '<td>'.$row2['t_date'].'</td>';
+                echo '<td>'.$row2['t_time'].'</td>';
+                echo '<td>'.$row['order_price'].'</td>';
                 echo '<td><button class="checkpicButton" onclick="showPopup(\'transcript/'.$row2['t_image'].'\')">ดูรูป</button></td>';
-
                 echo '<td><a href="cancel-transcript.php?id='.$row['order_id'].'" ><input type="submit" class="cancelButton" name="cancel" value="ยกเลิก" /></a></td>';
                 echo '<td><a href="confirm-transcript.php?id='.$row['order_id'].'" ><input type="submit" class="confirmButton" name="confirm" value="ยอมรับ" /></a></td>';
                 echo '</tr>';
