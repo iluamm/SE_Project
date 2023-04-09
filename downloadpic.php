@@ -30,7 +30,13 @@ if($_SESSION["user_type"]=="customer"){ echo '<h2>รูปที่อัพโ
         while($row = mysqli_fetch_assoc($result)){
             echo '<div class="DLeachitemlist">';
             echo '<div class="picturemenu">';
+            if($_SESSION["user_type"]=="admin"){
+            echo '<a href="uploads/'.$row['img_name'].'" download>';
             echo '<img src="uploads/'.$row['img_name'].'" >';
+            echo '</a>';
+            }else{
+            echo '<img src="uploads/'.$row['img_name'].'" >';
+            }
             echo '</div>';
             echo '</div>';
         }
@@ -55,10 +61,6 @@ if($_SESSION["user_type"]=="customer"){ echo '<h2>รูปที่อัพโ
             <a href="javascript:history.back()"><button class="backButton">ยกเลิก</button></a>
         <?php }else{ ?>
             <a href="javascript:history.back()"><button class="backButton">ย้อนกลับ</button></a>
-        <?php } ?>
-        <?php
-            if($_SESSION["user_type"]=="admin"){ ?>
-                <button class="confirmButton">ดาวน์โหลดทั้งหมด</button> 
         <?php } ?>
     </div>
 </div>

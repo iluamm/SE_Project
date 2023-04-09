@@ -16,5 +16,9 @@ $query3 = "DELETE FROM order_detail WHERE order_id='$order_id'";
     echo "<script>";
     echo "alert('ลบสำเร็จ');";
     echo "</script>";
-    header("location:http://localhost/SE_Project/history.php");
+    if($_SESSION["user_type"]=="customer"){
+        header("location:http://localhost/SE_Project/history.php");
+    }else{
+        header("location:http://localhost/SE_Project/checkordersent.php");
+    }
 ?>
