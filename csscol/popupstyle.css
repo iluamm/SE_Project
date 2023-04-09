@@ -71,6 +71,9 @@
 .popup .content {
     max-height: 30%;
 }
+.popup form {
+    width: 100%;
+}
 .popup .content img{
     width: 20rem;
 }

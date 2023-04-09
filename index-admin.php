@@ -64,29 +64,29 @@ include("navbar-admin.php") //navbar
     <div id="popup" class="overlay">
         <div class="popup center">
             <form action="addrecommend.php" method="post" enctype="multipart/from-data">
-            <h2>เพิ่มสินค้าแนะนำ</h2>
-            <a class="close" href="#" onclick="hidePopup()">&times;</a>
-            <div class="content">
-                <div class="tt1">
-                <?php
-                    $query = "SELECT * FROM promotion";
-                    $result = mysqli_query($mysqli, $query); ?>
-                    <select class="select-addRec" id="mySelect" name="recid" onchange="myFunction()"> 
-                    <?php while($row = mysqli_fetch_assoc($result)) { ?> 
-                        <option value="" disabled selected hidden>ค้นหาจากไอดี</option>
-                        <option value="<?php echo $row['promotion_id']?>"><?php echo $row['promotion_id']?></option>
-                        <?php } ?>
-                    </select>
+                <h2>เพิ่มสินค้าแนะนำ</h2>
+                <a class="close" href="#" onclick="hidePopup()">&times;</a>
+                <div class="content2">
+                    <div class="tt1">
+                    <?php
+                        $query = "SELECT * FROM promotion";
+                        $result = mysqli_query($mysqli, $query); ?>
+                        <select class="select-addRec" id="mySelect" name="recid" onchange="myFunction()"> 
+                        <?php while($row = mysqli_fetch_assoc($result)) { ?> 
+                            <option value="" disabled selected hidden>ค้นหาจากไอดี</option>
+                            <option value="<?php echo $row['promotion_id']?>"><?php echo $row['promotion_id']?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="left padpage">
+                        <p class="bold">รายละเอียดสินค้า</p>
+                        <p id="demo"></p>
+                    </div>
+                    <div class="padpage aa">
+                        <input type="hidden">
+                        <button class="saveButton">เพิ่มสินค้าแนะนำ</button>
+                    </div>
                 </div>
-                <div class="left padpage">
-                    <p class="bold">รายละเอียดสินค้า</p>
-                    <p id="demo"></p>
-                </div>
-                <div class="padpage aa">
-                    <input type="hidden">
-                    <button class="saveButton">เพิ่มสินค้าแนะนำ</button>
-                </div>
-            </div>
             </form>
         </div>
     </div>
