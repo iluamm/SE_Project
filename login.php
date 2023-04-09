@@ -27,7 +27,7 @@ include("navbar.php")
             <form class="inputbar" align="center" name="frm" method="post" action="checklogin.php" enctype="multipart/from-data">
                 <div class="warpborder">
                     <img src="image\user.png">
-                    <input class="withicon" type="text" name="username" placeholder="เบอร์โทรศัพท์">
+                    <input class="withicon" type="text" name="username" placeholder="Username">
                 </div>
                 <p>&nbsp;</p>
                 <div class="warpborder">
@@ -46,7 +46,6 @@ include("navbar.php")
     </div>
 </div>
 </body>
-
 <?php
     include("footer.php")
 ?>

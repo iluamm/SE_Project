@@ -26,12 +26,12 @@ include("navbar.php")
         <div class="area4">
             <form class="inputbar" align="center" name="frm" method="post" action="checkregis.php" enctype="multipart/from-data">
                 <div class="warpborder">
-                    <img src="image\user.png">
+                    <img src="image\name.png">
                     <input class="withicon" type="text" name="name" minlength="5" maxlength="25" placeholder="ชื่อ-นามสกุล*">
                 </div>
                 <p>&nbsp;</p>
                 <div class="warpborder">
-                    <img src="image\phone.png">
+                    <img src="image\user.png">
                     <input class="withicon" type="text" name="username" maxlength="10" placeholder="Username*">
                 </div>
                 <p>&nbsp;</p>
