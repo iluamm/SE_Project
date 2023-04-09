@@ -122,14 +122,6 @@ else{include("navbar-admin.php");}
             <br>วันที่สั่ง: <?php echo $row4['order_date'] ?>
         </div>
         
-        <?php if($row4['order_status']!='รอการตรวจสอบการชำระเงิน' && $_SESSION['user_type']!='customer'){ ?>
-        <a href="deleteorder.php?id=<?php echo $order_id; ?>">
-            <img src="image\bin2.png" width="20rem"> 
-            <span class="graytext">ยกเลิกออเดอร์<br>
-            *หากชำระเงินไปแล้วและต้องการยกเลิกคำสั่งซื้อ กรุณาติดต่อร้านเพื่อรับเงินคืน
-            </span>
-        </a>
-        <?php } ?>
         <?php if($_SESSION["user_type"]=="customer"){ ?><a href="history.php"><input class="backButton ba" type="submit" name="Submit" value="ย้อนกลับ" /></a>
             <?php }else{ ?>
                 <a href="history-admin.php?id=<?php echo $row4['user_id']; ?>" ><input class="backButton ba" type="submit" name="Submit" value="ย้อนกลับ" /></a>
