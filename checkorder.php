@@ -81,12 +81,12 @@ include("navbar.php")
                 $query7= "SELECT * FROM order_detail WHERE order_id='$order_id'";
                 $result7 = mysqli_query($mysqli, $query7);
                 $fetch2 = mysqli_fetch_assoc($result7);
-                if(!isset($fetch2['order_address'])){
+                if(!isset($fetch2['order_address'])||$fetch2['order_address']==""){
                     $order_address=$fetch['user_address'];
                 }else{
                     $order_address=$fetch2['order_address'];
                 }
-                if(!isset($fetch2['order_phone'])){
+                if(!isset($fetch2['order_phone'])||$fetch2['order_phone']==""){
                     $order_phone=$fetch['user_phone'];
                 }else{
                     $order_phone=$fetch2['order_phone'];
