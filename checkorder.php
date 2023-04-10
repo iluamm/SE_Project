@@ -5,7 +5,8 @@ $order_id=$_GET['id'];
 $user_id = $_SESSION["user_id"];
 $query6 = "SELECT * FROM user WHERE user_id='$user_id'";
 $result6 = mysqli_query($mysqli, $query6);
-$fetch = mysqli_fetch_assoc($result6)
+$fetch = mysqli_fetch_assoc($result6);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -76,15 +77,30 @@ include("navbar.php")
         </table>
 
         <h2 class="left">ชื่อผู้รับ ที่อยู่ และเบอร์โทรศัพท์</h2>
+        <?php
+                $query7= "SELECT * FROM order_detail WHERE order_id='$order_id'";
+                $result7 = mysqli_query($mysqli, $query7);
+                $fetch2 = mysqli_fetch_assoc($result7);
+                if(!isset($fetch2['order_address'])){
+                    $order_address=$fetch['user_address'];
+                }else{
+                    $order_address=$fetch2['order_address'];
+                }
+                if(!isset($fetch2['order_phone'])){
+                    $order_phone=$fetch['user_phone'];
+                }else{
+                    $order_phone=$fetch2['order_phone'];
+                }
+        ?>
         <form action="addressupdate.php?id=<?php echo $order_id; ?>" enctype="multipart/from-data" method="post">
             <div class="tt1">
-                <input class="common" type="text" placeholder="ชื่อ-นามสกุลผู้รับ" name="order_customerName" value="<?php echo $fetch['user_name'];?>"/>
+                <input class="common" type="text" placeholder="ชื่อ-นามสกุลผู้รับ" name="order_customerName" value="<?php echo $fetch['user_name'];?>" readonly/>
             </div>
             <div class="tt1">
-                <input class="a10" type="text" placeholder="ที่อยู่ที่ต้องการจัดส่งให้ผู้รับ" name="order_address" value="<?php echo $fetch['user_address'];?>"/>
+                <input class="a10" type="text" placeholder="ที่อยู่ที่ต้องการจัดส่งให้ผู้รับ" name="order_address" value="<?php echo $order_address;?>"/>
             </div>
             <div class="tt1">
-                <input class="common" type="text" placeholder="เบอร์โทรศัพท์" name="order_phone" value="<?php echo $fetch['user_phone'];?>"/>
+                <input class="common" type="text" placeholder="เบอร์โทรศัพท์" name="order_phone" value="<?php echo $order_phone;?>"/>
             </div>
             
             <p class="graytext">*กรุณาตรวจสอบความถูกต้องของชื่อ-นามสกุลผู้รับ ที่อยู่ และเบอร์โทรศัพท์</p>
