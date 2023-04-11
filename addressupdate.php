@@ -5,7 +5,7 @@ $order_id=$_GET['id'];
 if(isset($_POST['addressupdate'])){
     $order_address = $_POST['order_address'];
     $order_phone = $_POST['order_phone'];
-    if($order_address==""){
+    if($order_address=="" || $order_phone==""){
         echo "<script>";
         echo "alert('กรุณากรอกข้อมูลให้ครบถ้วน');";
         echo "window.history.back();";
